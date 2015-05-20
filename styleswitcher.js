@@ -23,7 +23,9 @@ function AddEvent( element, event_name, event_function )
 
 // MAIN PROGRAM //
 
+
 AddEvent( window, 'load', function () {
+	/*
 	var interval = window.setInterval( function () {
 		if (progress < 100) {
 			progress += 5;
@@ -31,6 +33,16 @@ AddEvent( window, 'load', function () {
 		} else {
 			window.clearInterval( interval );
 		}
-	}, 200 );   
+	}, 200 );
+	*/
+	max = 100;
+	if (typeof cnt !== 'undefined') {
+		set_progress(Math.min(cnt.cnt/max, 100));
+	}
+	else {
+		// set safe limit here
+		//set_progress();	
+	}
 }); // onLoad
+
 

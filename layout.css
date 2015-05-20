@@ -147,9 +147,9 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 }
 .actions li {
 	display:inline-block;
-	width:33.33%;
+	width:63.33%;
 	/*max-width:15.15em;*/
-	max-width:16.45em;
+	max-width:34.45em;
 	margin:1em 1em;
 	vertical-align:top;
 }
