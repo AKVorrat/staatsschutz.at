@@ -37,7 +37,7 @@ body {
 /*** General Styles ***/
 
 .nocss { display:none; }
-abbr[title], span[title] { cursor:help; }
+/* abbr[title], span[title] { cursor:help; } */
 :lang(de) { quotes:"\201E" "\201C"  "\201A" "\2018"; }
 a { text-decoration:none; }
 a:hover { text-decoration:underline; }
@@ -234,4 +234,37 @@ footer li {
 
 #wrapper-zeitplan {
 	background-color: #013c4e
+}
+
+#spenden-button {
+    display:block;
+    padding: 0.5em 1.2em;
+    border: 1px solid #148C04;
+    border-radius: 2px;
+    color: #FFF;
+    background: linear-gradient(#57B31C, #368C00) repeat scroll 0% 0% transparent;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align:center;
+    width: 30%;
+    margin: auto;
+    margin-top: 0.7em;
+}
+
+input {
+	padding: 0.7% 1.5%;
+	margin: 0.3em;
+}
+
+.form-required {
+	color: #f00;
+}
+
+label {
+	margin-right: 0.4em;
+}
+
+.signpetition {
+	text-align: left;
 }
