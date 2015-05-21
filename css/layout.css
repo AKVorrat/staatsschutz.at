@@ -50,8 +50,12 @@ h2 { font-size:1.6em, }
 p { margin:0.5em 0 1em; }
 li { margin:0.5em 0; }
 
-section { margin:2em 0; text-align:left; }
-section ul { margin-left:1em; }
+section { 
+	margin:2em 0; 
+	text-align:left;
+	padding: 0 2em 0 2em;
+}
+section ul, section ol,  { margin-left:1em; }
 
 section:not([class]),
 .actions > ul > li {
@@ -214,5 +218,20 @@ footer li {
 	vertical-align:top;
 }
 
+#10points li {
+	margin: 0.5em 2em 0em 3em;
+}
 
-/*EOF*/
+#wrapper-fazit section,
+#wrapper-zeitplan section {
+	margin: auto;
+	width: 90%;
+}
+
+#wrapper-fazit {
+	background-color: #8ebe2a
+}
+
+#wrapper-zeitplan {
+	background-color: #013c4e
+}
