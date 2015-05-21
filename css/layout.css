@@ -149,6 +149,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 	margin:-1em;
 	text-align:center;
 }
+
 .actions li {
 	display:inline-block;
 	width:63.33%;
@@ -218,7 +219,8 @@ footer li {
 	vertical-align:top;
 }
 
-#tenpoints {
+#tenpoints,
+#fivedemands {
 	padding: 1em 3em;
 }
 
@@ -267,6 +269,13 @@ label {
 
 .signpetition {
 	text-align: left;
+	padding-right: 2em;
+}
+
+.signpetition ol li {
+	width: 85%;
+	display: list-item;
+	max-width: 100%;
 }
 
 input.form-submit,
@@ -288,4 +297,8 @@ a.button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
+}
+
+.demand_short {
+	font-weight: bold;
 }
