@@ -27,7 +27,6 @@ html {
 body {
 	color:#000;
 	font-family:fira_sansregular, sans-serif;
-	text-align:center;
 	line-height:1.4;
 }
 
@@ -36,7 +35,7 @@ body {
 	margin:0 auto;
 	padding:0 2em;
 	background:#f8f9fa;
-	max-width:74em;	
+	max-width:78em;	
 	min-width: 54em;
 } 
 
@@ -56,13 +55,10 @@ h2 { font-size:1.6em }
 p { margin:0.5em 0 1em; }
 li { margin:0.5em 0; }
 
-section { 
-	margin:2em 1em; 
-	text-align:left;
-}
 section ul, section ol,  { margin-left:1em; }
 
-section:not([class]) {
+
+.paper {
 	padding:1em 1em;
 	background:#fff;
 	color:#000;
@@ -70,6 +66,9 @@ section:not([class]) {
 	box-shadow:0 0 0.3em 0.1em #E4E5E6;
 }
 
+.indent {
+	margin: 1em 0;
+}
 
 .actionarea {
   float: right;
@@ -78,11 +77,17 @@ section:not([class]) {
   padding: 1em;
 }
 
-.infoarea {
-  overflow: hidden;	
-  padding-right: 10px;
+.actionarea h2 {
+  font-size: 1.3em;
+  text-align: left;
+  margin: .6em 0 .2em;
 }
 
+.infoarea {
+	padding-top: 4px;
+	padding-right: 10px;
+	width: calc(100% - 28em);
+}
 /*** Page Layout ***/
 
 noscript p {
@@ -173,16 +178,15 @@ h2.Xnocss {
 }
 
 .actions li {
-	display:inline-block;
-	vertical-align:top;
 }
+
 .shareicons {
 	list-style-type:none;
 }
 .shareicons li {
-	display:inline-block;
-	margin:1em 0.5em;
-	width:auto;
+  display:inline-block;
+  margin: .3em 0.5em;
+  width:auto;
 }
 
 
@@ -227,6 +231,7 @@ footer {
 	padding:1em;	
 	background:#003b4c;
 	color:#fff;
+	text-align: center;
 }
 footer ul {
 	list-style-type:none;
@@ -244,7 +249,8 @@ footer li {
 
 #wrapper-fazit section,
 #wrapper-zeitplan section {
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	width: 90%;
 }
 
@@ -327,6 +333,15 @@ width:16em;
 
 .demand_short {
 	font-weight: bold;
+}
+
+.sectionimage {
+	text-align:center;
+	padding: .5em 0 0;
+}
+
+.is-sticky{
+	width: 432px;
 }
 
 @media screen and (max-width:1100px) {
