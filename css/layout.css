@@ -106,6 +106,7 @@ header {
 	margin:0 -2em;
 	background:#003b4c;
 	color:#fff;
+	text-align:center;
 }
 header h1 { font-size:2em; }
 
@@ -119,10 +120,6 @@ header h1 { font-size:2em; }
 	font-weight:bold;
 }
 
-header {
-	text-align:center;
-	margin-bottom:-1em;
-}
 header h1 {
 	margin:0 0 1.25em;
 }
@@ -144,31 +141,31 @@ blockquote p { margin:0; }
 blockquote p:before { content:'»'; color:#8ebf2a; font-weight:bold; }
 blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
-h2.Xnocss {
-  font-size: 1.2em;
-}
 .progress_bar {
 	position:relative;
 	overflow:hidden;
-	max-width:20em;
-	margin:1em auto 1em;
+	max-width:30em;
+	margin: 0 auto 1em;
 	border:solid 1px #000;
 	border-radius:0.3em;
 	background: #fff;
 }
-.progress_bar .progress {
-	display:block;
-	Xwidth:33%;
-	padding:0.3em;
+
+.progress {
 	background:#8Ebf2a;
-	color:#000;
-	text-align:center;
-	font-weight:bold;
-	padding: .8em 0.3em;
+	width:0;
+  position: absolute;
+  height: 100%;
 }
 
 #progress_description {
   text-align: center;
+  margin: 0;
+  font-weight:bold;
+  padding: .5em;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 10px #fff;
 }
 
 
