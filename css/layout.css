@@ -307,3 +307,7 @@ a.button {
 .demand_short {
 	font-weight: bold;
 }
+
+#progress_description {
+	text-align: center;
+}

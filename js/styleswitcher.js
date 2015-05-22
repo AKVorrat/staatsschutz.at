@@ -11,10 +11,11 @@ function set_progress( signatures )
 {
 	signatures = signatures || 0;
 	var target = getTarget(signatures);
-	var percent = Math.floor(signatures/target)*100 + '%';
+	var percent = signatures/target*100 + '%';
+	//console.log('progress', signatures, target, percent, $('#progress'))
 
-	$('#progress').animate({'width': percent}, 1500).html('Fortschritt:' + percent);
-	$('progress_description').html(signatures + ' Unterschriften von ' + target);
+	$('#progress').animate({'width': percent}, 800);
+	$('#progress_description').text(signatures + ' Unterschriften von ' + target);
 }
 
 $(function () {
