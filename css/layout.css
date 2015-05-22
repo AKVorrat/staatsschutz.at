@@ -25,14 +25,20 @@ html {
 }
 
 body {
-	max-width:60em;
-	margin:0 auto;
-	padding:0 2em;
-	background:#f8f9fa;
 	color:#000;
 	font-family:fira_sansregular, sans-serif;
 	text-align:center;
+	line-height:1.4;
 }
+
+
+.site-wrapper {
+	margin:0 auto;
+	padding:0 2em;
+	background:#f8f9fa;
+	max-width:74em;	
+	min-width: 54em;
+} 
 
 /*** General Styles ***/
 
@@ -46,19 +52,17 @@ a:hover abbr { border:none; }
 
 h1, h2 { text-align:center; margin:0 0 0.5em; }
 h1 { font-size:2em; }
-h2 { font-size:1.6em, }
+h2 { font-size:1.6em }
 p { margin:0.5em 0 1em; }
 li { margin:0.5em 0; }
 
 section { 
-	margin:2em 0; 
+	margin:2em 1em; 
 	text-align:left;
-	padding: 0 2em 0 2em;
 }
 section ul, section ol,  { margin-left:1em; }
 
-section:not([class]),
-.actions > ul > li {
+section:not([class]) {
 	padding:1em 1em;
 	background:#fff;
 	color:#000;
@@ -66,6 +70,18 @@ section:not([class]),
 	box-shadow:0 0 0.3em 0.1em #E4E5E6;
 }
 
+
+.actionarea {
+  float: right;
+  width: 400px;
+  background: #DFDFDF;
+  padding: 1em;
+}
+
+.infoarea {
+  overflow: hidden;	
+  padding-right: 10px;
+}
 
 /*** Page Layout ***/
 
@@ -123,16 +139,18 @@ blockquote p { margin:0; }
 blockquote p:before { content:'»'; color:#8ebf2a; font-weight:bold; }
 blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
-
+h2.Xnocss {
+  font-size: 1.2em;
+}
 .progress_bar {
 	position:relative;
 	overflow:hidden;
 	max-width:20em;
-	margin:2em auto 1em;
+	margin:1em auto 1em;
 	border:solid 1px #000;
 	border-radius:0.3em;
+	background: #fff;
 }
-
 .progress_bar .progress {
 	display:block;
 	Xwidth:33%;
@@ -141,26 +159,21 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 	color:#000;
 	text-align:center;
 	font-weight:bold;
+	padding: .8em 0.3em;
 }
 
-.progress {
-	width: 0px;
+#progress_description {
+  text-align: center;
 }
 
 
 .actions { margin:0; }
 .actions ul {
 	list-style-type:none;
-	margin:-1em;
-	text-align:center;
 }
 
 .actions li {
 	display:inline-block;
-	width:63.33%;
-	/*max-width:15.15em;*/
-	max-width:34.45em;
-	margin:1em 1em;
 	vertical-align:top;
 }
 .shareicons {
@@ -210,7 +223,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 
 footer {
-	margin:0 -2em;
+	margin:4em -2em 0;
 	padding:1em;	
 	background:#003b4c;
 	color:#fff;
@@ -243,38 +256,36 @@ footer li {
 	background-color: #013c4e
 }
 
-#spenden-button {
-    display:block;
-    padding: 0.5em 1.2em;
-    border: 1px solid #148C04;
-    border-radius: 2px;
-    color: #FFF;
-    background: linear-gradient(#57B31C, #368C00) repeat scroll 0% 0% transparent;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align:center;
-    width: 30%;
-    margin: auto;
-    margin-top: 0.7em;
+
+input[type=text], input[type=email], input[type="submit"], select {
+  padding: .45em .6em;
+  margin: 0.3em 0;
 }
 
-input {
-	padding: 0.7% 1.5%;
-	margin: 0.3em;
+input[type=text], input[type=email], select {
+  padding: .45em .6em;
+  margin: 0.3em 0;
+  border: 1px solid #aaa;
+  width: 20em;
+  max-width: calc(100% - 1.2em - 2px);
 }
+
+.inputSubmit {
+  background: linear-gradient(#F7F7F7,#DDD);
+}
+
 
 .form-required {
 	color: #f00;
 }
 
 label {
-	margin-right: 0.4em;
+  margin-right: 0.4em;
+  font-size: .95em;
 }
 
 .signpetition {
 	text-align: left;
-	padding-right: 2em;
 }
 
 .signpetition ol li {
@@ -283,31 +294,42 @@ label {
 	max-width: 100%;
 }
 
-input.form-submit,
-a.button {
-  background: #52AE18 url(../images/buttons.png) 0 0 repeat-x;
-  border: 1px solid #e4e4e4;
-  border-bottom: 1px solid #b4b4b4;
-  border-left-color: #d2d2d2;
-  border-right-color: #d2d2d2;
-  color: #fff;
-  cursor: pointer;
-  font-size: 0.929em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 1em;
-  margin-right: 0.6em; /* LTR */
-  padding: 4px 17px;
-  -khtml-border-radius: 15px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+.signformLabel {
+  display: inline-block;
+  min-width: 6em;
+}
+#edit-submitted-deine-botschaft {
+  width: calc(100% - 1.2em - 2px);
+  font-family: inherit;
+  font-size: inherit;
+  padding: .45em .6em;
+  margin: 0.3em 0;
+  border: 1px solid #aaa;
+}
+
+input.form-submit, a.button, #spenden-button {
+  color: #000;
+  background: #8EBF2A;
+  border: 1px solid #6E9917;
+  border-radius: .3em;
+  padding: .5em;
+  margin: .2em 0;
+  display: inline-block;
+}
+
+input.inputText {
+width:16em;
+}
+
+.button-primary {
+  font-size: 1.2em;
 }
 
 .demand_short {
 	font-weight: bold;
 }
 
-#progress_description {
-	text-align: center;
+@media screen and (max-width:1100px) {
+	.actionarea {
+	}
 }
