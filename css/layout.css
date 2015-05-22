@@ -132,6 +132,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 	border:solid 1px #000;
 	border-radius:0.3em;
 }
+
 .progress_bar .progress {
 	display:block;
 	Xwidth:33%;
@@ -140,6 +141,10 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 	color:#000;
 	text-align:center;
 	font-weight:bold;
+}
+
+.progress {
+	width: 0px;
 }
 
 
