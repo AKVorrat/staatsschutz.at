@@ -162,6 +162,10 @@ h2.Xnocss {
 	padding: .8em 0.3em;
 }
 
+.progress {
+	width: 0px;
+}
+
 #progress_description {
   text-align: center;
 }
