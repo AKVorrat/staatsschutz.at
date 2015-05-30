@@ -19,6 +19,14 @@
 
 <script>
   $(document).ready(function(){
+
+  	// remove after nginx https redirect is activated - dirty :| but useful
+	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
+	if (window.location.protocol != "https:")
+	{
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	}
+	
     $("#static").sticky({topSpacing:0,bottomSpacing:230});
   });
 </script>
