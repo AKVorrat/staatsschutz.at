@@ -14,8 +14,8 @@ def dictfetchall(cursor):
             for row in cursor.fetchall()]
 
 if __name__ == "__main__":
-	cur = db.cursor()
 	db = databaseconnect.connect(settings.DATABASE_URL)
+	cur = db.cursor()
 	results = dictfetchall(cursor)
 	with open("/js/signatures.json","wb") as f:
 		json_results = json.dumps(results)
