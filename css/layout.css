@@ -1,19 +1,5 @@
-body {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+.test abbr { color:#f00; }
 
-.header, .marketing, .footer { padding-right: 15px; padding-left: 15px; }
-
-#actionarea {margin: 18px 0px 0px 0px; padding:10px; background: #DFDFDF;}
-  
-@media (min-width: 1000px) {
-    .container {
-    max-width: 100%;
-  }
-  
-  #actionarea {float:right; }
-}
 
 @font-face {
 	font-family: 'fira_sansregular';
@@ -34,6 +20,7 @@ body {
 html {
 	margin:0;
 	padding:0;
+	background:#888;
 	color:#000;
 }
 
@@ -43,6 +30,14 @@ body {
 	line-height:1.4;
 }
 
+
+.site-wrapper {
+	margin:0 auto;
+	padding:0 2em;
+	background:#f8f9fa;
+	max-width:78em;	
+	min-width: 54em;
+} 
 
 /*** General Styles ***/
 
@@ -60,8 +55,7 @@ h2 { font-size:1.6em }
 p { margin:0.5em 0 1em; }
 li { margin:0.5em 0; }
 
-section ul, section ol  { margin-left:1em; }
-#actionarea section ul, section ol  { margin-left:0; }
+section ul, section ol,  { margin-left:1em; }
 
 
 .paper {
@@ -76,15 +70,23 @@ section ul, section ol  { margin-left:1em; }
 	margin: 1em 0;
 }
 
-#actionarea h2 {
-  font-size: 1.3em;
-  text-align: left;
-  margin: 1.3em 0 .9em 0;
+.actionarea {
+  float: right;
+  width: 400px;
+  background: #DFDFDF;
+  padding: 1em;
 }
 
-#infoarea {
+.actionarea h2 {
+  font-size: 1.3em;
+  text-align: left;
+  margin: .6em 0 .2em;
+}
+
+.infoarea {
 	padding-top: 4px;
 	padding-right: 10px;
+	width: calc(100% - 28em);
 }
 /*** Page Layout ***/
 
@@ -101,6 +103,7 @@ header {
 	position:relative;
 	overflow:hidden;
 	padding:2em 2em 0;
+	margin:0 -2em;
 	background:#003b4c;
 	color:#fff;
 	text-align:center;
@@ -225,8 +228,8 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 
 footer {
-	margin-top:20px;
-	padding:1em;
+	margin:4em -2em 0;
+	padding:1em;	
 	background:#003b4c;
 	color:#fff;
 	text-align: center;
@@ -270,8 +273,8 @@ input[type=text], input[type=email], select {
   padding: .45em .6em;
   margin: 0.3em 0;
   border: 1px solid #aaa;
-  width: 19em;
-  max-width: 100%;
+  width: 20em;
+  max-width: calc(100% - 1.2em - 2px);
 }
 
 .inputSubmit {
@@ -300,10 +303,10 @@ label {
 
 .signformLabel {
   display: inline-block;
-  min-width: 6.4em;
+  min-width: 6em;
 }
 #edit-submitted-deine-botschaft {
-  width: 97%;
+  width: calc(100% - 1.2em - 2px);
   font-family: inherit;
   font-size: inherit;
   padding: .45em .6em;
@@ -336,4 +339,13 @@ width:16em;
 .sectionimage {
 	text-align:center;
 	padding: .5em 0 0;
+}
+
+.is-sticky{
+	width: 432px;
+}
+
+@media screen and (max-width:1100px) {
+	.actionarea {
+	}
 }
