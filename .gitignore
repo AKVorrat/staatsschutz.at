@@ -1,2 +1,4 @@
+*.pyc
 /js/count.js
+/js/signatures.json
 /scripts/settings.py
