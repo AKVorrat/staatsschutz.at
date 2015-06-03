@@ -1,36 +1,50 @@
-<!DOCTYPE html><html id="top" lang="de"><head><meta charset="utf-8">
-<title>Österreichs 10 neue Geheimdienste</title>
+<!DOCTYPE html>
+<html id="top" lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<title>Petition gegen das geplante Staatsschutzgesetz</title>
 <meta name="author" content="Arbeitskreis Vorratsdastenspeicherung">
-<meta name="description" content="Stellungnahme des Arbeitskreis Vorratsdaten zum neuen Staatsschutzgesetz">
-<meta name="keywords" content="home,start">
+<meta name="description" content="Österreich bekommt 10 neue Geheimdienste!">
+<meta name="keywords" content="Petition,PStSG,Staatsschutzgesetz,Überwachungsstaat">
 <meta name="robots" content="index,follow">
+
+<meta property="og:image" content="https://staatsschutz.at/img/sharables/staatsschutz-1200.png" />
+<meta property="og:title" content="Petition gegen das geplante Staatsschutzgesetz" />
+<meta property="og:url" content="https://www.staatsschutz.at" />
+<meta property="og:description" content="Österreich bekommt 10 neue Geheimdienste!" />
+
 <link rel="stylesheet" type="text/css" href="./css/layout.css">
-<link rel="shortcut icon" href="/favicon.ico">
+<link rel="shortcut icon" href="./favicon.ico">
 <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="./js/jquery.sticky.js"></script>
 <script type="text/javascript" src="./js/count.js"></script>
 <script type="text/javascript" src="./js/styleswitcher.js"></script>
 
 <script>
   $(document).ready(function(){
-    $("#static").sticky({topSpacing:0,bottomSpacing:230});
+
+  // remove after nginx https redirect is activated - dirty :| but useful
+	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
+	if (window.location.protocol != "https:")
+	{
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	}	
   });
 </script>
 
 </head>
 <body id="home">
 
-<div id="main" class="site-wrapper">
-
 <p class="nocss"><a href="#page_content">Skip navigation</a></p>
 
 <header>
-	<!-- div id="akvorrat">AKVorrat</div> -->
 	<p id="akvorrat"><img src="./img/akvorrat.png" alt="AKVorrat Logo"></p>
-	<h1>
-		Petition gegen das geplante Staatsschutzgesetz
+	<h1>Petition gegen das geplante Staatsschutzgesetz
 		<br>
-		<small>Österreich bekommt 10 neue Geheimdienste</small>
+		<small class="subheadline">Österreich bekommt 10 neue Geheimdienste</small>
 	</h1>
 	<blockquote>
 		<cite> <abbr>AK</abbr>Vorrat :</cite>
@@ -41,8 +55,11 @@
 	</blockquote>
 </header>
 
-<h1 id="page_content" class="nocss">Seiteninhalt</h1>
-<div id="static" class="actionarea">
+<div class="container">
+<div class="row">
+<div id="actionarea" class="col-md-4">
+<h2 id="page_content" class="nocss">Seiteninhalt</h2>
+
 	<section class="status">
 		<h2 class="nocss">Fortschritt der Unterschriftenaktion</h2>
 		<div class="progress_bar">
@@ -59,107 +76,51 @@
 	<section class="actions" id="sign">
 		<ul>
 			<li class="signpetition">
-				<h2>1. Unterschreibe die <a href="#fivedemands">Petition</a></h2>
+				<h2>1. Petition herunterladen,  ausdrucken, unterschreiben und abschicken</h2>
+				<a href="staatsschutz-unterschriftenliste.pdf" class="button" target="_blank">Druckvorlage herunterladen (PDF)</a>
 
-				<form class="webform-client-form webform-client-form-108" enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-textfield webform-component--vorname webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-vorname">Vorname <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-vorname" name="submitted[vorname]" value="" size="40" maxlength="150" class="form-text required">
-				</div>
-				<div class="form-item webform-component webform-component-textfield webform-component--nachname webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-nachname">Nachname <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-nachname" name="submitted[nachname]" value="" size="40" maxlength="128" class="form-text required">
-				</div>
-				<div class="form-item webform-component webform-component-email webform-component--e-mail webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-e-mail">E-Mail <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" class="email form-text form-email required" placeholder="(Pflichtfeld)" type="email" id="edit-submitted-e-mail" name="submitted[e_mail]" size="40">
-				</div>
-				<div class="form-item webform-component webform-component-textfield webform-component--plz webform-container-inline">
-					
-
-				<div class="form-item webform-component webform-component-select webform-component--nationalitat webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-nationalitat">Nationalität </label>
-				 <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-select"><option value="" selected="selected">Land auswählen</option><option value="at">Österreich</option><option value="be">Belgien</option><option value="bg">Bulgarien</option><option value="hr">Kroatien</option><option value="cy">Zypern</option><option value="cz">TschechischeRepublik</option><option value="dk">Dänemark</option><option value="ee">Estland</option><option value="fi">Finnland</option><option value="fr">Frankreich</option><option value="de">Deutschland</option><option value="gr">Griechenland</option><option value="hu">Ungarn</option><option value="it">Italien</option><option value="ie">Irland</option><option value="lv">Lettland</option><option value="lt">Litauen</option><option value="lu">Luxemburg</option><option value="mt">Malta</option><option value="nl">Niederlande</option><option value="pl">Polen</option><option value="pt">Portugal</option><option value="ro">Rumänien</option><option value="sk">Slowakei</option><option value="si">Slowenien</option><option value="es">Spanien</option><option value="se">Schweden</option><option value="gb">Großbritannien</option></select>
-				</div>
-				<label class="signformLabel" for="edit-submitted-plz">PLZ </label>
-				 <input type="text" id="edit-submitted-plz" name="submitted[plz]" value="" maxlength="10" class="form-text">
-				</div>
-				<div class="form-item webform-component webform-component-number webform-component--alter webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-alter">Alter </label>
-				 <input type="text" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" step="1" class="form-text form-number">
-				</div>
-				<br/>
-				<div class="form-item webform-component webform-component-checkboxes webform-component--ispublic webform-container-inline">
-				 <div id="edit-submitted-ispublic" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-submitted-ispublic-1">
-				 <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" class="form-checkbox">  <label class="option" for="edit-submitted-ispublic-1">Ich will mit meiner Unterschrift öffentlich gelistet werden </label>
-
-				</div>
-				</div>
-				</div>
-				<div class="form-item webform-component webform-component-checkboxes webform-component--newsletter webform-container-inline">
-				 <div id="edit-submitted-newsletter" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-submitted-newsletter-1">
-				 <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" class="form-checkbox">  <label class="option" for="edit-submitted-newsletter-1">Ich will den Newsletter des AKVorrat erhalten</label>
-
-				</div>
-				</div>
-				</div>
-				<br/>
-				<div class="form-item webform-component webform-component-textarea webform-component--deine-botschaft webform-container-inline">
-				  <label for="edit-submitted-deine-botschaft">Deine Botschaft </label>
-				 <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" cols="60" rows="5" class="form-textarea"></textarea><div class="grippie"></div></div>
-				</div>
-				<input type="hidden" name="details[sid]">
-				<input type="hidden" name="details[page_num]" value="1">
-				<input type="hidden" name="details[page_count]" value="1">
-				<input type="hidden" name="details[finished]" value="0">
-				<input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
-				<input type="hidden" name="form_id" value="webform_client_form_108">
-				<div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Unterzeichnen">
-				</div></div></form>
 			</li>
 			<li>
-				<h2>2. Erzähle Anderen von der Kampagne</h2>
-				<ul class="shareicons">
-					<li><a href="mailto:?subject=%D6sterreich%20bekommt%2010%20neue%20Geheimdienste.%20Tun%20wir%20etwas%20dagegen%21&body=In%20%C3%96sterreich%20wird%20gerade%20im%20Eilverfahren%20ein%20Gesetz%20verabschiedet%20das%2010%20neue%20Geheimdienste%20etabliert.%20%0A%0ADieser%20neue%20Staatsschutz%20kann%20ohne%20konkreten%20Verdacht%2C%20ohne%20Richter%20und%20Staatsanwalt%20jede%20Person%20in%20%C3%96sterreich%20%C3%BCberwachen.%20Das%20Zu%20den%20Kritikern%20des%20Gesetzes%20geh%C3%B6ren%20der%20AKVorrat%2C%20Amnesty%20International%2C%20die%20Richtervereinigung%20und%20viele%20Andere.%20Trotzdem%20soll%20es%20noch%20vor%20der%20Sommerpause%20verabschiedet%20werden%20und%20tritt%20bereits%20ab%201.%20J%C3%A4nner%202016%20in%20Kraft.%20%0A%0AHilf%20mit%20etwas%20dagegen%20zu%20tun%2C%20unterschreibe%20die%20Petition%20auf%20https%3A%2F%2Fwww.staatsschutz.at%20und%20leite%20diese%20E-Mail%20weiter!%20"><img src="./img/email.png" alt="E-Mail" title="E-Mail"></a></li>
-					<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaatsschutz.at&title=%C3%96sterreich%20bekommt%2010%20neue%20Geheimdienste.%20Unterschreibe%20jetzt%20gegen%20das%20geplante%20Staatsschutzgesetz!"><img src="./img/facebook.png" alt="Facebook"></a></li>
-					<li><a href="https://twitter.com/intent/tweet?text=Der%20neue%20%23Staatsschutz%20speichert%20alle%20Daten%205%20Jahre%20lang%2C%2010x%20l%C3%A4nger%20als%20unter%20der%20Vorratsdatenspeicherung.%20https%3A%2F%2Fstaatsschutz.at%20%23PStSG&source=webclient"><img src="./img/twitter.png" alt="Twitter"></a></li>
-					<li><a href="https://plus.google.com/share?url=http://www.staatsschutz.at"><img src="./img/gplus.png" alt="Google Plus"></a></li>
-					<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.staatsschutz.at&title=%C3%96sterreich%20bekommt%2010%20neue%20Geheimdienste&summary=Unterschreibe%20die%20Petition%20gegen%20das%20geplante%20Staatsschutzgesetz%20in%20%C3%96sterreich!%20&source=https://www.akvorrat.at"><img src="./img/linkedin.png" alt="LinkedIn"></a></li>
-				</ul>
+				<h2>2. Erzähle anderen von der Kampagne</h2>
+				<div>
+					<ul class="shareicons">
+						<li><a href="mailto:?subject=%D6sterreich%20bekommt%2010%20neue%20Geheimdienste.%20Tun%20wir%20etwas%20dagegen%21&amp;body=In%20%C3%96sterreich%20wird%20gerade%20im%20Eilverfahren%20ein%20Gesetz%20verabschiedet%2C%20das%2010%20neue%20Geheimdienste%20etabliert.%0A%0ADieser%20neue%20Staatsschutz%20kann%20ohne%20konkreten%20Verdacht%2C%20ohne%20Richter%20und%20Staatsanwalt%20jede%20Person%20in%20%C3%96sterreich%20%C3%BCberwachen.%20Zu%20den%20Kritikern%20des%20Gesetzes%20geh%C3%B6ren%20der%20AKVorrat%2C%20Amnesty%20International%2C%20die%20Richtervereinigung%20und%20viele%20andere.%20Trotzdem%20soll%20es%20noch%20vor%20der%20Sommerpause%20verabschiedet%20werden%20und%20bereits%20ab%201.%20J%C3%A4nner%202016%20in%20Kraft%20treten.%0A%0AHilf%20mit%2C%20etwas%20dagegen%20zu%20tun%2C%20unterschreibe%20die%20Petition%20auf%20https%3A%2F%2Fwww.staatsschutz.at%20und%20leite%20diese%20E-Mail%20weiter!"><img src="./img/email.png" alt="E-Mail"></a></li>
+						<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaatsschutz.at&amp;title=%C3%96sterreich%20bekommt%2010%20neue%20Geheimdienste.%20Unterschreibe%20jetzt%20gegen%20das%20geplante%20Staatsschutzgesetz!"><img src="./img/facebook.png" alt="Facebook"></a></li>
+						<li><a href="https://twitter.com/intent/tweet?text=Der%20neue%20%23Staatsschutz%20speichert%20alle%20Daten%205%20Jahre%20lang%2C%2010x%20l%C3%A4nger%20als%20unter%20der%20Vorratsdatenspeicherung.%20https%3A%2F%2Fstaatsschutz.at%20%23PStSG&amp;source=webclient"><img src="./img/twitter.png" alt="Twitter"></a></li>
+						<li><a href="https://plus.google.com/share?url=https://www.staatsschutz.at"><img src="./img/gplus.png" alt="Google Plus"></a></li>
+						<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.staatsschutz.at&amp;title=%C3%96sterreich%20bekommt%2010%20neue%20Geheimdienste&amp;summary=Unterschreibe%20die%20Petition%20gegen%20das%20geplante%20Staatsschutzgesetz%20in%20%C3%96sterreich!%20&amp;source=https://www.akvorrat.at"><img src="./img/linkedin.png" alt="LinkedIn"></a></li>
+					</ul>
+				</div>
 			</li>
 			<li>
-				<h2>3. Abonniere den Newsletter und spende</h2>
-				<form method="post" action="http://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
-					<input type="email" name="email" class="inputText" size="19" placeholder="E-Mail">
-					<input type="submit" value="Newsletter abonnieren" class="inputSubmit webform-submit"><br>
-				</form>
+				<h2>3. Abonniere den AKVorrat-Newsletter und spende</h2>
+					<form method="post" action="http://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
+						<input type="email" name="email" class="inputText" size="19" placeholder="E-Mail">
+						<input type="submit" value="Newsletter abonnieren" class="inputSubmit webform-submit"><br>
+					</form>
+
 				<a href="https://spenden.akvorrat.at/" id="spenden-button">Jetzt spenden!</a>
 			</li>
 		</ul>
 	</section>
 </div>
 
-<div id="main" class="infoarea">
+<div id="infoarea" class="col-md-8">
+
 	<hr class="nocss">
 
-	<section class="indent paper" id="tenpoints">
-		<h2>10 wichtige Punkte<br>zum neuen Staatsschutzgesetz</h2>
-		<ol>
-			<li>Österreich bekommt einen neuen Geheimdienst.
-			<li>Das Bundesamt für Verfassungsschutz und Terrorismusbekämpfung (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>)
-				ist zwar eigentlich Polizeibehörde, hat aber bald die Befugnisse eines Nachrichtendienstes.
-			<li>Das <abbr>BVT</abbr> kann unbeschränkt und verdachtsunabhängig jeden überwachen und braucht dafür weder Richter noch Staatsanwalt.
-			<li>Schon zur <q>Bewertung der Wahrscheinlichkeit</q> eines verfassungsgefährdenden Angriffs darf das <abbr>BVT</abbr> jeden überwachen.
-						Ein Verdacht ist nicht mehr notwendig.
-			<li>Das <abbr>BVT</abbr> kann auf die Daten von allen Behörden und allen Firmen zugreifen, ohne Richter oder Staatsanwalt.
-				Die einzige Kontrolle ist der interne Rechtsschutzbeauftragte des BM.I, diesem kann das <abbr>BVT</abbr> jederzeit die Akteneinsicht verwehren.
-			<li>Aufgabe des <abbr>BVT</abbr> ist weit mehr als die Abwehr von Terrorismus. Auch wer als Whistleblower auf Missstände hinweist oder gegen Rechtsextreme
-				in der Hofburg oder für Tierschutz demonstriert, gerät ins Visier der Behörde.
-			<li>Rund 100 Straftaten definieren den <q>verfassungsgefährdenden Angriff</q>, 40 davon wenn sie aus <q>religiösen oder weltanschaulichen Motiven</q> begangen werden.
-			<li>Das <abbr>BVT</abbr> darf alle Daten 5 Jahre lang speichern. Wer auf diese Daten zugreift wird aber nur 3 Jahre lang gespeichert.
-			<li>Österreich hat bald zehn neue Geheimdienste, denn neben dem <abbr>BVT</abbr> bekommen auch alle 9 Landesämter für Verfassungsschutz dieselben Befugnisse.
-				Jeder Landeshauptmann (=Ministerpräsident) hat also bald seinen eigenen Geheimdienst.
-			<li>Das Gesetz soll im Eiltempo noch vor der Sommerpause (7. Juli) verabschiedet werden und tritt mit 1. Jänner 2016 in Kraft.
-		</ol>
+	<section class="indent paper" id="fivedemands">
+		<h2>Unsere 5 Forderungen</h2>
+		<p>Die Unterzeichner dieser Petition fordern von der Österreichischen Regierung und dem Nationalrat folgende fünf Punkte anlässlich des geplanten Staatsschutzgesetzes.</p>
+
+			<ol>
+				<li><span class="demand_short">Faktenbasierte Sicherheitspolitik</span> - Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnismäßig ist.</li>
+				<li><span class="demand_short">Klare Trennung von Polizei und Nachrichtendiensten</span> - Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
+				<li><span class="demand_short">Keine Repression gegenüber Zivilgesellschaft, Journalisten und "Whistleblowern"</span> - Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
+				<li><span class="demand_short">Starker Rechtsschutz, kein "pre-crime"</span> - Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden.</li>
+				<li><span class="demand_short">Keine bezahlten Spitzel</span> - Die Praxis im In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
+			</ol>
+			<br/>
 	</section>
 
 	<hr class="nocss">
@@ -167,7 +128,7 @@
 		<img src="./img/kritik.png" alt="Kritik">
 	</div>
 	<section class="indent paper">
-		<h1 class="Xnocss">2 Beispiele</h1>
+		<h2 class="nocss">2 Beispiele</h2>
 
 		<h2>Bespiel 1: Abschaffung des Redaktionsgeheimnisses</h2>
 		<p>
@@ -195,12 +156,35 @@
 	</section>
 
 	<hr class="nocss">
+
+
+	<section class="indent paper" id="tenpoints">
+		<h2>10 wichtige Punkte<br>zum neuen Staatsschutzgesetz</h2>
+		<ol>
+			<li>Österreich bekommt einen neuen Geheimdienst.
+			<li>Das Bundesamt für Verfassungsschutz und Terrorismusbekämpfung (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>)
+				ist zwar eigentlich Polizeibehörde, hat aber bald die Befugnisse eines Nachrichtendienstes.
+			<li>Das <abbr>BVT</abbr> kann unbeschränkt und verdachtsunabhängig jeden überwachen und braucht dafür weder Richter noch Staatsanwalt.
+			<li>Schon zur <q>Bewertung der Wahrscheinlichkeit</q> eines verfassungsgefährdenden Angriffs darf das <abbr>BVT</abbr> jeden überwachen.
+						Ein Verdacht ist nicht mehr notwendig.
+			<li>Das <abbr>BVT</abbr> kann auf die Daten von allen Behörden und allen Firmen zugreifen, ohne Richter oder Staatsanwalt.
+				Die einzige Kontrolle ist der interne Rechtsschutzbeauftragte des BM.I, diesem kann das <abbr>BVT</abbr> jederzeit die Akteneinsicht verwehren.
+			<li>Aufgabe des <abbr>BVT</abbr> ist weit mehr als die Abwehr von Terrorismus. Auch wer als Whistleblower auf Missstände hinweist oder gegen Rechtsextreme
+				in der Hofburg oder für Tierschutz demonstriert, gerät ins Visier der Behörde.
+			<li>Rund 100 Straftaten definieren den <q>verfassungsgefährdenden Angriff</q>, 40 davon wenn sie aus <q>religiösen oder weltanschaulichen Motiven</q> begangen werden.
+			<li>Das <abbr>BVT</abbr> darf alle Daten 5 Jahre lang speichern. Wer auf diese Daten zugreift wird aber nur 3 Jahre lang gespeichert.
+			<li>Österreich hat bald zehn neue Geheimdienste, denn neben dem <abbr>BVT</abbr> bekommen auch alle 9 Landesämter für Verfassungsschutz dieselben Befugnisse.
+				Jeder Landeshauptmann (=Ministerpräsident) hat also bald seinen eigenen Geheimdienst.
+			<li>Das Gesetz soll im Eiltempo noch vor der Sommerpause (7. Juli) verabschiedet werden und tritt mit 1. Jänner 2016 in Kraft.
+		</ol>
+	</section>
+
 	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
 		<div class="sectionimage">
 			<img src="./img/zeitplan.png" alt="Zeitplan">
 		</div>
 		<section class="paper indent">
-			<h1 class="nocss">Zeitplan</h1>
+			<h2 class="nocss">Zeitplan</h2>
 			<p>
 				Am <strong>12. Mai 2015</strong> endet die Begutachtungsfrist des neuen Gesetzes. Bereits <strong>vor der Sommerpause</strong> soll das Gesetz dann im Nationalrat beschlossen werden,
 				um am 1. Jänner 2016 in Kraft zu treten. Bei diesem knappen Zeitplan wird <strong>keine Rücksicht auf die hier geäußerten Bedenken</strong> ermöglicht.
@@ -213,22 +197,6 @@
 	</div>
 
 	<hr class="nocss">
-
-	<section class="indent paper" id="fivedemands">
-		<h2>Unsere 5 Forderungen</h2>
-		<p>
-			Die Unterzeichner dieser Petition fordern von der Österreichischen Regierung und dem Nationalrat folgende fünf Punkte anlässlich des geplanten Staatsschutzgesetzes.
-
-			<ol>
-				<li><span class="demand_short">Faktenbasierte Sicherheitspolitik</span><span class="demand_long"> - Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnissmäßig ist. </li>
-				<li><span class="demand_short">Klare Trennung von Polizei und Nachrichtendiensten</span><span class="demand_long"> - Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
-				<li><span class="demand_short">Finger weg von Zivilgesellschaft, Journalisten und "Whistleblowern"</span><span class="demand_long"> –  Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
-				<li><span class="demand_short">Starker Rechtsschutz, kein "pre-crime"</span><span class="demand_long"> - Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden. </li>
-				<li><span class="demand_short">Keine bezahlten Spitzel</span><span class="demand_long"> - Die Praxis In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
-			</ol>
-			<br/>
-		</p>
-	</section>
 
 	<section class="indent paper">
 		<h2>Hintergrund</h2>
@@ -299,7 +267,7 @@
 			<img src="./img/fazit.png" alt="Fazit">
 		</div>
 		<section class="indent paper">
-			<h1 class="nocss">Fazit</h1>
+			<h2 class="nocss">Fazit</h2>
 			<p>
 				Mit einer schwammigen Definition des <q>verfassungsgefährdenden Angriffs</q> schafft das Gesetz die Grundlage für eine überschießende Überwachung
 				unbescholtener Bürgerinnen und Bürger. Obwohl derart schwerwiegende Eingriffe in die Privatsphäre sorgfältiger Kontrolle bedürfen, wurden keine
@@ -313,19 +281,21 @@
 	</div>
 
 	<section class="glossar indent">
-		<h1>Glossar</h1>
+		<h2>Glossar</h2>
 		<dl>
-			<dt><abbr>PStSG<abbr> <dd>Polizeiliches Staatsschutzgesetz
-			<dt><abbr>SPG<abbr>   <dd>Sicherheitspolizeigesetz
-			<dt><abbr>StPO<abbr>  <dd>Strafprozessordnung
-			<dt><abbr>BVT<abbr>   <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung
-			<dt><abbr>LV<abbr>    <dd>Landesämter für Verfassungsschutz
+			<dt><abbr>PStSG</abbr></dt> <dd>Polizeiliches Staatsschutzgesetz</dd>
+			<dt><abbr>SPG</abbr></dt>   <dd>Sicherheitspolizeigesetz</dd>
+			<dt><abbr>StPO</abbr></dt>  <dd>Strafprozessordnung</dd>
+			<dt><abbr>BVT</abbr></dt>   <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</dd>
+			<dt><abbr>LV</abbr></dt>    <dd>Landesämter für Verfassungsschutz</dd>
 		</dl>
 	</section>
 
-	<center><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse</a></center>
+	<div style="text-align:center;"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse</a> | <a href="http://staatsschutz.at/img/sharables.zip">Banner</a> (ZIP)</div>
 	<hr class="nocss">
 
+</div>
+</div>
 </div>
 
 <footer id="footer">
@@ -333,7 +303,6 @@
 	<ul>
 		<li><a href="https://akvorrat.at"><img src="./img/akvorrat.png" alt="AKVorrat Logo"></a> <br> Arbeitskreis Vorratsdaten Österreich</li>
 	</ul>
-	
 </footer>
 
 </body></html>
