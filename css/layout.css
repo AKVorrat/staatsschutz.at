@@ -5,16 +5,31 @@ body {
 
 .header, .marketing, .footer { padding-right: 15px; padding-left: 15px; }
 
-#actionarea {margin: 18px 0px 0px 0px; padding:10px; background: #DFDFDF;}
-  
-@media (min-width: 1000px) {
+#actionarea {
+	max-width: 25em;
+	margin: 18px 9px 0px 1em;
+    padding:10px;
+	background: #DFDFDF;
+    border-radius: 5px;
+	float:right;
+}
+
+.subheadline {
+  font-size: .75em;
+  color: rgba(255,255,255,.5)
+}
+
+@media (max-width: 900px) {
     .container {
     max-width: 100%;
   }
-  
-  #actionarea {float:right; }
-}
 
+  #actionarea {
+	max-width:100%;
+	float:none;
+	}
+}
+/*
 @font-face {
 	font-family: 'fira_sansregular';
 		src: url('font/firasans-regular-webfont.eot');
@@ -26,6 +41,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+*/
 
 /*** Evil Reset ***/
 * { margin:0; padding:0; }
@@ -64,6 +80,13 @@ section ul, section ol  { margin-left:1em; }
 #actionarea section ul, section ol  { margin-left:0; }
 
 
+
+.container {
+	max-width: 80em;
+	margin: 0 auto;
+}
+
+
 .paper {
 	padding:1em 1em;
 	background:#fff;
@@ -83,8 +106,8 @@ section ul, section ol  { margin-left:1em; }
 }
 
 #infoarea {
-	padding-top: 4px;
-	padding-right: 10px;
+  padding: 5px;
+  overflow: hidden;
 }
 /*** Page Layout ***/
 
@@ -313,7 +336,7 @@ label {
 
 input.form-submit, a.button, #spenden-button {
   color: #000;
-  background: #8EBF2A;
+  background: #A4D939;
   border: 1px solid #6E9917;
   border-radius: .3em;
   padding: .5em;
