@@ -361,3 +361,9 @@ width:16em;
 	text-align:center;
 	padding: .5em 0 0;
 }
+
+#akvorrat {
+	position:absolute;
+	top:12.5em;
+	right:1.3em;
+}
