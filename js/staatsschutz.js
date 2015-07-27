@@ -7,10 +7,22 @@ function getTarget(cnt) {
 	}
 }
 
+function beautify_number (nr) {
+	var l, s = '';
+	nr = nr + '' || '';
+	l = nr.length;
+
+	for (var i = nr.length; i>0; i-=3) {
+		s = nr.substring(i, i-3) + '.' + s;
+	}
+
+	return s.substring(0, s.length-1);
+}
+
 function set_progress( signatures )
 {
-	signatures = signatures || 0;
-	var target = getTarget(signatures);
+	signatures = beautify_number(signatures || 0);
+	var target = beautify_number(getTarget(signatures));
 	var percent = signatures/target*100 + '%';
 	//console.log('progress', signatures, target, percent, $('#progress'))
 
