@@ -21,13 +21,13 @@ function beautify_number (nr) {
 
 function set_progress( signatures )
 {
-	signatures = beautify_number(signatures || 0);
-	var target = beautify_number(getTarget(signatures));
+	signatures = signatures || 0;
+	var target = getTarget(signatures);
 	var percent = signatures/target*100 + '%';
 	//console.log('progress', signatures, target, percent, $('#progress'))
 
 	$('#progress').animate({'width': percent}, 800);
-	$('#progress_description').text(signatures + ' Unterschriften von ' + target);
+	$('#progress_description').text(beautify_number(signatures) + ' Unterschriften von ' + beautify_number(target));
 }
 
 $(function () {
