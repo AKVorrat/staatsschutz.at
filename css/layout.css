@@ -264,6 +264,11 @@ footer li {
 	vertical-align:top;
 }
 
+footer li img{
+	height: 5em;
+	margin: 1em 2em;
+}
+
 #tenpoints,
 #fivedemands {
 	padding: 1em 3em;
