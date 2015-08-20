@@ -269,6 +269,10 @@ footer li img{
 	margin: 1em 2em;
 }
 
+footer li a, a:hover, a:focus{
+	color:#fff;
+}
+
 #tenpoints,
 #fivedemands {
 	padding: 1em 3em;
