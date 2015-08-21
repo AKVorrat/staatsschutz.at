@@ -269,7 +269,7 @@ footer li img{
 	margin: 1em 2em;
 }
 
-footer li a, a:hover, a:focus{
+footer li a, footer a:hover, footer a:focus{
 	color:#fff;
 }
 
