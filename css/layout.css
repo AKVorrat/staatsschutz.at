@@ -9,8 +9,17 @@ body {
 	max-width: 25em;
 	margin: 18px 9px 0px 1em;
     padding:10px;
-	background: #DFDFDF;
+	background: #C4C3C3;
     border-radius: 5px;
+	float:right;
+}
+
+#moreactionarea {
+	max-width: 15em;
+	margin: 18px 9px 0px 1em;
+  padding:10px;
+	background: #C6C6C6;
+  border-radius: 5px;
 	float:right;
 }
 
@@ -213,7 +222,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 
 .specialemphasis {
-	max-width:25em;
+	max-width:35em;
 	margin:1em auto;
 	border:solid 0.2em #8ebf2a;
 	padding:1em;
