@@ -233,7 +233,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 
 .glossar dl {
-	width:20em;
+	width:45em;
 	margin:1em auto;
 }
 /* Float-contain */
@@ -243,7 +243,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 .glossar dt {
 	display:block;
-	width:4em;
+	width:5em;
 	clear:left;
 	float:left;
 	margin:0 0 0.75em;
@@ -251,7 +251,7 @@ blockquote p:after  { content:'«'; color:#8ebf2a; font-weight:bold; }
 
 .glossar dd {
 	display:block;
-	width:16em;
+	width:40em;
 	float:left;
 	margin:0 0 0.75em;
 }
