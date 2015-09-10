@@ -30,7 +30,7 @@
 
   // remove after nginx https redirect is activated - dirty :| but useful
 	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-	if (window.location.protocol != "https:")
+	if (window.location.protocol != "https:" && (window.location.href || '').indexOf('localhost') === -1)
 	{
 		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 	}	
@@ -166,6 +166,41 @@
 
 <div id="infoarea" class="col-md-8">
 
+	<section class="indent paper" id="tenpoints">
+		<h2>9 important facts about<br> the new State Protection Act</h2>
+		<ol>
+			<li>Austria gets a new secret service.
+			<li>The Federal Agency for State Protection and Counter Terrorism (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>), which is currently a police department, will soon gain the powers of an intelligence agency.
+			<li>The <abbr>BVT</abbr> will be able to spy on any citizens without having to ask for a permit from a judge or prosecutor.
+			<li>To <q> estimate the possibility</q> of an "attack endangering the constitution" everyone can be spied upon. Only a justified suspicion of danger is required. However, there are no clear rules on where and how the justification for the existence of a concrete danger has to be recorded in writing and must be submitted.
+			<li>The <abbr>BVT</abbr> can access the data from all authorities and all companies, no judge or prosecutor is needed. The only control instance is the internal officer for the protection of rights of the <abbr>Ministry of the Interior (BMI)</abbr> and the <abbr>BVT</abbr> has the possibility to deny him access to files for various reasons, for example in order to protect the identity of a witness.
+			<li>The objectives of the <abbr>BVT</abbr> are many more than just the defense against terrorism. People acting as whistleblowers, people protesting against right-wing extremists in the Hofburg, or protestors against animal cruelty become the target of authority
+			<li>Around 100 crimes are defined as <q>attack endangering the constitution</q>, 40 of them if they are committed with <q>religious or ideological motives</q>.
+			<li>The <abbr>BVT</abbr> may store all the data for 5 years. Who is accessing this data is stored only for 3 years.
+			<li>Austria will soon have 10 new intelligence agencies, because in addition to the <abbr>BVT</abbr> also all 9 provinces get their own office with the same powers. Each Governor will soon have his own intelligence agency.
+		</ol>
+	</section>
+
+	<hr class="nocss">
+
+	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
+          <div class="sectionimage">
+                  <img src=".././img/timetable.png" alt="timetable">
+          </div>
+          <section class="paper indent">
+                  <h2 class="nocss">Zeitplan</h2>
+                  <p>
+                          
+                          <p><strong>Originaly the law was supposed to be adopted before the summer break 2015. But because of massive protests of civil society we could postpone that vote!</strong></p>
+                          <p>The new date is <strong>October 13-15. 2015</strong> for the vote in plenary of the Austrian Parliament</p>
+                  </p>
+                  <p class="specialemphasis countdown">
+                          The law makers must return to square one and start from scratch!
+                  </p>
+                  <div style="clear:both"></div>
+          </section>
+  </div>
+
 	<hr class="nocss">
 
 	<section class="indent paper" id="fivedemands">
@@ -183,6 +218,7 @@
 	</section>
 
 	<hr class="nocss">
+
 	<div class="sectionimage">
 		<img src=".././img/examples.png" alt="examples">
 	</div>
@@ -215,41 +251,6 @@ In this new database introduced through the state protection act various sensiti
 Furthermore, they can be legaly exchanged with foreign intelligence services as NSA, GCHQ and BND. The logs about who accessed this database are only stored for 3 years, which is certainly not helpful in preventing abuse of these highly sensitive data.
 		</p>
 	</section>
-	<section class="indent paper" id="tenpoints">
-		<h2>9 important facts about<br> the new State Protection Act</h2>
-		<ol>
-			<li>Austria gets a new secret service.
-			<li>The Federal Agency for State Protection and Counter Terrorism (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>), which is currently a police department, will soon gain the powers of an intelligence agency.
-			<li>The <abbr>BVT</abbr> will be able to spy on any citizens without having to ask for a permit from a judge or prosecutor.
-			<li>To <q> estimate the possibility</q> of an "attack endangering the constitution" everyone can be spied upon. Only a justified suspicion of danger is required. However, there are no clear rules on where and how the justification for the existence of a concrete danger has to be recorded in writing and must be submitted.
-			<li>The <abbr>BVT</abbr> can access the data from all authorities and all companies, no judge or prosecutor is needed. The only control instance is the internal officer for the protection of rights of the <abbr>Ministry of the Interior (BMI)</abbr> and the <abbr>BVT</abbr> has the possibility to deny him access to files for various reasons, for example in order to protect the identity of a witness.
-			<li>The objectives of the <abbr>BVT</abbr> are many more than just the defense against terrorism. People acting as whistleblowers, people protesting against right-wing extremists in the Hofburg, or protestors against animal cruelty become the target of authority
-			<li>Around 100 crimes are defined as <q>attack endangering the constitution</q>, 40 of them if they are committed with <q>religious or ideological motives</q>.
-			<li>The <abbr>BVT</abbr> may store all the data for 5 years. Who is accessing this data is stored only for 3 years.
-			<li>Austria will soon have 10 new intelligence agencies, because in addition to the <abbr>BVT</abbr> also all 9 provinces get their own office with the same powers. Each Governor will soon have his own intelligence agency.
-		</ol>
-	</section>
-
-	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
-          <div class="sectionimage">
-                  <img src=".././img/timetable.png" alt="timetable">
-          </div>
-          <section class="paper indent">
-                  <h2 class="nocss">Zeitplan</h2>
-                  <p>
-                          <p>On <strong>Mai 12th 2015</strong> , the review period of the new law ended. There were <a href="http://www.parlament.gv.at/PAKT/VHG/XXV/SNME/SNME_04166/index.shtml">numerous critical opinions</a> by the Judges Association, Amnesty International, 
-The Austrian Chamber of Labour, The Austrian Economic Chamber, The Austrian Conference of Catholic Bishops, 
-The Protestant Church of Austria, The Austrian Medical Chamber, Internet Providers, Austrian Bar - The umbrella organisation of all Chambers of Austrian Lawyers (ÖRAK), the network for critical legal research, the ombudsman board, the data privacy council, trade unions, journalists, and AKVorrat.</p>
-                          <p>In June, the government bill was passed in the Council of Ministers. The majority of our criticism of the law has not been included.</p>
-                          <p><strong>Originally, the law should be adopted before the summer break. Due to the massive protest of civil society, we could prevent this! </strong></p>
-                          <p>However, the law will continue to be <strong>negotiated in autumn </strong> and it is due to come into force on July 1st, 2016, according to the government's plans. </p>
-                  </p>
-                  <p class="specialemphasis">
-                          The law makers must return to square one and start from scratch!
-                  </p>
-                  <div style="clear:both"></div>
-          </section>
-  </div>
 
 	<hr class="nocss">
 

@@ -37,12 +37,12 @@ $(function () {
 
 // countdown 
 var _translate_twords = {
-  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'Plenary Vote in', 'smprefix': '', 'smsuffix': ' left to save the internet. Take Action on http://savetheinternet.eu #NetNeutrality '}
-  , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Abstimmung in', 'smprefix': 'Noch ', 'smsuffix': ' Zeit um das Internet zu retten. Take Action on http://savetheinternet.eu/de #Netzneutralität'}
+  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'New secret agency in', 'smprefix': 'Austria get\'s new secret agency in ', 'smsuffix': '\nprevent #Staatsschutz!\nhttps://www.staatsschutz.at/en'}
+  , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Staatsschutz kommt in', 'smprefix': 'Österreich bekommt neuen Geheimdienst in ', 'smsuffix': '\n#Staatsschutz verhindern!\nhttps://www.staatsschutz.at'}
   , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans', 'smprefix': 'Plus que ', 'smsuffix': ' pour sauver internet. Agissez, rendez-vous sur http://savetheinternet.eu/fr #netneutralité'}
   , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en', 'smprefix': 'Quedan ', 'smsuffix': ' para salvar internet. Actúa ahora en http://savetheinternet.eu/es #neutralidaddelared'}
 };
-var plenary_vote = new Date(2015, 8, 8, 3, 42);
+var plenary_vote = new Date(2015, 9, 13, 8, 0);
 
 function setCountdown (e, twords) {
   var ms = plenary_vote.valueOf()-(new Date()).valueOf()
@@ -87,7 +87,7 @@ function setCountdown (e, twords) {
 
 function setSMLinks(o, twords, e) {
   var tweet = 'https://twitter.com/home?status=' + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
-  $('#tw_count_bg a').attr('href', tweet);
+  $('#tweetcount a').attr('href', tweet);
   $(e).attr('href', tweet);
 }
 
@@ -95,7 +95,7 @@ $(function () {
   try {
     var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'de'];
     var e = $('.countdown'); 
-    if (e && false) {
+    if (e) {
       setCountdown(e, twords);
       window.setInterval(function () {
         setCountdown(e, twords);

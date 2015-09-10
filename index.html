@@ -30,7 +30,7 @@
 
   // remove after nginx https redirect is activated - dirty :| but useful
 	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-	if (window.location.protocol != "https:")
+	if (window.location.protocol != "https:" && (window.location.href || '').indexOf('localhost') === -1)
 	{
 		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 	}	
@@ -203,6 +203,26 @@
 
 	<hr class="nocss">
 
+	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
+          <div class="sectionimage">
+                  <img src="./img/zeitplan.png" alt="Zeitplan">
+          </div>
+          <section class="paper indent">
+                  <h2 class="nocss">Zeitplan</h2>
+                  <p>
+                          
+                          <p><strong>Ursprünglich sollte das Gesetz noch vor der Sommerpause kommen. Dank des massiven Protests der Zivilgesellschaft – von uns allen – haben wir diesen Termin verhindert! </strong></p>
+                          <p>Jetzt soll der Staatsschutz am <strong>13. und 15. Oktober im Nationalrat beschlossen werden</strong> und laut den Plänen der Regierung bereits mit 1. Juli 2016 in Kraft treten! </p>
+                  </p>
+                  <p class="specialemphasis countdown">
+                          Das Gesetz muss zurück an den Start!
+                  </p>
+                  <div style="clear:both"></div>
+          </section>
+  </div>
+
+	<hr class="nocss">
+
 	<section class="indent paper" id="fivedemands">
 		<h2>Unsere 5 Forderungen</h2>
 		<p>Die Unterzeichner dieser Petition fordern von der Österreichischen Regierung und dem Nationalrat folgende fünf Punkte anlässlich des geplanten Staatsschutzgesetzes.</p>
@@ -253,27 +273,6 @@
 			Diese Daten werden mindestens fünf Jahre lang gespeichert, zehnmal länger als es mit der Vorratsdatenspeicherung in Österreich der Fall war. Und sie können zukünftig auch an ausländische Geheimdienste wie NSA, BND und GCHQ weiter gegeben werden.
 		</p>
 	</section>
-
-	
-  <hr class="nocss">
-
-	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
-          <div class="sectionimage">
-                  <img src="./img/zeitplan.png" alt="Zeitplan">
-          </div>
-          <section class="paper indent">
-                  <h2 class="nocss">Zeitplan</h2>
-                  <p>
-                          
-                          <p><strong>Ursprünglich sollte das Gesetz noch vor der Sommerpause beschlossen werden. Aufgrund des massiven Protests der Zivilgesellschaft konnten wir diesen Termin aber bereits verhindern! </strong></p>
-                          <p>Jedoch wird das Gesetz schon <strong>im Herbst weiter verhandelt</strong> und soll laut den Plänen der Regierung bereits am 1. Juli 2016 in Kraft treten. </p>
-                  </p>
-                  <p class="specialemphasis countdown">
-                          Das Gesetz muss zurück an den Start!
-                  </p>
-                  <div style="clear:both"></div>
-          </section>
-  </div>
 
 	<hr class="nocss">
 
