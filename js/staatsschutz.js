@@ -37,8 +37,8 @@ $(function () {
 
 // countdown 
 var _translate_twords = {
-  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'New secret agency in', 'smprefix': 'Austria get\'s new secret agency in ', 'smsuffix': '\nprevent #Staatsschutz!\nhttps://www.staatsschutz.at/en'}
-  , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Staatsschutz kommt in', 'smprefix': 'Österreich bekommt neuen Geheimdienst in ', 'smsuffix': '\n#Staatsschutz verhindern!\nhttps://www.staatsschutz.at'}
+  'en': {'hs': 'hours', 'ds': 'days', 'ms': 'minutes', 'ss': 'seconds', 'h': 'hour', 'd': 'day', 'm': 'minute', 's': 'second', 'suffix': 'until the vote', 'prefix': 'New secret agency in', 'smprefix': 'Austria establishes 10 new secret agencies in ', 'smsuffix': '.\nprevent #Staatsschutz!\nhttps://www.staatsschutz.at/en'}
+  , 'de': {'hs': 'Stunden', 'ds': 'Tagen', 'ms': 'Minuten', 'ss': 'Sekunden', 'h': 'Stunde', 'd': 'Tag', 'm': 'Minute', 's': 'Sekunde', 'suffix': 'bis zur Abstimmung', 'prefix': 'Staatsschutz kommt in', 'smprefix': 'Österreich bekommt zehn neue Geheimdienste in ', 'smsuffix': '.\n#Staatsschutz verhindern!\nhttps://www.staatsschutz.at'}
   , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans', 'smprefix': 'Plus que ', 'smsuffix': ' pour sauver internet. Agissez, rendez-vous sur http://savetheinternet.eu/fr #netneutralité'}
   , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en', 'smprefix': 'Quedan ', 'smsuffix': ' para salvar internet. Actúa ahora en http://savetheinternet.eu/es #neutralidaddelared'}
 };
@@ -77,7 +77,7 @@ function setCountdown (e, twords) {
     else if (s == 1) {
       o.push(s + ' ' + twords['s']);
     }
-    //setSMLinks(o, twords, e);
+    setSMLinks(o, twords, e);
 
     //o = o.join(' ') + ' ' + twords['suffix'];
     o = twords['prefix'] + ' ' +  o.join(' '); 
@@ -86,9 +86,10 @@ function setCountdown (e, twords) {
 }
 
 function setSMLinks(o, twords, e) {
-  var tweet = 'https://twitter.com/home?status=' + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
-  $('#tweetcount a').attr('href', tweet);
-  $(e).attr('href', tweet);
+  var tweet = 
+    'https://twitter.com/home?status=' 
+    + encodeURIComponent((twords['smprefix']||'') + o.join(' ') + (twords['smsuffix']||''));
+  $('#tweetcount').attr('href', tweet);
 }
 
 $(function () {
