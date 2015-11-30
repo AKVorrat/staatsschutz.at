@@ -42,7 +42,15 @@ var _translate_twords = {
   , 'fr': {'hs': 'heures', 'ds': 'jours', 'ms': 'minutes', 'ss': 'secondes', 'h': 'heure', 'd': 'jour', 'm': 'minute', 's': 'seconde', 'suffix': 'jusqu\'au vote', 'prefix': 'Vote dans', 'smprefix': 'Plus que ', 'smsuffix': ' pour sauver internet. Agissez, rendez-vous sur http://savetheinternet.eu/fr #netneutralité'}
   , 'es': {'hs': 'horas', 'ds': 'días', 'ms': 'minutos', 'ss': 'segundos', 'h': 'hora', 'd': 'día', 'm': 'minuto', 's': 'segundo', 'suffix': 'hasta el voto', 'prefix': 'Voto en', 'smprefix': 'Quedan ', 'smsuffix': ' para salvar internet. Actúa ahora en http://savetheinternet.eu/es #neutralidaddelared'}
 };
-var plenary_vote = new Date(2015, 11, 1, 13, 0);
+
+var plenary_vote = new Date(2015, 11, 1, 13, 0);  // innenausschuss
+
+if (plenary_vote.valueOf() - (new Date()).valueOf() <= 0 )
+  plenary_vote = new Date(2015, 11, 9, 11, 0); // Plenum Dezember 2015
+
+if (plenary_vote.valueOf() - (new Date()).valueOf() <= 0) 
+  plenary_vote = new Date(2016, 0, 27, 9, 0); // Plenum Jaenner 2016
+
 
 function setCountdown (e, twords) {
   var ms = plenary_vote.valueOf()-(new Date()).valueOf()
