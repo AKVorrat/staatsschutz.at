@@ -25,21 +25,6 @@
 <script type="text/javascript" src="./js/count_paper.js"></script>
 <script type="text/javascript" src="./js/staatsschutz.js"></script>
 
-<script>
-  $(document).ready(function(){
-
-  // remove after nginx https redirect is activated - dirty :| but useful
-	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-	if (window.location.hostname === "staatschutz.at" || window.location.hostname === "staatschutzgesetz.at" || window.location.hostname === "staatsschutzgesetz.at") {
-		window.location.href = "https://www.staatsschutz.at/";
-	}
-	else if (window.location.protocol != "https:" && (window.location.href || '').indexOf('localhost') === -1)
-	{
-		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-	}	
-  });
-</script>
-
 </head>
 <body id="home">
 
