@@ -82,6 +82,7 @@ a:hover abbr { border:none; }
 h1, h2 { text-align:center; margin:0 0 0.5em; }
 h1 { font-size:2em; }
 h2 { font-size:1.6em }
+h3 { margin-top: 1em; }
 p { margin:0.5em 0 1em; }
 li { margin:0.5em 0; }
 
