@@ -23,6 +23,7 @@
     <script type="text/javascript" src="./js/count.js"></script>
     <script type="text/javascript" src="./js/count_paper.js"></script>
     <script type="text/javascript" src="./js/staatsschutz.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
 </head>
 
 <body id="home">
@@ -40,12 +41,12 @@
     </header>
     
     <div id="slider" class="slider">
-        <div id="slideleft" class="slide noselect">&lt;</div>
+        <div id="slideleft" class="slide noselect" onclick="slideBackwards()">&lt;</div>
         <div class="slidecol">
-            <strong id="slideauthor">Max Mustermann, Niederösterreich</strong>
+            <strong id="slideauthor">Arbeitskreis Vorratsdaten Österreich</strong>
             <blockquote id="slidetext">Das geplante Staatschutzgesetz untergr&#228;bt unsere Grundrechte und etabliert eine unkontrollierbare &#220;berwachungsbeh&#246;rde.</blockquote>
         </div>
-        <div id="slideright" class="slide noselect">&gt;</div>
+        <div id="slideright" class="slide noselect" onclick="slideForwards()">&gt;</div>
     </div>
     
     <div class="container">
