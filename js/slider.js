@@ -1,11 +1,14 @@
 var firstnames, lastnames, states, messages;
-var slideAuthor, slideText;
+var slideAuthor, slideText, slideContent;
 var current = 0;
 
-function setSlideScreen(index) {
+function findElements() {
     slideAuthor = document.getElementById("slideauthor");
     slideText = document.getElementById("slidetext");
-    
+    slideContent = document.getElementById("slideContent");
+}
+
+function setSlideScreen(index) {
     var firstname, lastname, state, message;
     
     firstname = firstnames[index].childNodes[0].nodeValue;
@@ -45,7 +48,15 @@ function slideForwards() {
     } else {
         current++;
     }
-    setSlideScreen(current);
+    
+    slideContent.classList.remove("slideBackwards");
+    slideContent.classList.remove("slideForwards");
+    slideContent.offsetWidth = slideContent.offsetWidth;
+    slideContent.classList.add("slideForwards");
+    
+    setTimeout(function() {
+        setSlideScreen(current);
+    }, 300);
 }
 
 function slideBackwards() {
@@ -54,10 +65,19 @@ function slideBackwards() {
     } else {
         current--;
     }
-    setSlideScreen(current);
+    
+    slideContent.classList.remove("slideBackwards");
+    slideContent.classList.remove("slideForwards");
+    slideContent.offsetWidth = slideContent.offsetWidth;
+    slideContent.classList.add("slideBackwards");
+    
+    setTimeout(function() {
+        setSlideScreen(current);
+    }, 300);
 }
 
 window.onload = function () {
     openXML("./docs/comments.xml");
+    findElements();
     setSlideScreen(current);
 };
