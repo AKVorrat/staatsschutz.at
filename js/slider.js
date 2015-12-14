@@ -1,6 +1,7 @@
 var firstnames, lastnames, states, messages;
 var slideAuthor, slideText, slideContent;
 var current = 0;
+var blocked = false;
 
 function findElements() {
     slideAuthor = document.getElementById("slideauthor");
@@ -43,6 +44,11 @@ function openXML(path) {
 }
 
 function slideForwards() {
+    if (blocked == true)
+        return;
+    
+    blocked = true;
+    
     if (current + 1 >= firstnames.length) {
         current = 0;
     } else {
@@ -56,10 +62,16 @@ function slideForwards() {
     
     setTimeout(function() {
         setSlideScreen(current);
+        blocked = false;
     }, 300);
 }
 
 function slideBackwards() {
+    if (blocked == true)
+        return;
+    
+    blocked = true;
+    
     if (current - 1 < 0) {
         current = firstnames.length - 1;
     } else {
@@ -73,11 +85,17 @@ function slideBackwards() {
     
     setTimeout(function() {
         setSlideScreen(current);
+        blocked = false;
     }, 300);
+}
+
+function autoSlide() {
+    slideForwards();
+    setTimeout(autoSlide, 10000);
 }
 
 window.onload = function () {
     openXML("./docs/comments.xml");
     findElements();
-    setSlideScreen(current);
+    autoSlide();
 };
