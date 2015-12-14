@@ -91,7 +91,7 @@ function slideBackwards() {
 
 function autoSlide() {
     slideForwards();
-    setTimeout(autoSlide, 10000);
+    setTimeout(autoSlide, 15000);
 }
 
 window.onload = function () {

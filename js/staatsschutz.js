@@ -27,7 +27,7 @@ function set_progress( signatures )
 	//console.log('progress', signatures, target, percent, $('#progress'))
 
 	//$('#progress').animate({'width': percent}, 800);
-    $('#progress').css.('width':percent);
+	$('#progress').css.('width':percent);
 	$('#progress_description').text(beautify_number(signatures) + ' Unterschriften von ' + beautify_number(target));
 }
 
