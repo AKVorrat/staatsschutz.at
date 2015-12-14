@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="ISO-8859-2"?>
 <comments>
 	<comment>
-		<firstname>Peter</firstname>
-		<lastname>Pilz</lastname>
-		<state>Wien</state>
-		<message>Frankreich gehört neben Großbritannien zu den härtesten Überwachungsstaaten. Dort darf auf alles zugegriffen werden: Vorratsdaten, Internetnutzung, sogar direkter Zugang zu den Providern  und das ohne richterlichen Befehl. Paris zeigt jetzt: Weniger Bürgerrechte bringen nicht mehr Sicherheit. Denn die großen Geheimdienste sammeln alles, verstehen aber fast nichts.</message>
+		<firstname>Vorname01</firstname>
+		<lastname>Nachname01</lastname>
+		<state>Bundesland01</state>
+		<message>Dies ist ein Platzhalter für die erste Nachricht. Um eine möglichst gute Vorschau darzustellen, wird ein Text von etwa dieser Länge benötigt.</message>
 	</comment>
 	<comment>
-		<firstname>Otto</firstname>
-		<lastname>Pendl</lastname>
-		<state>Wien</state>
-		<message>Nicht der Zeitplan ist das Primäre, sondern ein gutes Ergebnis.</message>
+		<firstname>Vorname02</firstname>
+		<lastname>Nachname02</lastname>
+		<state>Bundesland02</state>
+		<message>Dies ist ein Platzhalter für die zweite Nachricht. Um eine möglichst gute Vorschau darzustellen, wird ein Text von etwa dieser Länge benötigt.</message>
 	</comment>
 	<comment>
-		<firstname>Edward</firstname>
-		<lastname>Snowden</lastname>
-		<state>Whereever</state>
-		<message>Traditional, effective surveillance means targeting suspects. Not a population. Not a technology. Not a service. The suspect.</message>
+		<firstname>Vorname03</firstname>
+		<lastname>Nachname03</lastname>
+		<state>Bundesland03</state>
+		<message>Dies ist ein Platzhalter für die dritte Nachricht. Um eine möglichst gute Vorschau darzustellen, wird ein Text von etwa dieser Länge benötigt.</message>
 	</comment>
 </comments>

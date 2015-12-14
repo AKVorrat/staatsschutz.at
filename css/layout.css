@@ -451,10 +451,12 @@ footer {
     background: #003b4c;
     color: #fff;
     text-align: center;
+    overflow: hidden;
 }
 
 footer img {
     margin-bottom: 1em;
+    max-width: 100%;
 }
 
 footer a,

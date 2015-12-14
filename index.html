@@ -28,6 +28,7 @@
 
 <body id="home">
     
+    <!--START body header-->
     <header>
         <p id="akvorrat" class="max768">
             <a href="https://www.akvorrat.at/"><img src="./img/akvorrat.png" alt="AKVorrat Logo"></a>
@@ -39,7 +40,9 @@
 		<img src="./img/notext.png" alt="Staatsschutz -alt Logo">
         </h1>
     </header>
+    <!--END body header-->
     
+    <!--START body slider-->
     <div id="slider" class="slider">
         <div id="slideleft" class="slide noselect" onclick="slideBackwards()">&lt;</div>
         <div class="slideColumn">
@@ -50,18 +53,23 @@
         </div>
         <div id="slideright" class="slide noselect" onclick="slideForwards()">&gt;</div>
     </div>
+    <!--END body slider-->
     
+    <!--START body main-->
     <div class="container">
         
+        <!--START progress bar-->
         <div class="progress_bar shadow">
             <div id="progress" class="progress_volume"></div>
             <p id="progress_description">
                 <noscript>Dieses Element braucht <a href="http://enable-javascript.com/de/" title="Wie Sie JavaScript in Ihrem Browser aktivieren">JavaScript</a>.</noscript>
             </p>
         </div>
+        <!--END progress bar-->
         
         <div class="row">
-            <div class="col-md-4">
+            
+            <div class="col-md-4 col-md-push-8">
                 <div class="sidebar shadow">
                     <div class="sidetitle">Unterschreiben</div>
                     <div class="sidetext">
@@ -192,7 +200,8 @@
                     </div>
                 </div>
             </div>
-            <div id="infoarea" class="col-md-8">
+
+            <div id="infoarea" class="col-md-8 col-md-pull-4">
                 <section class="indent paper shadow">
 <!--                    Resonsive nocookie-youtube does not work-->
                     <div class="embed-responsive embed-responsive-16by9">
@@ -315,10 +324,15 @@
                         <dd><a href="/docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Änderungsanträge der Regierungsparteien für den Innenausschuss am 1. Dezember 2015</a> (32 Seiten, 658 KB)</dd>
                     </dl>
                 </section>
-                <div style="text-align:center;"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse / Datenschutz</a> | <a href="http://staatsschutz.at/img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)</div>
-                 </div>
+                <div style="text-align:center;"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse / Datenschutz</a> | <a href="http://staatsschutz.at/img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)
+                </div>
+            </div>        
+            
         </div>
     </div>
+    <!--END body main-->
+    
+    <!--START body footer -->
     <footer id="footer">
         <p>Diese Kampagne wird unterstützt von</p>
         <div class="container-fluid">
@@ -337,6 +351,7 @@
         </div>
         <p><a href="https://akvorrat.at/kontakt">Kontaktieren Sie uns, wenn Ihre Organisation staatsschutz.at auch unterstützen möchte.</a></p>
     </footer>
+    <!--END body footer -->
 
     <!-- Piwik -->
     <script type="text/javascript">
