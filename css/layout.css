@@ -41,7 +41,7 @@ body {
 }
 
 .slideContent {
-    width: 30%;
+    width: 40%;
     margin: auto;
 }
 
@@ -86,10 +86,10 @@ body {
     50% {
         opacity: 0;
         transform: scale(2,2);
-        transform: translate(100%,0);
+        transform: translate(-100%,0);
     }
     51% {
-        transform: translate(-100%,0);
+        transform: translate(100%,0);
     }
     100% {
         opacity: 1;
@@ -112,10 +112,10 @@ body {
     50% {
         opacity: 0;
         transform: scale(2,2);
-        transform: translate(-100%,0);
+        transform: translate(100%,0);
     }
     51% {
-        transform: translate(100%,0);
+        transform: translate(-100%,0);
     }
     100% {
         opacity: 1;
