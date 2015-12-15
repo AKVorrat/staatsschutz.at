@@ -1,6 +1,6 @@
 var firstnames, lastnames, states, messages;
 var slideAuthor, slideText, slideContent;
-var current = 0;
+var current = -1;
 var blocked = false;
 
 function findElements() {
@@ -34,13 +34,12 @@ function openXML(path) {
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
             getElements(xhttp);
+            findElements();
+            autoSlide();
         }
     };
     xhttp.open("GET", path, true);
     xhttp.send();
-    
-    // TODO
-    window.alert("without me the xml content wont show up :(");
 }
 
 function slideForwards() {
@@ -96,6 +95,4 @@ function autoSlide() {
 
 window.onload = function () {
     openXML("./docs/comments.xml");
-    findElements();
-    autoSlide();
 };
