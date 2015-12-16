@@ -31,7 +31,7 @@ function set_progress ( signatures ) {
 }
 
 $(function () {
-	set_progress((cnt.cnt || 0) + (cnt_paper.cnt || 0));
+	set_progress(((cnt || {}).cnt || 0) + (cnt_paper.cnt || 0));
 });
 
 
