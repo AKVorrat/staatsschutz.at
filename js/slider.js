@@ -1,14 +1,18 @@
-var firstnames, lastnames, states, messages;
+var firstnames = [], lastnames = [], states = [], messages = [];
 var slideAuthor, slideText, slideContent;
 var backwardsSlide;
 var current = -1;
 var blocked = false;
 var hovering = false;
-var xmlResource = "./docs/comments.xml";
+var xmlResource = "./appsrv/messages";
 
-function htmlColToArray(htmlCol) {
-    // TODO
-    // convert htmlCollection object to array
+function htmlColToArray(xml, tagName) {
+    var i, x, xmlDoc, nodeArray = [];
+    xmlDoc = xml.responseXML;
+    x = xmlDoc.getElementsByTagName(tagName);
+    for (i = 0; i < x.length; i++) {
+        nodeArray = nodeArray.concat([x[i].childNodes[0].nodeValue]);
+    }
     return nodeArray;
 }
 
@@ -21,27 +25,18 @@ function findElements() {
 }
 
 function setSlideScreen(index) {
-    var firstname, lastname, state, message;
-    
-    firstname = firstnames[index].childNodes[0].nodeValue;
-    lastname = lastnames[index].childNodes[0].nodeValue;
-    state = states[index].childNodes[0].nodeValue;
-    message = messages[index].childNodes[0].nodeValue;
-    
-    slideAuthor.innerHTML = firstname + " " + lastname + ", " + state;
-    slideText.innerHTML = message;
+    slideAuthor.innerHTML = firstnames[index] + " " + lastnames[index] + ", " + states[index];
+    slideText.innerHTML = messages[index];
 }
 
 function getElements(xml) {
-    var xmlDoc = xml.responseXML;
-    
-    firstnames = htmlColToArray(xmlDoc.getElementsByTagName("firstname"));
-    lastnames = htmlColToArray(xmlDoc.getElementsByTagName("lastname"));
-    states = htmlColToArray(xmlDoc.getElementsByTagName("state"));
-    messages = htmlColToArray(xmlDoc.getElementsByTagName("message"));
+    firstnames = firstnames.concat(htmlColToArray(xml, "firstname"));
+    lastnames = lastnames.concat(htmlColToArray(xml, "lastname"));
+    states = states.concat(htmlColToArray(xml, "state"));
+    messages = messages.concat(htmlColToArray(xml, "message"));
 }
 
-function openXML(path) {
+function openXML() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
@@ -50,7 +45,7 @@ function openXML(path) {
             autoSlide();
         }
     };
-    xhttp.open("GET", path, true);
+    xhttp.open("GET", xmlResource, true);
     xhttp.send();
 }
 
@@ -58,12 +53,7 @@ function loadNext() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-            xmlDoc = xhttp.responseXML;
-            
-            firstnames = firstnames.concat(htmlColToArray(xmlDoc.getElementsByTagName("firstname")));
-            lastnames = lastnames.concat(htmlColToArray(xmlDoc.getElementsByTagName("lastname")));
-            states = states.concat(htmlColToArray(xmlDoc.getElementsByTagName("state")));
-            messages = messages.concat(htmlColToArray(xmlDoc.getElementsByTagName("message")));
+            getElements(xhttp);
         }
     };
     xhttp.open("GET", xmlResource, true);
@@ -139,5 +129,5 @@ $(document).ready(function(){
 }); 
 
 window.onload = function () {
-    openXML(xmlResource);
+    openXML();
 };
