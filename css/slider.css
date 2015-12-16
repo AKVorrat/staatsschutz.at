@@ -37,6 +37,10 @@
     width: 10%;
 }
 
+.slideUnselectable {
+    color: #DDD;
+}
+
 .slide:hover {
     background-color: rgba(0, 0, 0, .05);
 }

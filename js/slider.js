@@ -1,44 +1,62 @@
-var firstnames, lastnames, states, messages;
+var firstnames = [], lastnames = [], states = [], messages = [];
 var slideAuthor, slideText, slideContent;
+var backwardsSlide;
 var current = -1;
 var blocked = false;
+var hovering = false;
+var xmlResource = "./appsrv/messages";
+
+function htmlColToArray(xml, tagName) {
+    var i, x, xmlDoc, nodeArray = [];
+    xmlDoc = xml.responseXML;
+    x = xmlDoc.getElementsByTagName(tagName);
+    for (i = 0; i < x.length; i++) {
+        nodeArray = nodeArray.concat([x[i].childNodes[0].nodeValue]);
+    }
+    return nodeArray;
+}
 
 function findElements() {
     slideAuthor = document.getElementById("slideauthor");
     slideText = document.getElementById("slidetext");
     slideContent = document.getElementById("slideContent");
+    
+    backwardsSlide = document.getElementById("slideleft");
 }
 
 function setSlideScreen(index) {
-    var firstname, lastname, state, message;
-    
-    firstname = firstnames[index].childNodes[0].nodeValue;
-    lastname = lastnames[index].childNodes[0].nodeValue;
-    state = states[index].childNodes[0].nodeValue;
-    message = messages[index].childNodes[0].nodeValue;
-    
-    slideAuthor.innerHTML = firstname + " " + lastname + ", " + state;
-    slideText.innerHTML = message;
+    slideAuthor.innerHTML = firstnames[index] + " " + lastnames[index] + ", " + states[index];
+    slideText.innerHTML = messages[index];
 }
 
 function getElements(xml) {
-    var xmlDoc = xml.responseXML;
-    firstnames = xmlDoc.getElementsByTagName("firstname");
-    lastnames = xmlDoc.getElementsByTagName("lastname");
-    states = xmlDoc.getElementsByTagName("state");
-    messages = xmlDoc.getElementsByTagName("message");
+    firstnames = firstnames.concat(htmlColToArray(xml, "firstname"));
+    lastnames = lastnames.concat(htmlColToArray(xml, "lastname"));
+    states = states.concat(htmlColToArray(xml, "state"));
+    messages = messages.concat(htmlColToArray(xml, "message"));
 }
 
-function openXML(path) {
+function openXML() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-            getElements(xhttp);
+            getElements(xhttp); 
             findElements();
             autoSlide();
         }
     };
-    xhttp.open("GET", path, true);
+    xhttp.open("GET", xmlResource, true);
+    xhttp.send();
+}
+
+function loadNext() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
+            getElements(xhttp);
+        }
+    };
+    xhttp.open("GET", xmlResource, true);
     xhttp.send();
 }
 
@@ -48,18 +66,22 @@ function slideForwards() {
     
     blocked = true;
     
-    if (current + 1 >= firstnames.length) {
-        current = 0;
-    } else {
-        current++;
+    if (current == -1) {
+        backwardsSlide.classList.add("slideUnselectable");
+    } else if (current == 0) {
+        backwardsSlide.classList.remove("slideUnselectable");
+    } else if (current + 3 >= firstnames.length) {
+        loadNext();
     }
+    
+    current++;
     
     slideContent.classList.remove("slideBackwards");
     slideContent.classList.remove("slideForwards");
     slideContent.offsetWidth = slideContent.offsetWidth;
     slideContent.classList.add("slideForwards");
     
-    setTimeout(function() {
+    setTimeout(function () {
         setSlideScreen(current);
         blocked = false;
     }, 300);
@@ -71,28 +93,41 @@ function slideBackwards() {
     
     blocked = true;
     
-    if (current - 1 < 0) {
-        current = firstnames.length - 1;
-    } else {
-        current--;
+    if (current == 0) {
+        blocked = false;
+        return;
+    } else if (current <= 1) {
+        backwardsSlide.classList.add("slideUnselectable");
     }
+    
+    current--;
     
     slideContent.classList.remove("slideBackwards");
     slideContent.classList.remove("slideForwards");
     slideContent.offsetWidth = slideContent.offsetWidth;
     slideContent.classList.add("slideBackwards");
     
-    setTimeout(function() {
+    setTimeout(function () {
         setSlideScreen(current);
         blocked = false;
     }, 300);
 }
 
 function autoSlide() {
-    slideForwards();
+    if (!hovering) {
+        slideForwards();
+    }
     setTimeout(autoSlide, 15000);
 }
 
+$(document).ready(function(){
+    $("#slider").hover(function () {
+        hovering = true;
+    }, function () {
+        hovering = false;
+    });
+}); 
+
 window.onload = function () {
-    openXML("./docs/comments.xml");
+    openXML();
 };
