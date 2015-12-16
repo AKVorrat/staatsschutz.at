@@ -1,13 +1,23 @@
 var firstnames, lastnames, states, messages;
 var slideAuthor, slideText, slideContent;
+var backwardsSlide;
 var current = -1;
 var blocked = false;
 var hovering = false;
+var xmlResource = "./docs/comments.xml";
+
+function htmlColToArray(htmlCol) {
+    // TODO
+    // convert htmlCollection object to array
+    return nodeArray;
+}
 
 function findElements() {
     slideAuthor = document.getElementById("slideauthor");
     slideText = document.getElementById("slidetext");
     slideContent = document.getElementById("slideContent");
+    
+    backwardsSlide = document.getElementById("slideleft");
 }
 
 function setSlideScreen(index) {
@@ -24,22 +34,39 @@ function setSlideScreen(index) {
 
 function getElements(xml) {
     var xmlDoc = xml.responseXML;
-    firstnames = xmlDoc.getElementsByTagName("firstname");
-    lastnames = xmlDoc.getElementsByTagName("lastname");
-    states = xmlDoc.getElementsByTagName("state");
-    messages = xmlDoc.getElementsByTagName("message");
+    
+    firstnames = htmlColToArray(xmlDoc.getElementsByTagName("firstname"));
+    lastnames = htmlColToArray(xmlDoc.getElementsByTagName("lastname"));
+    states = htmlColToArray(xmlDoc.getElementsByTagName("state"));
+    messages = htmlColToArray(xmlDoc.getElementsByTagName("message"));
 }
 
 function openXML(path) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-            getElements(xhttp);
+            getElements(xhttp); 
             findElements();
             autoSlide();
         }
     };
     xhttp.open("GET", path, true);
+    xhttp.send();
+}
+
+function loadNext() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
+            xmlDoc = xhttp.responseXML;
+            
+            firstnames = firstnames.concat(htmlColToArray(xmlDoc.getElementsByTagName("firstname")));
+            lastnames = lastnames.concat(htmlColToArray(xmlDoc.getElementsByTagName("lastname")));
+            states = states.concat(htmlColToArray(xmlDoc.getElementsByTagName("state")));
+            messages = messages.concat(htmlColToArray(xmlDoc.getElementsByTagName("message")));
+        }
+    };
+    xhttp.open("GET", xmlResource, true);
     xhttp.send();
 }
 
@@ -49,11 +76,15 @@ function slideForwards() {
     
     blocked = true;
     
-    if (current + 1 >= firstnames.length) {
-        current = 0;
-    } else {
-        current++;
+    if (current == -1) {
+        backwardsSlide.classList.add("slideUnselectable");
+    } else if (current == 0) {
+        backwardsSlide.classList.remove("slideUnselectable");
+    } else if (current + 3 >= firstnames.length) {
+        loadNext();
     }
+    
+    current++;
     
     slideContent.classList.remove("slideBackwards");
     slideContent.classList.remove("slideForwards");
@@ -72,11 +103,14 @@ function slideBackwards() {
     
     blocked = true;
     
-    if (current - 1 < 0) {
-        current = firstnames.length - 1;
-    } else {
-        current--;
+    if (current == 0) {
+        blocked = false;
+        return;
+    } else if (current <= 1) {
+        backwardsSlide.classList.add("slideUnselectable");
     }
+    
+    current--;
     
     slideContent.classList.remove("slideBackwards");
     slideContent.classList.remove("slideForwards");
@@ -105,5 +139,5 @@ $(document).ready(function(){
 }); 
 
 window.onload = function () {
-    openXML("./docs/comments.xml");
+    openXML(xmlResource);
 };
