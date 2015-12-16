@@ -2,6 +2,7 @@ var firstnames, lastnames, states, messages;
 var slideAuthor, slideText, slideContent;
 var current = -1;
 var blocked = false;
+var hovering = false;
 
 function findElements() {
     slideAuthor = document.getElementById("slideauthor");
@@ -59,7 +60,7 @@ function slideForwards() {
     slideContent.offsetWidth = slideContent.offsetWidth;
     slideContent.classList.add("slideForwards");
     
-    setTimeout(function() {
+    setTimeout(function () {
         setSlideScreen(current);
         blocked = false;
     }, 300);
@@ -82,16 +83,26 @@ function slideBackwards() {
     slideContent.offsetWidth = slideContent.offsetWidth;
     slideContent.classList.add("slideBackwards");
     
-    setTimeout(function() {
+    setTimeout(function () {
         setSlideScreen(current);
         blocked = false;
     }, 300);
 }
 
 function autoSlide() {
-    slideForwards();
+    if (!hovering) {
+        slideForwards();
+    }
     setTimeout(autoSlide, 15000);
 }
+
+$(document).ready(function(){
+    $("#slider").hover(function () {
+        hovering = true;
+    }, function () {
+        hovering = false;
+    });
+}); 
 
 window.onload = function () {
     openXML("./docs/comments.xml");
