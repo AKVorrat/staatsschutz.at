@@ -1,7 +1,7 @@
 .progress_bar {
     position: relative;
     overflow: hidden;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
     border: solid 1px #003b4c;
     border-radius: 0.3em;
 }
@@ -29,5 +29,5 @@
     position: relative;
     z-index: 2;
     text-shadow: 0 0 10px #fff;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
