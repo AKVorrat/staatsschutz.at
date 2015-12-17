@@ -4,7 +4,11 @@ var backwardsSlide;
 var current = -1;
 var blocked = false;
 var hovering = false;
-var xmlResource = "./appsrv/messages";
+var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
+
+$(function () {
+    findElements();
+})
 
 function htmlColToArray(xml, tagName) {
     var i, x, xmlDoc, nodeArray = [];
@@ -20,7 +24,6 @@ function findElements() {
     slideAuthor = document.getElementById("slideauthor");
     slideText = document.getElementById("slidetext");
     slideContent = document.getElementById("slideContent");
-    
     backwardsSlide = document.getElementById("slideleft");
 }
 
