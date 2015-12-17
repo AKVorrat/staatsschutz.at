@@ -19,19 +19,21 @@ function beautify_number (nr) {
 	return s.substring(0, s.length-1);
 }
 
-function set_progress( signatures )
-{
+function set_progress ( signatures ) {
 	signatures = signatures || 0;
 	var target = getTarget(signatures);
 	var percent = signatures/target*100 + '%';
 	//console.log('progress', signatures, target, percent, $('#progress'))
 
-	$('#progress').animate({'width': percent}, 800);
-	$('#progress_description').text(beautify_number(signatures) + ' Unterschriften von ' + beautify_number(target));
+	//$('#progress').animate({'width': percent}, 800);
+	$('#progress').css('width', percent);
+	$('#progress_description').text(beautify_number(signatures) + ' Menschen sind gegen das geplante Staatsschutzgesetz'/* + beautify_number(target)*/);
 }
 
 $(function () {
-	set_progress((cnt.cnt || 0) + (cnt_paper.cnt || 0));
+	if (typeof cnt === 'undefined')
+		cnt = {}
+	set_progress(((cnt || {}).cnt || 0) + (cnt_paper.cnt || 0));
 });
 
 
@@ -99,7 +101,7 @@ function setSMLinks(o, twords, e) {
 
 $(function () {
   try {
-    var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'de'];
+    var twords = _translate_twords[((window.location.pathname + '').match(/\/(\w\w)\/?$/)||[])[1]||'de'];
     var e = $('.countdown'); 
     if (e) {
       setCountdown(e, twords);
