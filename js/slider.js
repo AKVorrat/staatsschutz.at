@@ -1,6 +1,7 @@
 var firstnames = [], lastnames = [], states = [], messages = [];
 var slideAuthor, slideText, slideContent;
 var backwardsSlide;
+var nextMessageTimeout = null;
 var current = -1;
 var blocked = false;
 var hovering = false;
@@ -68,6 +69,9 @@ function slideForwards() {
         return;
     
     blocked = true;
+
+    nextMessageTimeout && clearTimeout(nextMessageTimeout);
+    nextMessageTimeout = setTimeout(autoSlide, 15000);
     
     if (current == -1) {
         backwardsSlide.classList.add("slideUnselectable");
@@ -103,6 +107,9 @@ function slideBackwards() {
         backwardsSlide.classList.add("slideUnselectable");
     }
     
+    nextMessageTimeout && clearTimeout(nextMessageTimeout);
+    nextMessageTimeout = setTimeout(autoSlide, 15000);
+
     current--;
     
     slideContent.classList.remove("slideBackwards");
@@ -120,7 +127,6 @@ function autoSlide() {
     if (!hovering) {
         slideForwards();
     }
-    setTimeout(autoSlide, 15000);
 }
 
 $(document).ready(function(){
