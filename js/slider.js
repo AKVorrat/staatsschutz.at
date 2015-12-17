@@ -16,7 +16,7 @@ function htmlColToArray(xml, tagName) {
     xmlDoc = xml.responseXML;
     x = xmlDoc.getElementsByTagName(tagName);
     for (i = 0; i < x.length; i++) {
-        nodeArray = nodeArray.concat([x[i].childNodes[0].nodeValue]);
+        nodeArray = nodeArray.concat([$("<div/>").text(x[i].childNodes[0].nodeValue).html()]);
     }
     return nodeArray;
 }
