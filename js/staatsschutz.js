@@ -31,6 +31,8 @@ function set_progress ( signatures ) {
 }
 
 $(function () {
+	if (typeof cnt === 'undefined')
+		cnt = {}
 	set_progress(((cnt || {}).cnt || 0) + (cnt_paper.cnt || 0));
 });
 
@@ -99,7 +101,7 @@ function setSMLinks(o, twords, e) {
 
 $(function () {
   try {
-    var twords = _translate_twords[((window.location.pathname + '').match(/\w\w/)||[])[0]||'de'];
+    var twords = _translate_twords[((window.location.pathname + '').match(/\/(\w\w)\/?$/)||[])[1]||'de'];
     var e = $('.countdown'); 
     if (e) {
       setCountdown(e, twords);
