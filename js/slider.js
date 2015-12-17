@@ -6,6 +6,7 @@ var current = -1;
 var blocked = false;
 var hovering = false;
 var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
+var timeout = 15000;
 
 $(function () {
     findElements();
@@ -69,9 +70,6 @@ function slideForwards() {
         return;
     
     blocked = true;
-
-    nextMessageTimeout && clearTimeout(nextMessageTimeout);
-    nextMessageTimeout = setTimeout(autoSlide, 15000);
     
     if (current == -1) {
         backwardsSlide.classList.add("slideUnselectable");
@@ -80,6 +78,9 @@ function slideForwards() {
     } else if (current + 3 >= firstnames.length) {
         loadNext();
     }
+    
+    nextMessageTimeout && clearTimeout(nextMessageTimeout);
+    nextMessageTimeout = setTimeout(autoSlide, timeout);
     
     current++;
     
@@ -108,7 +109,7 @@ function slideBackwards() {
     }
     
     nextMessageTimeout && clearTimeout(nextMessageTimeout);
-    nextMessageTimeout = setTimeout(autoSlide, 15000);
+    nextMessageTimeout = setTimeout(autoSlide, timeout);
 
     current--;
     
@@ -132,8 +133,12 @@ function autoSlide() {
 $(document).ready(function(){
     $("#slider").hover(function () {
         hovering = true;
+        slideText.classList.remove("sliderShrink");
+        slideText.classList.add("sliderExpand");
     }, function () {
         hovering = false;
+        slideText.classList.remove("sliderExpand");
+        slideText.classList.add("sliderShrink");
     });
 }); 
 

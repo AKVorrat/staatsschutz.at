@@ -7,6 +7,7 @@
 
 .slideContent {
     width: 40%;
+    overflow: hidden;
     margin: auto;
 }
 
@@ -16,6 +17,40 @@
     color: #003b4c;
     background: #f8f9fa;
     display: table;
+}
+
+.sliderExpand {
+    min-height: 2.3em;
+    animation-name: sliderExpand;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sliderExpand {
+    0% {
+        max-height: 2.3em;
+    }
+    100% {
+        max-height: 1000em;
+    }
+}
+
+.sliderShrink {
+    min-height: 2.3em;
+    animation-name: sliderShrink;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sliderShrink {
+    0% {
+        max-height: 1000em;
+    }
+    100% {
+        max-height: 2.3em;
+    }
 }
 
 .slider blockquote:before {
