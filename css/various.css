@@ -329,8 +329,8 @@ input.form-submit,
 a.button,
 #spenden-button {
     color: #fff;
-    background: #A4D939;
-    border: 1px solid #013c4e;
+    background: #013c4e;
+    border: 1px solid #A4D939;
     border-radius: .3em;
     padding: .5em;
     margin: .2em 0;
