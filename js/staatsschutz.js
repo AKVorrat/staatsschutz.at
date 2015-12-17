@@ -27,7 +27,7 @@ function set_progress ( signatures ) {
 
 	//$('#progress').animate({'width': percent}, 800);
 	$('#progress').css('width', percent);
-	$('#progress_description').text(beautify_number(signatures) + ' Unterschriften von ' + beautify_number(target));
+	$('#progress_description').text(beautify_number(signatures) + ' Menschen sind gegen den geplanten Staatsschutz '/* + beautify_number(target)*/);
 }
 
 $(function () {
