@@ -65,6 +65,17 @@
     font-weight: bold;
 }
 
+#quoteFadeout {
+	position: absolute;
+	width: 32%;
+	min-height: 2.3em;
+	background: linear-gradient(to bottom, transparent, transparent 80%, #f8f9fa);
+}
+
+#quoteFadeout.sliderExpand {
+	background: transparent;
+}
+
 .slide {
     display: table-cell;
     vertical-align: middle;
