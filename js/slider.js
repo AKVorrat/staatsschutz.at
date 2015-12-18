@@ -51,7 +51,6 @@ function openXML() {
             getElements(xhttp); 
             findElements();
             loaded = true;
-            backwardsSlide.classList.remove("slideUnselectable");
             forwardSlide.classList.remove("slideUnselectable");
             autoSlide();
         }
@@ -103,7 +102,7 @@ function slideForwards() {
 }
 
 function slideBackwards() {
-    if (blocked == true)
+    if (blocked || ! loaded)
         return;
     
     blocked = true;
