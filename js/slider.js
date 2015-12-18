@@ -1,10 +1,11 @@
 var firstnames = [], lastnames = [], states = [], messages = [];
 var slideAuthor, slideText, slideContent;
-var backwardsSlide;
+var backwardsSlide, forwardSlide;
 var nextMessageTimeout = null;
 var current = -1;
 var blocked = false;
 var hovering = false;
+var loaded = false;
 var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
 var timeout = 15000;
 
@@ -27,6 +28,7 @@ function findElements() {
     slideText = document.getElementById("slidetext");
     slideContent = document.getElementById("slideContent");
     backwardsSlide = document.getElementById("slideleft");
+    forwardSlide = document.getElementById("slideright");
     quoteFadeout = document.getElementById("quoteFadeout");
 }
 
@@ -48,6 +50,9 @@ function openXML() {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
             getElements(xhttp); 
             findElements();
+            loaded = true;
+            backwardsSlide.classList.remove("slideUnselectable");
+            forwardSlide.classList.remove("slideUnselectable");
             autoSlide();
         }
     };
@@ -67,7 +72,8 @@ function loadNext() {
 }
 
 function slideForwards() {
-    if (blocked == true)
+
+    if (blocked || ! loaded)
         return;
     
     blocked = true;
