@@ -5,7 +5,7 @@ var nextMessageTimeout = null;
 var current = -1;
 var blocked = false;
 var hovering = false;
-var xmlResource = "./messages";
+var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
 var timeout = 15000;
 
 $(function () {
