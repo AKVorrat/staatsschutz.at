@@ -38,7 +38,7 @@
 
 .sliderShrink {
     min-height: 2.3em;
-    animation-name: sliderShrink;
+    // animation-name: sliderShrink;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
