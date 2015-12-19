@@ -35,9 +35,15 @@ function findElements() {
     quoteFadeout = document.getElementById("quoteFadeout");
 }
 
+function adaptSlideTextHeight() {
+    var sHeight = $('#slidetext')[0].scrollHeight;
+    $('#slidetext').css('height', sHeight + 'px');
+}
+
 function setSlideScreen(index) {
     slideAuthor.innerHTML = firstnames[index] + " " + lastnames[index] + ", " + states[index];
     slideText.innerHTML = messages[index];
+    adaptSlideTextHeight();
 }
 
 function getElements(xml) {
@@ -132,8 +138,7 @@ function autoSlide() {
 $(document).ready(function(){
     $("#slider").hover(function () {
         hovering = true;
-        var sHeight = $('#slidetext')[0].scrollHeight;
-        $('#slidetext').css('height', sHeight + 'px');
+        adaptSlideTextHeight();
         $('#fadeout').css('opacity', 0);
     }, function () {
         hovering = false;
