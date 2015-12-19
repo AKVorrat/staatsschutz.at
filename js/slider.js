@@ -9,6 +9,9 @@ var loaded = false;
 var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
 var timeout = 15000;
 
+//for testing purposes use
+//var xmlResource = "./appsrv/messages";
+
 $(function () {
     findElements();
 })
@@ -44,26 +47,16 @@ function getElements(xml) {
     messages = messages.concat(htmlColToArray(xml, "message"));
 }
 
-function openXML() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (xhttp.readyState === 4 && xhttp.status === 200) {
-            getElements(xhttp); 
-            findElements();
-            loaded = true;
-            forwardSlide.classList.remove("slideUnselectable");
-            autoSlide();
-        }
-    };
-    xhttp.open("GET", xmlResource, true);
-    xhttp.send();
-}
-
-function loadNext() {
+function loadXML() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
             getElements(xhttp);
+            if(!loaded) {
+                loaded = true;
+                forwardSlide.classList.remove("slideUnselectable");
+                setTimeout(autoSlide, timeout);
+            }
         }
     };
     xhttp.open("GET", xmlResource, true);
@@ -82,7 +75,7 @@ function slideForwards() {
     } else if (current == 0) {
         backwardsSlide.classList.remove("slideUnselectable");
     } else if (current + 3 >= firstnames.length) {
-        loadNext();
+        loadXML();
     }
     
     nextMessageTimeout && clearTimeout(nextMessageTimeout);
@@ -150,5 +143,5 @@ $(document).ready(function(){
 }); 
 
 window.onload = function () {
-    openXML();
+    loadXML();
 };
