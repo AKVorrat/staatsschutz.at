@@ -52,13 +52,13 @@
 }
 */
 
-section ul,
-section ol {
+article ul,
+article ol {
     margin-left: 1em;
 }
 
-#actionarea section ul,
-section ol {
+#actionarea article ul,
+article ol {
     margin-left: 0;
 }
 
@@ -177,8 +177,8 @@ noscript a {
     padding: 1em 3em;
 }
 
-#wrapper-fazit section,
-#wrapper-zeitplan section {
+#wrapper-fazit article,
+#wrapper-zeitplan article {
     margin: 2em;
 }
 
