@@ -1,10 +1,3 @@
-.header,
-.marketing,
-.footer {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .sidebar {
     margin: 2em auto;
     background: #C4C3C3;
@@ -24,16 +17,6 @@
     padding: 1em;
 }
 
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-}
-
 #moreactionarea {
     max-width: 15em;
     margin: 18px 9px 0px 1em;
@@ -41,11 +24,6 @@
     background: #C6C6C6;
     border-radius: 5px;
     float: right;
-}
-
-.subheadline {
-    font-size: .75em;
-    color: rgba(255, 255, 255, .5)
 }
 
 @media (max-width: 900px) {
@@ -128,43 +106,6 @@ noscript a {
     color: #262;
 }
 
-header {
-    position: relative;
-    overflow: hidden;
-    padding: 1em 1em 0;
-    background: #003b4c;
-    color: #fff;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-/*#akvorrat:after {
-	content:'AKVorrat';
-	position:absolute;
-	top:-0.3em;
-	right:-0.001em;
-	color:rgba(255,255,255, 0.2);
-	font-size:5em;
-	font-weight:bold;
-}*/
-
-header h1 {
-    font-size: 3.2em;
-    margin: 0 0 0.35em;
-}
-
-header cite {
-    position: relative;
-    top: -2.1em;
-    padding: 0.3em 0.5em;
-    color: #000;
-    background: #8ebf2a;
-    border-radius: 0.3em;
-}
-
 .actions {
     margin: 0;
 }
@@ -229,26 +170,6 @@ header cite {
     width: 40em;
     float: left;
     margin: 0 0 0.75em;
-}
-
-footer {
-    margin-top: 20px;
-    padding: 1em;
-    background: #003b4c;
-    color: #fff;
-    text-align: center;
-    overflow: hidden;
-}
-
-footer img {
-    margin-bottom: 1em;
-    max-width: 100%;
-}
-
-footer a,
-footer a:hover,
-footer a:focus {
-    color: #fff;
 }
 
 #tenpoints,
@@ -354,12 +275,6 @@ input.inputText {
     text-align: center;
     padding: 2em 0 0;
     margin-bottom: 2em;
-}
-
-#akvorrat {
-    position: absolute;
-    top: 13em;
-    right: 1.3em;
 }
 
 @media only screen and (max-width: 768px) {
