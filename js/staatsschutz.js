@@ -101,7 +101,7 @@ function setSMLinks(o, twords, e) {
 
 $(function () {
     var videoId = /youtube\.com\/watch\?(.*&)*v=([^&]+)/;
-    $('a[href*="youtube.com/watch"]').click(function () {
+    $('a.loadEmbed').click(function () {
         id = $(this).attr('href').match(videoId)[2];
         width = $(this).width();
         height = $(this).height();
