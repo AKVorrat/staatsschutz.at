@@ -20,7 +20,6 @@
 }
 
 .slider blockquote {
-    min-height: 2.3em;
     transition: height .6s ease;
 }
 
