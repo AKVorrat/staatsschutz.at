@@ -139,14 +139,13 @@ function autoSlide() {
 $(document).ready(function(){
     $("#slider").hover(function () {
         hovering = true;
-        slideText.classList.remove("sliderShrink");
-        slideText.classList.add("sliderExpand");
-        quoteFadeout.classList.add("sliderExpand");
+        var sHeight = $('#slidetext')[0].scrollHeight;
+        $('#slidetext').css('height', sHeight + 'px');
+        $('#fadeout').css('opacity', 0);
     }, function () {
         hovering = false;
-        slideText.classList.remove("sliderExpand");
-        slideText.classList.add("sliderShrink");
-        quoteFadeout.classList.remove("sliderExpand");
+        $('#slidetext').css('height', '2.3em');
+        $('#fadeout').css('opacity', 1);
     });
 }); 
 
