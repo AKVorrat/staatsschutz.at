@@ -90,8 +90,8 @@ section ol {
     color: #000;
 }
 
-.paper iframe {
-    border: 0px;
+.paper img {
+    display: block;
     margin: auto;
 }
 
