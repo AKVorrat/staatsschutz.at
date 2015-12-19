@@ -100,6 +100,17 @@ function setSMLinks(o, twords, e) {
 }
 
 $(function () {
+    var videoId = /youtube\.com\/watch\?(.*&)*v=([^&]+)/;
+    $('a[href*="youtube.com/watch"]').click(function () {
+        id = $(this).attr('href').match(videoId)[2];
+        width = $(this).width();
+        height = $(this).height();
+        $(this).html('<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1" width="' + width + '" height="' + height + '" style="border: 0"></iframe>');
+        return false;
+    });
+});
+
+$(function () {
   try {
     var twords = _translate_twords[((window.location.pathname + '').match(/\/(\w\w)\/?$/)||[])[1]||'de'];
     var e = $('.countdown'); 
