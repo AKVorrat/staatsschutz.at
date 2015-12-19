@@ -73,6 +73,10 @@ article ol {
     margin: auto;
 }
 
+.paper dt img {
+    margin-left: 0;
+}
+
 .indent {
     margin: 2em 0;
 }
