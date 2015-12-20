@@ -20,6 +20,10 @@
 }
 
 .slider blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    border-left: none;
     transition: height .6s ease;
 }
 
