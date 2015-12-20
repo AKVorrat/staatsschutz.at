@@ -79,25 +79,25 @@
                         <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
                             <div class="form-group">
                                 <label for="edit-submitted-vorname">Vorname</label>
-                                <input type="text" class="form-control" id="edit-submitted-vorname" name="submitted[vorname]" placeholder="Vorname">
+                                <input type="text" class="form-control" id="edit-submitted-vorname" name="submitted[vorname]" placeholder="Vorname" required="required">
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-nachname">Nachname</label>
-                                <input type="text" class="form-control" id="edit-submitted-nachname" name="submitted[nachname]" placeholder="Nachname">
+                                <input type="text" class="form-control" id="edit-submitted-nachname" name="submitted[nachname]" placeholder="Nachname" required="required">
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-e-mail">E-Mail</label>
-                                <input type="email" class="form-control" id="edit-submitted-e-mail" name="submitted[e_mail]" placeholder="E-Mail">
+                                <input type="email" class="form-control" id="edit-submitted-e-mail" name="submitted[e_mail]" placeholder="E-Mail" required="required">
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-nationalitat">Nationalität</label>
-                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control">
+                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control" required="required">
                                     <option value="at" selected="selected">&#214;sterreich</option>
                                     <option value="be">Belgien</option>
                                     <option value="bg">Bulgarien</option>
                                     <option value="hr">Kroatien</option>
                                     <option value="cy">Zypern</option>
-                                    <option value="cz">TschechischeRepublik</option>
+                                    <option value="cz">Tschechische&nbsp;Republik</option>
                                     <option value="dk">D&#228;nemark</option>
                                     <option value="ee">Estland</option>
                                     <option value="fi">Finnland</option>
@@ -124,11 +124,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-plz">Postleitzahl</label>
-                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl">
+                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl" required="required">
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-alter">Alter</label>
-                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter">
+                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter" required="required">
                             </div>
                             <div class="checkbox">
                               <label for="edit-submitted-newsletter-1">
@@ -146,7 +146,13 @@
                                 <label for="edit-submitted-deine-botschaft">Deine Botschaft</label>
                                 <textarea class="form-control" id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" rows="3" placeholder="Deine Botschaft"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-default btn-lg btn-block greenbutton">Unterzeichnen</button>
+                            <input type="hidden" name="details[sid]">
+                            <input type="hidden" name="details[page_num]" value="1">
+                            <input type="hidden" name="details[page_count]" value="1">
+                            <input type="hidden" name="details[finished]" value="0">
+                            <input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
+                            <input type="hidden" name="form_id" value="webform_client_form_108">
+                            <button type="submit" class="btn btn-default btn-lg btn-block greenbutton" name="op" value="Unterzeichnen">Unterzeichnen</button>
                         </form>                   
                     </div>
                 </div>
@@ -171,7 +177,7 @@
                     <div class="sidetitle">Mitwirken</div>
                     <div class="sidetext">
                         <p>Wenn Du unsere <a href="#fivedemands">5&nbsp;Forderungen</a> noch mehr stärken möchtest, kannst du aktiv werden und Unterschriften sammeln. Dazu einfach die <a href="./docs/staatsschutz-unterschriftenliste.pdf" target="_blank">Druckvorlage</a> ausdrucken, Mitmenschen aufklären, um deren Unterschriften bitten und deine Liste an uns <a href=# data-toggle=tooltip title="Leider brauchen wir die Originaldokumente. Wenn Du keinen Brief senden möchtest, kannst Du auch gerne persönlich vorbeikommen. Die Adresse lautet Neubaugasse 12-14, 1070 Wien">zurücksenden</a>.</p>
-                        <p>Auch mit einer Spende kannst Du einen erheblichen Beitrag leisten. Neben der Erhaltung der Webpräsenz werden damit unsere <a href=# data-toggle=tooltip title="Sticker und Flyer sind kostenlos beim Arbeitskreis Vorratsdaten Österreich erhältlich.">Werbemittel</a> finanziert.</p>
+                        <p>Auch mit einer Spende kannst Du einen erheblichen Beitrag leisten. Neben der Erhaltung der Webpräsenz werden damit unsere <a href=# data-toggle=tooltip title="Sticker und Flyer sind kostenlos beim Arbeitskreis Vorratsdaten Österreich erhältlich.">Werbemittel</a> und Aktionen finanziert.</p>
                         <form action="https://spenden.akvorrat.at/">
                             <button type="submit" class="btn btn-default btn-block">Jetzt spenden!</button>
                         </form>
