@@ -72,106 +72,85 @@
             <!--START side column-->
             <section class="col-md-4 col-md-push-8">
                 <div class="sidebar shadow">
-                    <div class="sidetitle">Unterschreiben</div>
+                    <div class="sidetitle">Unterzeichnen</div>
                     <div class="sidetext">
                         <p>Mit einer Unterschrift stimmst Du den <a href="#fivedemands">5&nbsp;Forderungen</a> dieser Petition zu und hilfst, ihr in der Politik mehr Gewicht zu geben. Bitte beachte außerdem unsere <a href="#privacy">Datenschutzerklärung</a>.</p>
-                            <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
-                            <div class="form-item webform-component webform-component-textfield webform-component--vorname webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-vorname">Vorname <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-vorname" name="submitted[vorname]" value="" size="40" maxlength="150" class="form-text required"> </div>
-                            <div class="form-item webform-component webform-component-textfield webform-component--nachname webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-nachname">Nachname <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-nachname" name="submitted[nachname]" value="" size="40" maxlength="128" class="form-text required"> </div>
-                            <div class="form-item webform-component webform-component-email webform-component--e-mail webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-e-mail">E-Mail <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" class="email form-text form-email required" placeholder="(zur Bestätigung der Unterschrift)" type="email" id="edit-submitted-e-mail" name="submitted[e_mail]" size="40"> </div>
-                            <div class="form-item webform-component webform-component-textfield webform-component--plz webform-container-inline">
-                                <div class="form-item webform-component webform-component-select webform-component--nationalitat webform-container-inline">
-                                    <label class="signformLabel" for="edit-submitted-nationalitat">Nationalität </label>
-                                    <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-select">
-                                        <option value="" selected="selected">Land auswählen</option>
-                                        <option value="at">&#214;sterreich</option>
-                                        <option value="be">Belgien</option>
-                                        <option value="bg">Bulgarien</option>
-                                        <option value="hr">Kroatien</option>
-                                        <option value="cy">Zypern</option>
-                                        <option value="cz">TschechischeRepublik</option>
-                                        <option value="dk">D&#228;nemark</option>
-                                        <option value="ee">Estland</option>
-                                        <option value="fi">Finnland</option>
-                                        <option value="fr">Frankreich</option>
-                                        <option value="de">Deutschland</option>
-                                        <option value="gr">Griechenland</option>
-                                        <option value="hu">Ungarn</option>
-                                        <option value="it">Italien</option>
-                                        <option value="ie">Irland</option>
-                                        <option value="lv">Lettland</option>
-                                        <option value="lt">Litauen</option>
-                                        <option value="lu">Luxemburg</option>
-                                        <option value="mt">Malta</option>
-                                        <option value="nl">Niederlande</option>
-                                        <option value="pl">Polen</option>
-                                        <option value="pt">Portugal</option>
-                                        <option value="ro">Rumänien</option>
-                                        <option value="sk">Slowakei</option>
-                                        <option value="si">Slowenien</option>
-                                        <option value="es">Spanien</option>
-                                        <option value="se">Schweden</option>
-                                        <option value="gb">Gro&#223;britannien</option>
-                                    </select>
-                                </div>
-                                <label class="signformLabel" for="edit-submitted-plz">PLZ </label>
-                                <input type="text" id="edit-submitted-plz" name="submitted[plz]" value="" maxlength="10" class="form-text"> </div>
-                            <div class="form-item webform-component webform-component-number webform-component--alter webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-alter">Alter </label>
-                                <input type="text" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" class="form-text form-number"> </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-checkboxes webform-component--newsletter webform-container-inline">
-                                <div id="edit-submitted-newsletter" class="form-checkboxes">
-                                    <div class="form-item form-type-checkbox form-item-submitted-newsletter-1">
-                                        <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" class="form-checkbox">
-                                        <label class="option" for="edit-submitted-newsletter-1">Ich will den Newsletter des AKVorrat erhalten</label>
-                                    </div>
-                                </div>
+                        
+                        <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
+                            <div class="form-group">
+                                <label for="edit-submitted-vorname">Vorname</label>
+                                <input type="text" class="form-control" id="edit-submitted-vorname" name="submitted[vorname]" placeholder="Vorname">
                             </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-checkboxes webform-component--ispublic webform-container-inline">
-                                <div id="edit-submitted-ispublic" class="form-checkboxes">
-                                    <div class="form-item form-type-checkbox form-item-submitted-ispublic-1">
-                                        <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" class="form-checkbox">
-                                        <label class="option" for="edit-submitted-ispublic-1">Ich will mit meiner Unterschrift öffentlich sichtbar sein</label>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nachname">Nachname</label>
+                                <input type="text" class="form-control" id="edit-submitted-nachname" name="submitted[nachname]" placeholder="Nachname">
                             </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-textarea webform-component--deine-botschaft webform-container-inline">
-                                <label for="edit-submitted-deine-botschaft">Deine Botschaft </label>
-                                <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
-                                    <textarea id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" cols="60" rows="5" class="form-textarea"></textarea>
-                                    <div class="grippie"></div>
-                                </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-e-mail">E-Mail</label>
+                                <input type="email" class="form-control" id="edit-submitted-e-mail" name="submitted[e_mail]" placeholder="E-Mail">
                             </div>
-                            <input type="hidden" name="details[sid]">
-                            <input type="hidden" name="details[page_num]" value="1">
-                            <input type="hidden" name="details[page_count]" value="1">
-                            <input type="hidden" name="details[finished]" value="0">
-                            <input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
-                            <input type="hidden" name="form_id" value="webform_client_form_108">
-                            <div style="display: table; width: 100%">
-                                <div class="form-actions" style="display: table-cell"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Unterzeichnen"></div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nationalitat">Nationalität</label>
+                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control">
+                                    <option value="at" selected="selected">&#214;sterreich</option>
+                                    <option value="be">Belgien</option>
+                                    <option value="bg">Bulgarien</option>
+                                    <option value="hr">Kroatien</option>
+                                    <option value="cy">Zypern</option>
+                                    <option value="cz">TschechischeRepublik</option>
+                                    <option value="dk">D&#228;nemark</option>
+                                    <option value="ee">Estland</option>
+                                    <option value="fi">Finnland</option>
+                                    <option value="fr">Frankreich</option>
+                                    <option value="de">Deutschland</option>
+                                    <option value="gr">Griechenland</option>
+                                    <option value="hu">Ungarn</option>
+                                    <option value="it">Italien</option>
+                                    <option value="ie">Irland</option>
+                                    <option value="lv">Lettland</option>
+                                    <option value="lt">Litauen</option>
+                                    <option value="lu">Luxemburg</option>
+                                    <option value="mt">Malta</option>
+                                    <option value="nl">Niederlande</option>
+                                    <option value="pl">Polen</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="ro">Rumänien</option>
+                                    <option value="sk">Slowakei</option>
+                                    <option value="si">Slowenien</option>
+                                    <option value="es">Spanien</option>
+                                    <option value="se">Schweden</option>
+                                    <option value="gb">Gro&#223;britannien</option>
+                                </select>
                             </div>
-                        </form>                        
+                            <div class="form-group">
+                                <label for="edit-submitted-plz">Postleitzahl</label>
+                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">Alter</label>
+                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter">
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-newsletter-1">
+                                <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" />
+                                Ich will den Newsletter des AKVorrat erhalten
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-ispublic-1">
+                                <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" />
+                                Ich will mit meiner Unterschrift öffentlich sichtbar sein
+                              </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-deine-botschaft">Deine Botschaft</label>
+                                <textarea class="form-control" id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" rows="3" placeholder="Deine Botschaft"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-lg btn-block greenbutton">Unterzeichnen</button>
+                        </form>                   
                     </div>
                 </div>
                 
-                <div class="sidebar shadow">
-                    <div class="sidetitle">Mitwirken</div>
-                    <div class="sidetext">
-                        <p>Wenn Du unsere <a href="#fivedemands">5&nbsp;Forderungen</a> noch mehr stärken möchtest, kannst du aktiv werden und Unterschriften sammeln. Dazu einfach die <a href="./docs/staatsschutz-unterschriftenliste.pdf" target="_blank">Druckvorlage</a> ausdrucken, Mitmenschen aufklären, um deren Unterschriften bitten und deine Liste an uns <a href=# data-toggle=tooltip title="Leider brauchen wir die Originaldokumente. Wenn Du keinen Brief senden möchtest, kannst Du auch gerne persönlich vorbeikommen. Die Adresse lautet Neubaugasse 12-14, 1070 Wien">zurücksenden</a>.</p>
-                        <p>Auch mit einer Spende kannst Du einen erheblichen Beitrag leisten. Neben der Erhaltung der Webpräsenz werden damit unsere <a href=# data-toggle=tooltip title="Sticker und Flyer sind kostenlos beim Arbeitskreis Vorratsdaten Österreich erhältlich.">Werbemittel</a> finanziert.</p>
-                    </div>
-                </div>
-
                 <div class="sidebar shadow">
                     <div class="sidetitle">Weitersagen</div>
                     <div class="sidetext">
@@ -187,15 +166,28 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Mitwirken</div>
+                    <div class="sidetext">
+                        <p>Wenn Du unsere <a href="#fivedemands">5&nbsp;Forderungen</a> noch mehr stärken möchtest, kannst du aktiv werden und Unterschriften sammeln. Dazu einfach die <a href="./docs/staatsschutz-unterschriftenliste.pdf" target="_blank">Druckvorlage</a> ausdrucken, Mitmenschen aufklären, um deren Unterschriften bitten und deine Liste an uns <a href=# data-toggle=tooltip title="Leider brauchen wir die Originaldokumente. Wenn Du keinen Brief senden möchtest, kannst Du auch gerne persönlich vorbeikommen. Die Adresse lautet Neubaugasse 12-14, 1070 Wien">zurücksenden</a>.</p>
+                        <p>Auch mit einer Spende kannst Du einen erheblichen Beitrag leisten. Neben der Erhaltung der Webpräsenz werden damit unsere <a href=# data-toggle=tooltip title="Sticker und Flyer sind kostenlos beim Arbeitskreis Vorratsdaten Österreich erhältlich.">Werbemittel</a> finanziert.</p>
+                        <form action="https://spenden.akvorrat.at/">
+                            <button type="submit" class="btn btn-default btn-block">Jetzt spenden!</button>
+                        </form>
+                    </div>
+                </div>
 
                 <div class="sidebar shadow">
                     <div class="sidetitle">Informiert bleiben</div>
                     <div class="sidetext">
-                        <p>Der Arbeitskreis Vorratsdaten Österreich hält Interessierte immer auf dem neuesten Stand. Wenn Du über Neuigkeiten zu digitalen Bürgerrechten bescheid wissen möchtest, kannst Du dich hier für den Newsletter eintragen.</p> 
+                        <p>Der Arbeitskreis Vorratsdaten Österreich hält Interessierte immer auf dem neuesten Stand. Wenn Du über Neuigkeiten zu digitalen Bürgerrechten bescheid wissen möchtest, kannst Du dich hier für den Newsletter eintragen.</p>            
                         <form method="post" action="https://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
-                            <input type="email" name="email" class="inputText" size="19" placeholder="E-Mail">
-                            <input type="submit" class="button-primary" value="Newsletter abonnieren" class="inputSubmit webform-submit">
-                            <br /> 
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">E-Mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="E-Mail">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Abonnieren</button>
                         </form>
                     </div>
                 </div>
@@ -207,7 +199,7 @@
                 <article class="indent paper shadow">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/JOeD4dOw4mM" style="border: none;" allowfullscreen="1"></iframe>
-                        <!--<a href="https://www.youtube.com/watch?v=JOeD4dOw4mM" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_opinions.png" class="img-responsive" alt="YouTube"></a>-->
+                        <!--<a href="https://www.youtube.com/watch?v=JOeD4dOw4mM" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_opinions.jpg" class="img-responsive" alt="YouTube"></a>-->
                     </div>
                 </article>
 
@@ -268,7 +260,7 @@
                 </article>
 
                 <article class="indent paper shadow">
-                    <a href="https://www.youtube.com/watch?v=MvzVFbQ06wM" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_quiz.png" class="img-responsive" alt="YouTube"></a>
+                    <a href="https://www.youtube.com/watch?v=MvzVFbQ06wM" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_quiz.jpg" class="img-responsive" alt="YouTube"></a>
                 </article>
 
                 <article class="indent paper shadow">
@@ -296,7 +288,7 @@
                 </article>
 
                 <article class="indent paper shadow">
-                    <a href="https://www.youtube.com/watch?v=ezK19cRJfTI" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_author.png" class="img-responsive" alt="YouTube"></a>
+                    <a href="https://www.youtube.com/watch?v=ezK19cRJfTI" class="loadEmbed" target="_blank"><img src="./img/youtube/cover_author.jpg" class="img-responsive" alt="YouTube"></a>
                 </article>
 
                 <div id="wrapper-fazit" class="indent paper shadow">

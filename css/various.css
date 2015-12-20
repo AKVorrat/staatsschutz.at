@@ -192,80 +192,8 @@ noscript a {
     background-color: #013c4e
 }
 
-input[type=text],
-input[type=email],
-input[type="submit"],
-select {
-    padding: .45em .6em;
-    margin: 0.3em 0;
-}
-
-input[type=text],
-input[type=email],
-select {
-    padding: .45em .6em;
-    margin: 0.3em 0;
-    border: 1px solid #aaa;
-    width: 19em;
-    max-width: 100%;
-}
-
-.inputSubmit {
-    background: linear-gradient(#F7F7F7, #DDD);
-}
-
 .form-required {
     color: #f00;
-}
-
-label {
-    margin-right: 0.4em;
-    font-size: .95em;
-}
-
-.signpetition {
-    text-align: left;
-}
-
-.signpetition ol li {
-    width: 85%;
-    display: list-item;
-    max-width: 100%;
-}
-
-.signformLabel {
-    display: inline-block;
-    min-width: 6.4em;
-}
-
-#edit-submitted-deine-botschaft {
-    width: 97%;
-    font-family: inherit;
-    font-size: inherit;
-    padding: .45em .6em;
-    margin: 0.3em 0;
-    border: 1px solid #aaa;
-}
-
-input.form-submit,
-a.button {
-    color: #fff;
-    background: #013c4e;
-    border: 1px solid #A4D939;
-    border-radius: .3em;
-    padding: .5em;
-    margin: .2em 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-input.inputText {
-    width: 16em;
-}
-
-.button-primary {
-    font-size: 1.2em;
 }
 
 .demand_short {
@@ -276,10 +204,4 @@ input.inputText {
     text-align: center;
     padding: 2em 0 0;
     margin-bottom: 2em;
-}
-
-@media only screen and (max-width: 768px) {
-    .max768 {
-        display: none
-    }
 }
