@@ -71,7 +71,6 @@ function loadXML() {
 }
 
 function slideForwards() {
-
     if (blocked || ! loaded)
         return;
     

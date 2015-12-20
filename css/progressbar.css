@@ -2,8 +2,8 @@
     position: relative;
     overflow: hidden;
     margin: 1em auto -1em;
-    border: solid 1px #003b4c;
-    border-radius: 0.3em;
+    border: solid 1px #9C9C9C;
+    background: #F8F9FA;
 }
 
 .progress_volume {

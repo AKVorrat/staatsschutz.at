@@ -1,6 +1,6 @@
 .sidebar {
     margin: 2em auto;
-    background: #C4C3C3;
+    background: #F8F9FA;
 }
 
 .sidetitle {
@@ -10,7 +10,6 @@
     font-size: 1.6em;
     font-weight: bold;
     background: #003b4c;
-    border-radius: 0.4em 0.4em 0 0;
 }
 
 .sidetext {
@@ -52,13 +51,13 @@
 }
 */
 
-section ul,
-section ol {
+article ul,
+article ol {
     margin-left: 1em;
 }
 
-#actionarea section ul,
-section ol {
+#actionarea article ul,
+article ol {
     margin-left: 0;
 }
 
@@ -73,12 +72,15 @@ section ol {
     margin: auto;
 }
 
+.paper dt img {
+    margin-left: 0;
+}
+
 .indent {
     margin: 2em 0;
 }
 
 .shadow {
-    border-radius: 0.4em;
     box-shadow: 0 0 0.3em 0.1em #E4E5E6;
 }
 
@@ -177,8 +179,8 @@ noscript a {
     padding: 1em 3em;
 }
 
-#wrapper-fazit section,
-#wrapper-zeitplan section {
+#wrapper-fazit article,
+#wrapper-zeitplan article {
     margin: 2em;
 }
 

@@ -103,9 +103,7 @@ $(function () {
     var videoId = /youtube\.com\/watch\?(.*&)*v=([^&]+)/;
     $('a.loadEmbed').click(function () {
         id = $(this).attr('href').match(videoId)[2];
-        width = $(this).width();
-        height = $(this).height();
-        $(this).html('<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1" width="' + width + '" height="' + height + '" style="border: 0"></iframe>');
+        $(this).html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1" style="border: none;" allowfullscreen="1"></iframe></div>');
         return false;
     });
 });
