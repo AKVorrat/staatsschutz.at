@@ -43,7 +43,8 @@ function adaptSlideTextHeight() {
 function setSlideScreen(index) {
     slideAuthor.innerHTML = firstnames[index] + " " + lastnames[index] + ", " + states[index];
     slideText.innerHTML = messages[index];
-    adaptSlideTextHeight();
+    if (hovering)
+        adaptSlideTextHeight();
 }
 
 function getElements(xml) {
