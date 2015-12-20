@@ -74,7 +74,7 @@
                 <div class="sidebar shadow">
                     <div class="sidetitle">Unterzeichnen</div>
                     <div class="sidetext">
-                        <p>Mit einer Unterschrift stimmst Du den <a href="#fivedemands">5&nbsp;Forderungen</a> dieser Petition zu und hilfst, ihr in der Politik mehr Gewicht zu geben. Bitte beachte außerdem unsere <a href="#privacy">Datenschutzerklärung</a>.</p>
+                        <p>Mit einer Unterschrift stimmst Du den <a href="#fivedemands">5&nbsp;Forderungen</a> dieser Petition zu und hilfst, ihr in der Politik mehr Gewicht zu geben. Bitte beachte außerdem unsere <a href="#" data-toggle="modal" data-target="#privacyModal">Datenschutzerklärung</a>.</p>
                         
                         <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
                             <div class="form-group">
@@ -91,7 +91,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-nationalitat">Nationalität</label>
-                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control" required="required">
+                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control">
                                     <option value="at" selected="selected">&#214;sterreich</option>
                                     <option value="be">Belgien</option>
                                     <option value="bg">Bulgarien</option>
@@ -124,11 +124,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-plz">Postleitzahl</label>
-                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl" required="required">
+                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl">
                             </div>
                             <div class="form-group">
                                 <label for="edit-submitted-alter">Alter</label>
-                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter" required="required">
+                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter">
                             </div>
                             <div class="checkbox">
                               <label for="edit-submitted-newsletter-1">
@@ -191,7 +191,7 @@
                         <form method="post" action="https://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
                             <div class="form-group">
                                 <label for="edit-submitted-alter">E-Mail</label>
-                                <input type="email" name="email" class="form-control" placeholder="E-Mail">
+                                <input type="email" name="email" class="form-control" placeholder="E-Mail" required="required">
                             </div>
                             <button type="submit" class="btn btn-default btn-block">Abonnieren</button>
                         </form>
@@ -244,11 +244,11 @@
                     <h2>Unsere 5 Forderungen</h2>
                     <p>Die Unterzeichner dieser Petition fordern von der Österreichischen Regierung und dem Nationalrat folgende fünf Punkte anlässlich des geplanten Staatsschutzgesetzes.</p>
                     <ol>
-                        <li><span class="demand_short">Faktenbasierte Sicherheitspolitik</span> &ndash; Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnismäßig ist.</li>
-                        <li><span class="demand_short">Klare Trennung von Polizei und Nachrichtendiensten</span> &ndash; Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
-                        <li><span class="demand_short">Keine Repression gegenüber Zivilgesellschaft, Journalisten und "Whistleblowern"</span> &ndash; Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
-                        <li><span class="demand_short">Starker Rechtsschutz, kein "pre-crime"</span> &ndash; Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden.</li>
-                        <li><span class="demand_short">Keine bezahlten Spitzel</span> &ndash; Die Praxis im In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
+                        <li><strong>Faktenbasierte Sicherheitspolitik</strong> &ndash; Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnismäßig ist.</li>
+                        <li><strong>Klare Trennung von Polizei und Nachrichtendiensten</strong> &ndash; Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
+                        <li><strong>Keine Repression gegenüber Zivilgesellschaft, Journalisten und "Whistleblowern"</strong> &ndash; Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
+                        <li><strong>Starker Rechtsschutz, kein "pre-crime"</strong> &ndash; Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden.</li>
+                        <li><strong>Keine bezahlten Spitzel</strong> &ndash; Die Praxis im In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
                     </ol>
                 </article>
 
@@ -304,45 +304,15 @@
                         <p>Mit einer schwammigen Definition des <q>verfassungsgefährdenden Angriffs</q> schafft das Gesetz die Grundlage für eine überschießende Überwachung unbescholtener Bürgerinnen und Bürger. Obwohl derart schwerwiegende Eingriffe in die Privatsphäre sorgfältiger Kontrolle bedürfen, wurden keine effizienten Rechtsschutzmechanismen vorgesehen. Ein vorgeschobener Zweck soll offenbar alle Mittel heiligen. Der AKVorrat sieht im Gesetzesentwurf die Schaffung der Grundlage eines Inlandsgeheimdienstes und lehnt ihn daher zur Gänze ab. Gleichzeitig erkennt der AKVorrat aber an, dass Maßnahmen zur Terrorbekämpfung nötig sind. Diese sollten allerdings in einem offenen Stakeholderdialog ausgearbeitet und sehr genau hinsichtlich ihrer Wirksamkeit und Grundrechtskonformität evaluiert werden.</p>
                     </article>
                 </div>
-
-                <article class="indent paper shadow" id="privacy">
-                    <h2>Datenschutzerklärung</h2>
-                    <p>Die persönlichen Daten der Unterzeichner_innen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt">Datenschutzbestimmungen</a>.</p>
-                    <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
-                    <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
-                </article>
-
-                <article class="glossar indent paper shadow">
-                    <h2>Glossar</h2>
-                    <dl> <dt><abbr>PStSG</abbr></dt>
-                        <dd>Polizeiliches Staatsschutzgesetz</dd> <dt><abbr>SPG</abbr></dt>
-                        <dd>Sicherheitspolizeigesetz</dd> <dt><abbr>StPO</abbr></dt>
-                        <dd>Strafprozessordnung</dd> <dt><abbr>BVT</abbr></dt>
-                        <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</dd> <dt><abbr>LV</abbr></dt>
-                        <dd>Landesämter für Verfassungsschutz</dd>
-                    </dl>
-                </article>
-
-                <article class="glossar indent paper shadow">
-                    <h2 id="dokumente">Dokumente</h2>
-                    <dl>
-                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/PSTSG_Kritik_short.pdf">Kritik Kurzfassung</a> (2 Seiten, 110 KB)</dd>
-                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/akvorrat_print-handout-PStSG.pdf">Handout zum ersten Entwurf des Gesetzes</a> (4 Seiten, 110 KB)</dd>
-                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/AKVorrat_PStSG_Stellungnahme_RV.pdf">Stellungnahme AKVorrat zum 2. Entwurf (Regierungsvorlage)</a> (40 Seiten, 810 KB)</dd>
-                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="https://www.akvorrat.at/sites/default/files/AKVorrat-Stellungnahme-Polizeiliches%20Staatsschutzgesetz%20-%20PStSG_Entwurf_BM%20I_Stellungnahme.pdf">Stellungnahme AKVorrat zum 1. Gesetzesentwurf</a> (79 Seiten, 3,63 MB)</dd>
-                        <dt><img src="./img/mouse-30_30.png" alt="Link" /></dt>
-                        <dd><a href="http://www.parlament.gv.at/PAKT/VHG/XXV/ME/ME_00110/index.shtml">alle Stellungnahmen zum 1. Gesetzesentwurf</a> (39 Stellungnahmen, Parlamentshomepage)</dd>
-                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="./docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Änderungsanträge der Regierungsparteien für den Innenausschuss am 1. Dezember 2015</a> (32 Seiten, 658 KB)</dd>
-                        <dt></dt>
-                        <dd><a href="./img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)</dd>
-                    </dl>
-                </article>
-
+                
+                <form class="form-inline center indent">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#privacyModal">Datenschutzerkl&auml;rung</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#glossaryModal">Glossar</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#downloadsModal">Downloads</button>
+                    </div>
+                </form>
+                
                 <div class="center"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse</a></div>
             </section>
             <!--END main column-->
@@ -368,10 +338,95 @@
                 <div class="col-md-3"><a href="http://www.informationsfreiheit.at/"><img src="./img/ForumInformationsfreiheit.jpg" alt="Forum Informationsfreiheit Logo" /></a></div>
             </div>
         </div>
-        <p><a href="https://akvorrat.at/kontakt">Kontaktieren Sie uns, wenn Ihre Organisation staatsschutz.at auch unterstützen möchte.</a></p>
+        <p><a href="https://akvorrat.at/kontakt">Kontaktieren Sie uns, wenn Ihre Organisation staatsschutz.at auch unterst&uuml;tzen m&ouml;chte.</a></p>
     </footer>
     <!--END body footer-->
 
+    <!--START privacyModal-->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="privacyModalLabel">Datenschutzerkl&auml;rung</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Die persönlichen Daten der Unterzeichner und Unterzeichnerinnen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt#datenschutz">Datenschutzbestimmungen</a>.</p>
+                    <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
+                    <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END privacyModal-->
+    
+    <!--START glossaryModal-->
+    <div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="glossaryModalLabel">Glossar</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><abbr>PStSG</abbr></dt>
+                        <dd>Polizeiliches Staatsschutzgesetz</dd>
+                        <dt><abbr>SPG</abbr></dt>
+                        <dd>Sicherheitspolizeigesetz</dd>
+                        <dt><abbr>StPO</abbr></dt>
+                        <dd>Strafprozessordnung</dd>
+                        <dt><abbr>BVT</abbr></dt>
+                        <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</dd>
+                        <dt><abbr>LV</abbr></dt>
+                        <dd>Landesämter für Verfassungsschutz</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END glossaryModal-->
+    
+    <!--START downloadsModal-->
+    <div class="modal fade" id="downloadsModal" tabindex="-1" role="dialog" aria-labelledby="downloadsModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="downloadsModalLabel">Downloads</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/PSTSG_Kritik_short.pdf">Kritik Kurzfassung</a> (2 Seiten, 110 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/akvorrat_print-handout-PStSG.pdf">Handout zum ersten Entwurf des Gesetzes</a> (4 Seiten, 110 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/AKVorrat_PStSG_Stellungnahme_RV.pdf">Stellungnahme AKVorrat zum 2. Entwurf (Regierungsvorlage)</a> (40 Seiten, 810 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="https://www.akvorrat.at/sites/default/files/AKVorrat-Stellungnahme-Polizeiliches%20Staatsschutzgesetz%20-%20PStSG_Entwurf_BM%20I_Stellungnahme.pdf">Stellungnahme AKVorrat zum 1. Gesetzesentwurf</a> (79 Seiten, 3,63 MB)</dd>
+                        <dt><img src="./img/mouse-30_30.png" alt="Link" /></dt>
+                        <dd><a href="http://www.parlament.gv.at/PAKT/VHG/XXV/ME/ME_00110/index.shtml">alle Stellungnahmen zum 1. Gesetzesentwurf</a> (39 Stellungnahmen, Parlamentshomepage)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="./docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Änderungsanträge der Regierungsparteien für den Innenausschuss am 1. Dezember 2015</a> (32 Seiten, 658 KB)</dd>
+                        <dt></dt>
+                        <dd><a href="./img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END downloadsModal-->
+    
     <!-- Piwik -->
     <script type="text/javascript">
         var _paq = _paq || [];

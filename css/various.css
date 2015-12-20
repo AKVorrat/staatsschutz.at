@@ -136,40 +136,25 @@ noscript a {
     font-size: 1.2em;
 }
 
-.glossar dl {
+.modal dl {
     width: 45em;
     margin: 1em auto;
+    overflow: auto;
 }
 
 /* Float-contain */
 
-.glossar:after {
-    content: '.';
+.modal dt {
     display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-.glossar {
-    display: inline-block;
-}
-
-.glossar {
-    display: block;
-}
-
-.glossar dt {
-    display: block;
-    width: 5em;
+    width: 10%;
     clear: left;
     float: left;
     margin: 0 0 0.75em;
 }
 
-.glossar dd {
+.modal dd {
     display: block;
-    width: 40em;
+    width: 80%;
     float: left;
     margin: 0 0 0.75em;
 }
@@ -190,14 +175,6 @@ noscript a {
 
 #wrapper-zeitplan {
     background-color: #013c4e
-}
-
-.form-required {
-    color: #f00;
-}
-
-.demand_short {
-    font-weight: bold;
 }
 
 .sectionimage {
