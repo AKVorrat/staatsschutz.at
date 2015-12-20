@@ -1,6 +1,6 @@
 .sidebar {
     margin: 2em auto;
-    background: #C4C3C3;
+    background: #F8F9FA;
 }
 
 .sidetitle {
@@ -10,7 +10,6 @@
     font-size: 1.6em;
     font-weight: bold;
     background: #003b4c;
-    border-radius: 0.4em 0.4em 0 0;
 }
 
 .sidetext {
@@ -82,7 +81,6 @@ article ol {
 }
 
 .shadow {
-    border-radius: 0.4em;
     box-shadow: 0 0 0.3em 0.1em #E4E5E6;
 }
 
