@@ -248,8 +248,7 @@ label {
 }
 
 input.form-submit,
-a.button,
-#spenden-button {
+a.button {
     color: #fff;
     background: #013c4e;
     border: 1px solid #A4D939;

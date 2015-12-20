@@ -109,6 +109,11 @@ $(function () {
 });
 
 $(function () {
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
+})
+
+$(function () {
   try {
     var twords = _translate_twords[((window.location.pathname + '').match(/\/(\w\w)\/?$/)||[])[1]||'de'];
     var e = $('.countdown'); 
