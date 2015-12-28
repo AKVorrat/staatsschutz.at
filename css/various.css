@@ -16,41 +16,6 @@
     padding: 1em;
 }
 
-#moreactionarea {
-    max-width: 15em;
-    margin: 18px 9px 0px 1em;
-    padding: 10px;
-    background: #C6C6C6;
-    border-radius: 5px;
-    float: right;
-}
-
-@media (max-width: 900px) {
-    .container {
-        max-width: 100%;
-    }
-
-    #actionarea {
-        max-width: 100%;
-        float: none;
-    }
-
-}
-
-/*
-@font-face {
-	font-family: 'fira_sansregular';
-		src: url('font/firasans-regular-webfont.eot');
-		src: url('font/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('font/firasans-regular-webfont.woff2') format('woff2'),
-		url('font/firasans-regular-webfont.woff') format('woff'),
-		url('font/firasans-regular-webfont.ttf') format('truetype'),
-		url('font/firasans-regular-webfont.svg#fira_sansregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-*/
-
 article ul,
 article ol {
     margin-left: 1em;
@@ -84,27 +49,7 @@ article ol {
     box-shadow: 0 0 0.3em 0.1em #E4E5E6;
 }
 
-#actionarea h2 {
-    font-size: 1.3em;
-    text-align: left;
-    margin: 1.3em 0 .9em 0;
-}
-
-#infoarea {
-    overflow: hidden;
-}
-
-/*** Page Layout ***/
-
-.actions {
-    margin: 0;
-}
-
-.actions ul {
-    list-style-type: none;
-}
-
-.actions li {} .shareicons {
+.shareicons ul {
     list-style-type: none;
 }
 
@@ -129,8 +74,6 @@ article ol {
     margin: 1em auto;
     overflow: auto;
 }
-
-/* Float-contain */
 
 .modal dt {
     display: block;
