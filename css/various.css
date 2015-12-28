@@ -170,3 +170,8 @@ article ol {
     padding: 2em 0 0;
     margin-bottom: 2em;
 }
+
+.form-required {
+    color: #f00;
+    padding-left: 0.5ex;
+}
