@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./css/forms.css" />
     <link rel="icon" href="./favicon.ico" />
     <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/count.js"></script>
     <script type="text/javascript" src="./js/count_paper.js"></script>
     <script type="text/javascript" src="./js/staatsschutz.js"></script>
@@ -71,84 +72,79 @@
             <!--START side column-->
             <section class="col-md-4 col-md-push-8">
                 <div class="sidebar shadow">
-                    <div class="sidetitle">Unterschreiben</div>
+                    <div class="sidetitle">Unterzeichnen</div>
                     <div class="sidetext">
-                        <p>Mit einer Unterschrift stimmst Du den <a href="#fivedemands">5&nbsp;Forderungen</a> dieser Petition zu und hilfst, ihr in der Politik mehr Gewicht zu geben.</p>
-                            <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
-                            <div class="form-item webform-component webform-component-textfield webform-component--vorname webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-vorname">Vorname <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-vorname" name="submitted[vorname]" value="" size="40" maxlength="150" class="form-text required"> </div>
-                            <div class="form-item webform-component webform-component-textfield webform-component--nachname webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-nachname">Nachname <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" placeholder="(Pflichtfeld)" type="text" id="edit-submitted-nachname" name="submitted[nachname]" value="" size="40" maxlength="128" class="form-text required"> </div>
-                            <div class="form-item webform-component webform-component-email webform-component--e-mail webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-e-mail">E-Mail <span class="form-required" title="This field is required.">*</span></label>
-                                <input required="required" class="email form-text form-email required" placeholder="(zur Bestätigung der Unterschrift)" type="email" id="edit-submitted-e-mail" name="submitted[e_mail]" size="40"> </div>
-                            <div class="form-item webform-component webform-component-textfield webform-component--plz webform-container-inline">
-                                <div class="form-item webform-component webform-component-select webform-component--nationalitat webform-container-inline">
-                                    <label class="signformLabel" for="edit-submitted-nationalitat">Nationalität </label>
-                                    <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-select">
-                                        <option value="" selected="selected">Land auswählen</option>
-                                        <option value="at">&#214;sterreich</option>
-                                        <option value="be">Belgien</option>
-                                        <option value="bg">Bulgarien</option>
-                                        <option value="hr">Kroatien</option>
-                                        <option value="cy">Zypern</option>
-                                        <option value="cz">TschechischeRepublik</option>
-                                        <option value="dk">D&#228;nemark</option>
-                                        <option value="ee">Estland</option>
-                                        <option value="fi">Finnland</option>
-                                        <option value="fr">Frankreich</option>
-                                        <option value="de">Deutschland</option>
-                                        <option value="gr">Griechenland</option>
-                                        <option value="hu">Ungarn</option>
-                                        <option value="it">Italien</option>
-                                        <option value="ie">Irland</option>
-                                        <option value="lv">Lettland</option>
-                                        <option value="lt">Litauen</option>
-                                        <option value="lu">Luxemburg</option>
-                                        <option value="mt">Malta</option>
-                                        <option value="nl">Niederlande</option>
-                                        <option value="pl">Polen</option>
-                                        <option value="pt">Portugal</option>
-                                        <option value="ro">Rumänien</option>
-                                        <option value="sk">Slowakei</option>
-                                        <option value="si">Slowenien</option>
-                                        <option value="es">Spanien</option>
-                                        <option value="se">Schweden</option>
-                                        <option value="gb">Gro&#223;britannien</option>
-                                    </select>
-                                </div>
-                                <label class="signformLabel" for="edit-submitted-plz">PLZ </label>
-                                <input type="text" id="edit-submitted-plz" name="submitted[plz]" value="" maxlength="10" class="form-text"> </div>
-                            <div class="form-item webform-component webform-component-number webform-component--alter webform-container-inline">
-                                <label class="signformLabel" for="edit-submitted-alter">Alter </label>
-                                <input type="text" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" class="form-text form-number"> </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-checkboxes webform-component--newsletter webform-container-inline">
-                                <div id="edit-submitted-newsletter" class="form-checkboxes">
-                                    <div class="form-item form-type-checkbox form-item-submitted-newsletter-1">
-                                        <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" class="form-checkbox">
-                                        <label class="option" for="edit-submitted-newsletter-1">Ich will den Newsletter des AKVorrat erhalten</label>
-                                    </div>
-                                </div>
+                        <p>Mit einer Unterschrift stimmst Du den <a href="#fivedemands">5&nbsp;Forderungen</a> dieser Petition zu und hilfst, ihr in der Politik mehr Gewicht zu geben. Bitte beachte außerdem unsere <a href="#privacyns" data-toggle="modal" data-target="#privacyModal">Datenschutzerklärung</a>.</p>
+                        
+                        <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
+                            <div class="form-group">
+                                <label for="edit-submitted-vorname">Vorname</label>
+                                <input type="text" class="form-control" id="edit-submitted-vorname" name="submitted[vorname]" placeholder="Vorname" required="required">
                             </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-checkboxes webform-component--ispublic webform-container-inline">
-                                <div id="edit-submitted-ispublic" class="form-checkboxes">
-                                    <div class="form-item form-type-checkbox form-item-submitted-ispublic-1">
-                                        <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" class="form-checkbox">
-                                        <label class="option" for="edit-submitted-ispublic-1">Ich will mit meiner Unterschrift öffentlich sichtbar sein</label>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nachname">Nachname</label>
+                                <input type="text" class="form-control" id="edit-submitted-nachname" name="submitted[nachname]" placeholder="Nachname" required="required">
                             </div>
-                            <br/>
-                            <div class="form-item webform-component webform-component-textarea webform-component--deine-botschaft webform-container-inline">
-                                <label for="edit-submitted-deine-botschaft">Deine Botschaft </label>
-                                <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
-                                    <textarea id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" cols="60" rows="5" class="form-textarea"></textarea>
-                                    <div class="grippie"></div>
-                                </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-e-mail">E-Mail</label>
+                                <input type="email" class="form-control" id="edit-submitted-e-mail" name="submitted[e_mail]" placeholder="E-Mail" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nationalitat">Nationalität</label>
+                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control">
+                                    <option value="at" selected="selected">&#214;sterreich</option>
+                                    <option value="be">Belgien</option>
+                                    <option value="bg">Bulgarien</option>
+                                    <option value="hr">Kroatien</option>
+                                    <option value="cy">Zypern</option>
+                                    <option value="cz">Tschechische&nbsp;Republik</option>
+                                    <option value="dk">D&#228;nemark</option>
+                                    <option value="ee">Estland</option>
+                                    <option value="fi">Finnland</option>
+                                    <option value="fr">Frankreich</option>
+                                    <option value="de">Deutschland</option>
+                                    <option value="gr">Griechenland</option>
+                                    <option value="hu">Ungarn</option>
+                                    <option value="it">Italien</option>
+                                    <option value="ie">Irland</option>
+                                    <option value="lv">Lettland</option>
+                                    <option value="lt">Litauen</option>
+                                    <option value="lu">Luxemburg</option>
+                                    <option value="mt">Malta</option>
+                                    <option value="nl">Niederlande</option>
+                                    <option value="pl">Polen</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="ro">Rumänien</option>
+                                    <option value="sk">Slowakei</option>
+                                    <option value="si">Slowenien</option>
+                                    <option value="es">Spanien</option>
+                                    <option value="se">Schweden</option>
+                                    <option value="gb">Gro&#223;britannien</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-plz">Postleitzahl</label>
+                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Postleitzahl">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">Alter</label>
+                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Alter">
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-newsletter-1">
+                                <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" />
+                                Ich will den Newsletter des AKVorrat erhalten
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-ispublic-1">
+                                <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" />
+                                Ich will mit meiner Unterschrift öffentlich sichtbar sein
+                              </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-deine-botschaft">Deine Botschaft</label>
+                                <textarea class="form-control" id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" rows="3" placeholder="Deine Botschaft"></textarea>
                             </div>
                             <input type="hidden" name="details[sid]">
                             <input type="hidden" name="details[page_num]" value="1">
@@ -156,19 +152,15 @@
                             <input type="hidden" name="details[finished]" value="0">
                             <input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
                             <input type="hidden" name="form_id" value="webform_client_form_108">
-                            <div style="display: table; width: 100%">
-                                <div class="form-actions" style="display: table-cell"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Unterzeichnen"></div>
-                                <div style="display: table-cell; text-align: right"><a href="#privacy">Datenschutz</a></div>
-                            </div>
-                        </form>
-                        <h3>Auf Papier unterschreiben</h3>
-                        <p><a href="docs/staatsschutz-unterschriftenliste.pdf" target="_blank">Druckvorlage herunterladen</a>, ausdrucken, Unterschriften sammeln und <a href="https://akvorrat.at/kontakt">an uns zurück schicken</a></p>
+                            <button type="submit" class="btn btn-default btn-lg btn-block greenbutton" name="op" value="Unterzeichnen">Unterzeichnen</button>
+                        </form>                   
                     </div>
                 </div>
-
+                
                 <div class="sidebar shadow">
                     <div class="sidetitle">Weitersagen</div>
                     <div class="sidetext">
+                        <p>Je mehr Menschen unterschreiben, umso besser hört uns die Politik. Erzähle deinen Freunden und Verwandten von diesem Gesetz, denn sie sind genauso betroffen wie du es bist.</p>
                         <div class="center">
                             <ul class="shareicons">
                                 <li><a href="mailto:?subject=%C3%96sterreich%20bekommt%20einen%20neuen%20Geheimdienst.%20Tun%20wir%20etwas%20dagegen%21&amp;body=In%20%C3%96sterreich%20wird%20gerade%20ein%20Gesetz%20verabschiedet%2C%20das%20einen%20neuen%20Geheimdienst%20etabliert.%0A%0ADieser%20neue%20Staatsschutz%20kann%20ohne%20konkreten%20Verdacht%2C%20ohne%20Richter%20und%20Staatsanwalt%20jede%20Person%20in%20%C3%96sterreich%20%C3%BCberwachen.%20Zu%20den%20Kritikern%20des%20Gesetzes%20geh%C3%B6ren%20der%20AKVorrat%2C%20Amnesty%20International%2C%20die%20Richtervereinigung%20und%20viele%20andere.%20%0A%0AIm%20Juni%20wurde%20im%20Ministerrat%20die%20Regierungsvorlage%20beschlossen%2C%20der%20Gro%C3%9Fteil%20unserer%20Kritik%20am%20Gesetz%20wurde%20nicht%20aufgenommen%20(siehe%20http%3A%2F%2Fakvorrat.at%2Fsites%2Fdefault%2Ffiles%2FAKVorrat_PStSG_Stellungnahme_RV.pdf)%0A%0AUrspr%C3%BCnglich%20sollte%20das%20Gesetz%20noch%20vor%20der%20Sommerpause%20beschlossen%20werden.%20Aufgrund%20des%20massiven%20Protests%20der%20Zivilgesellschaft%20konnten%20wir%20diesen%20Termin%20aber%20bereits%20verhindern!%0A%0AJedoch%20wird%20das%20Gesetz%20schon%20im%20Herbst%20weiter%20verhandelt%20und%20soll%20laut%20den%20Pl%C3%A4nen%20der%20Regierung%20bereits%20am%201.%20Juli%202016%20in%20Kraft%20treten.%20%0A%0AHilf%20mit%2C%20etwas%20dagegen%20zu%20tun%2C%20unterschreibe%20die%20Petition%20auf%20https%3A%2F%2Fwww.staatsschutz.at%20und%20leite%20diese%20E-Mail%20weiter!"><img src="./img/email.png" alt="E-Mail" /></a></li>
@@ -180,20 +172,30 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="sidebar shadow">
-                    <div class="sidetitle">Informiert bleiben</div>
+                    <div class="sidetitle">Mitwirken</div>
                     <div class="sidetext">
-                        <form method="post" action="https://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
-                            <input type="email" name="email" class="inputText" size="19" placeholder="E-Mail">
-                            <input type="submit" value="Newsletter abonnieren" class="inputSubmit webform-submit">
-                            <br /> 
+                        <p>Wenn Du unsere <a href="#fivedemands">5&nbsp;Forderungen</a> noch mehr stärken möchtest, kannst du aktiv werden und Unterschriften sammeln. Dazu einfach die <a href="./docs/staatsschutz-unterschriftenliste.pdf" target="_blank">Druckvorlage</a> ausdrucken, Mitmenschen aufklären, um deren Unterschriften bitten und deine Liste an uns <a href=# data-toggle=tooltip title="Leider brauchen wir die Originaldokumente. Wenn Du keinen Brief senden möchtest, kannst Du auch gerne persönlich vorbeikommen. Die Adresse lautet Neubaugasse 12-14, 1070 Wien">zurücksenden</a>.</p>
+                        <p>Auch mit einer Spende kannst Du einen erheblichen Beitrag leisten. Neben der Erhaltung der Webpräsenz werden damit unsere <a href=# data-toggle=tooltip title="Sticker und Flyer sind kostenlos beim Arbeitskreis Vorratsdaten Österreich erhältlich.">Werbemittel</a> und Aktionen finanziert.</p>
+                        <form action="https://spenden.akvorrat.at/">
+                            <button type="submit" class="btn btn-default btn-block">Jetzt spenden!</button>
                         </form>
                     </div>
                 </div>
 
-                <div class="center">
-                    <a href="https://spenden.akvorrat.at/" id="spenden-button">Jetzt spenden!</a>
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Informiert bleiben</div>
+                    <div class="sidetext">
+                        <p>Der Arbeitskreis Vorratsdaten Österreich hält Interessierte immer auf dem neuesten Stand. Wenn Du über Neuigkeiten zu digitalen Bürgerrechten bescheid wissen möchtest, kannst Du dich hier für den Newsletter eintragen.</p>            
+                        <form method="post" action="https://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">E-Mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="E-Mail" required="required">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Abonnieren</button>
+                        </form>
+                    </div>
                 </div>
             </section>
             <!--END side column-->
@@ -242,11 +244,11 @@
                     <h2>Unsere 5 Forderungen</h2>
                     <p>Die Unterzeichner dieser Petition fordern von der Österreichischen Regierung und dem Nationalrat folgende fünf Punkte anlässlich des geplanten Staatsschutzgesetzes.</p>
                     <ol>
-                        <li><span class="demand_short">Faktenbasierte Sicherheitspolitik</span> &ndash; Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnismäßig ist.</li>
-                        <li><span class="demand_short">Klare Trennung von Polizei und Nachrichtendiensten</span> &ndash; Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
-                        <li><span class="demand_short">Keine Repression gegenüber Zivilgesellschaft, Journalisten und "Whistleblowern"</span> &ndash; Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
-                        <li><span class="demand_short">Starker Rechtsschutz, kein "pre-crime"</span> &ndash; Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden.</li>
-                        <li><span class="demand_short">Keine bezahlten Spitzel</span> &ndash; Die Praxis im In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
+                        <li><strong>Faktenbasierte Sicherheitspolitik</strong> &ndash; Das Staatsschutzgesetz muss zurück an den Start und nach einer umfassenden Evaluierung der Überwachungssituation, der Ermittlungsstatistiken und einer faktenbasierten Erhebung des Sicherheitsbedarfs neu ausgerichtet werden. Bevor die Bundesregierung Grundrechte einschränken darf, muss sie nachweisen, dass ihr Vorhaben notwendig und verhältnismäßig ist.</li>
+                        <li><strong>Klare Trennung von Polizei und Nachrichtendiensten</strong> &ndash; Der Staatsschutz darf nicht gleichzeitig Polizei sein und Überwachungsbefugnisse wie ein Geheimdienst haben. Es braucht eindeutige Zuständigkeiten. </li>
+                        <li><strong>Keine Repression gegenüber Zivilgesellschaft, Journalisten und "Whistleblowern"</strong> &ndash; Die Aufgabe des Staatsschutzes darf sich nicht auf "Wald- und Wiesen"-Delikte erstrecken. Der "verfassungsgefährdende Angriff" muss auf wirklich schwere Straftaten reduziert werden und darf nicht allgemeine Grundrechte wie das Demonstrationsrecht oder die Pressefreiheit einschränken.</li>
+                        <li><strong>Starker Rechtsschutz, kein "pre-crime"</strong> &ndash; Für jede Überwachungsmaßnahme müssen konkrete Verdachtsmomente und die Verhältnismäßigkeit des Eingriffs schriftlich begründet und richterlich genehmigt werden. Die parlamentarische Kontrolle muss ausgebaut und die Transparenz über die Tätigkeiten der Sicherheitsbehörden muss verstärkt werden.</li>
+                        <li><strong>Keine bezahlten Spitzel</strong> &ndash; Die Praxis im In- und Ausland zeigt, dass der Einsatz von "Vertrauenspersonen" im rechtsstaatlichen Verfahren oft zu Schwierigkeiten – und bei bezahlten Spitzeln nicht selten zu skandalösen Auswüchsen – führt. Österreich sollte aus den Erfahrungen anderer Länder lernen, anstatt deren Fehler zu wiederholen. Auch der Einsatz unbezahlter "V-Leute" (Spitzel) sollte im Einklang mit der Strafprozessordnung sauber geregelt werden.</li>
                     </ol>
                 </article>
 
@@ -302,39 +304,25 @@
                         <p>Mit einer schwammigen Definition des <q>verfassungsgefährdenden Angriffs</q> schafft das Gesetz die Grundlage für eine überschießende Überwachung unbescholtener Bürgerinnen und Bürger. Obwohl derart schwerwiegende Eingriffe in die Privatsphäre sorgfältiger Kontrolle bedürfen, wurden keine effizienten Rechtsschutzmechanismen vorgesehen. Ein vorgeschobener Zweck soll offenbar alle Mittel heiligen. Der AKVorrat sieht im Gesetzesentwurf die Schaffung der Grundlage eines Inlandsgeheimdienstes und lehnt ihn daher zur Gänze ab. Gleichzeitig erkennt der AKVorrat aber an, dass Maßnahmen zur Terrorbekämpfung nötig sind. Diese sollten allerdings in einem offenen Stakeholderdialog ausgearbeitet und sehr genau hinsichtlich ihrer Wirksamkeit und Grundrechtskonformität evaluiert werden.</p>
                     </article>
                 </div>
-
-                <article class="indent paper shadow" id="privacy">
-                    <h2>Datenschutzerklärung</h2>
-                    <p>Die persönlichen Daten der Unterzeichner_innen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt">Datenschutzbestimmungen</a>.</p>
-                    <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
-                    <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
-                </article>
-
-                <article class="glossar indent paper shadow">
-                    <h2>Glossar</h2>
-                    <dl> <dt><abbr>PStSG</abbr></dt>
-                        <dd>Polizeiliches Staatsschutzgesetz</dd> <dt><abbr>SPG</abbr></dt>
-                        <dd>Sicherheitspolizeigesetz</dd> <dt><abbr>StPO</abbr></dt>
-                        <dd>Strafprozessordnung</dd> <dt><abbr>BVT</abbr></dt>
-                        <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</dd> <dt><abbr>LV</abbr></dt>
-                        <dd>Landesämter für Verfassungsschutz</dd>
-                    </dl>
-                </article>
-
-                <article class="glossar indent paper shadow">
-                    <h2 id="dokumente">Dokumente</h2>
-                    <dl> <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/PSTSG_Kritik_short.pdf">Kritik Kurzfassung</a> (2 Seiten, 110 KB)</dd> <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/akvorrat_print-handout-PStSG.pdf">Handout zum ersten Entwurf des Gesetzes</a> (4 Seiten, 110 KB)</dd> <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="http://akvorrat.at/sites/default/files/AKVorrat_PStSG_Stellungnahme_RV.pdf">Stellungnahme AKVorrat zum 2. Entwurf (Regierungsvorlage)</a> (40 Seiten, 810 KB)</dd> <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="https://www.akvorrat.at/sites/default/files/AKVorrat-Stellungnahme-Polizeiliches%20Staatsschutzgesetz%20-%20PStSG_Entwurf_BM%20I_Stellungnahme.pdf">Stellungnahme AKVorrat zum 1. Gesetzesentwurf</a> (79 Seiten, 3,63 MB)</dd> <dt><img src="./img/mouse-30_30.png" alt="Link" /></dt>
-                        <dd><a href="http://www.parlament.gv.at/PAKT/VHG/XXV/ME/ME_00110/index.shtml">alle Stellungnahmen zum 1. Gesetzesentwurf</a> (39 Stellungnahmen, Parlamentshomepage)</dd> <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
-                        <dd><a href="./docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Änderungsanträge der Regierungsparteien für den Innenausschuss am 1. Dezember 2015</a> (32 Seiten, 658 KB)</dd>
-                    </dl>
-                </article>
-
-                <div class="center"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse / Datenschutz</a> | <a href="http://staatsschutz.at/img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)
-                </div>
+                
+                <noscript>
+                    <div class="indent paper shadow" id="privacyns">
+                        <h2>Datenschutzerkl&auml;rung</h2>
+                        <p>Die persönlichen Daten der Unterzeichner und Unterzeichnerinnen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt#datenschutz">Datenschutzbestimmungen</a>.</p>
+                        <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
+                        <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
+                    </div>
+                </noscript>
+                
+                <form class="form-inline center indent">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#privacyModal">Datenschutzerkl&auml;rung</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#glossaryModal">Glossar</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#downloadsModal">Downloads</button>
+                    </div>
+                </form>
+                
+                <div class="center"><a href="https://akvorrat.at/kontakt">Kontakt / Impressum / Presse</a></div>
             </section>
             <!--END main column-->
 
@@ -359,10 +347,95 @@
                 <div class="col-md-3"><a href="http://www.informationsfreiheit.at/"><img src="./img/ForumInformationsfreiheit.jpg" alt="Forum Informationsfreiheit Logo" /></a></div>
             </div>
         </div>
-        <p><a href="https://akvorrat.at/kontakt">Kontaktieren Sie uns, wenn Ihre Organisation staatsschutz.at auch unterstützen möchte.</a></p>
+        <p><a href="https://akvorrat.at/kontakt">Kontaktieren Sie uns, wenn Ihre Organisation staatsschutz.at auch unterst&uuml;tzen m&ouml;chte.</a></p>
     </footer>
     <!--END body footer-->
 
+    <!--START privacyModal-->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="privacyModalLabel">Datenschutzerkl&auml;rung</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Die persönlichen Daten der Unterzeichner und Unterzeichnerinnen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt#datenschutz">Datenschutzbestimmungen</a>.</p>
+                    <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
+                    <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END privacyModal-->
+    
+    <!--START glossaryModal-->
+    <div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="glossaryModalLabel">Glossar</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><abbr>PStSG</abbr></dt>
+                        <dd>Polizeiliches Staatsschutzgesetz</dd>
+                        <dt><abbr>SPG</abbr></dt>
+                        <dd>Sicherheitspolizeigesetz</dd>
+                        <dt><abbr>StPO</abbr></dt>
+                        <dd>Strafprozessordnung</dd>
+                        <dt><abbr>BVT</abbr></dt>
+                        <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung</dd>
+                        <dt><abbr>LV</abbr></dt>
+                        <dd>Landesämter für Verfassungsschutz</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END glossaryModal-->
+    
+    <!--START downloadsModal-->
+    <div class="modal fade" id="downloadsModal" tabindex="-1" role="dialog" aria-labelledby="downloadsModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Schließen"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="downloadsModalLabel">Downloads</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/PSTSG_Kritik_short.pdf">Kritik Kurzfassung</a> (2 Seiten, 110 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/akvorrat_print-handout-PStSG.pdf">Handout zum ersten Entwurf des Gesetzes</a> (4 Seiten, 110 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/AKVorrat_PStSG_Stellungnahme_RV.pdf">Stellungnahme AKVorrat zum 2. Entwurf (Regierungsvorlage)</a> (40 Seiten, 810 KB)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="https://www.akvorrat.at/sites/default/files/AKVorrat-Stellungnahme-Polizeiliches%20Staatsschutzgesetz%20-%20PStSG_Entwurf_BM%20I_Stellungnahme.pdf">Stellungnahme AKVorrat zum 1. Gesetzesentwurf</a> (79 Seiten, 3,63 MB)</dd>
+                        <dt><img src="./img/mouse-30_30.png" alt="Link" /></dt>
+                        <dd><a href="http://www.parlament.gv.at/PAKT/VHG/XXV/ME/ME_00110/index.shtml">alle Stellungnahmen zum 1. Gesetzesentwurf</a> (39 Stellungnahmen, Parlamentshomepage)</dd>
+                        <dt><img src="./img/Adobe_PDF_file_icon_24x24.png" alt="PDF" /></dt>
+                        <dd><a href="./docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Änderungsanträge der Regierungsparteien für den Innenausschuss am 1. Dezember 2015</a> (32 Seiten, 658 KB)</dd>
+                        <dt></dt>
+                        <dd><a href="./img/sharables.zip">Banner zum Teilen</a> (ZIP, 931 KB)</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END downloadsModal-->
+    
     <!-- Piwik -->
     <script type="text/javascript">
         var _paq = _paq || [];
