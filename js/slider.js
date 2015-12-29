@@ -27,8 +27,9 @@ function htmlColToArray(xml, tagName) {
 }
 
 function findElements() {
-    $slideAuthor = $("#slideauthor");
-    $slideText = $("#slidetext");
+    $slideAuthor = $("#slideAuthor");
+    $slideText = $("#slideText");
+    $fixHeight = $("#fixHeight");
     $slideContent = $("#slideContent");
     $backwardsSlide = $("#slideleft");
     $forwardSlide = $("#slideright");
@@ -36,8 +37,8 @@ function findElements() {
 }
 
 function adaptSlideTextHeight() {
-    var sHeight = $slideText[0].scrollHeight;
-    $slideText.css('height', sHeight + 'px');
+    var scrollHeight = $slideText.prop("scrollHeight");
+    $fixHeight.css('height', scrollHeight + 'px');
 }
 
 function setSlideScreen(index) {
@@ -142,7 +143,7 @@ $(document).ready(function(){
         $fadeout.css('opacity', 0);
     }, function () {
         hovering = false;
-        $slideText.css('height', '2.3em');
+        $fixHeight.css('height', '2.3em');
         $fadeout.css('opacity', 1);
     });
 }); 

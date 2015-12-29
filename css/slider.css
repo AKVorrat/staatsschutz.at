@@ -42,7 +42,6 @@
     margin: 0;
     font-size: inherit;
     border-left: none;
-    transition: height .6s ease;
 }
 
 .slider blockquote:before {
@@ -55,6 +54,15 @@
     content: '«';
     color: #8ebf2a;
     font-weight: bold;
+}
+
+#fixHeight {
+    transition: height .6s ease;
+    height: 2.3em;
+}
+
+#slideText {
+    min-height: 2.3em;
 }
 
 #fadeout {
