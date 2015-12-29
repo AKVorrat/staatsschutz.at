@@ -21,28 +21,28 @@ function htmlColToArray(xml, tagName) {
     xmlDoc = xml.responseXML;
     x = xmlDoc.getElementsByTagName(tagName);
     for (i = 0; i < x.length; i++) {
-        nodeArray = nodeArray.concat([$("<div/>").text(x[i].childNodes[0].nodeValue).html()]);
+		nodeArray.push(x[i].textContent);
     }
     return nodeArray;
 }
 
 function findElements() {
-    slideAuthor = document.getElementById("slideauthor");
-    slideText = document.getElementById("slidetext");
-    slideContent = document.getElementById("slideContent");
-    backwardsSlide = document.getElementById("slideleft");
-    forwardSlide = document.getElementById("slideright");
-    quoteFadeout = document.getElementById("quoteFadeout");
+    $slideAuthor = $("#slideauthor");
+    $slideText = $("#slidetext");
+    $slideContent = $("#slideContent");
+    $backwardsSlide = $("#slideleft");
+    $forwardSlide = $("#slideright");
+    $fadeout = $("#fadeout");
 }
 
 function adaptSlideTextHeight() {
-    var sHeight = $('#slidetext')[0].scrollHeight;
-    $('#slidetext').css('height', sHeight + 'px');
+    var sHeight = $slideText[0].scrollHeight;
+    $slideText.css('height', sHeight + 'px');
 }
 
 function setSlideScreen(index) {
-    slideAuthor.innerHTML = firstnames[index] + " " + lastnames[index] + ", " + states[index];
-    slideText.innerHTML = messages[index];
+    $slideAuthor.html(firstnames[index] + " " + lastnames[index] + ", " + states[index]);
+    $slideText.html(messages[index]);
     if (hovering)
         adaptSlideTextHeight();
 }
@@ -61,7 +61,7 @@ function loadXML() {
             getElements(xhttp);
             if(!loaded) {
                 loaded = true;
-                forwardSlide.classList.remove("slideUnselectable");
+                $forwardSlide.removeClass("slideUnselectable");
                 setTimeout(autoSlide, timeout);
             }
         }
@@ -77,9 +77,9 @@ function slideForwards() {
     blocked = true;
     
     if (current == -1) {
-        backwardsSlide.classList.add("slideUnselectable");
+        $backwardsSlide.addClass("slideUnselectable");
     } else if (current == 0) {
-        backwardsSlide.classList.remove("slideUnselectable");
+        $backwardsSlide.removeClass("slideUnselectable");
     } else if (current + 3 >= firstnames.length) {
         loadXML();
     }
@@ -89,10 +89,10 @@ function slideForwards() {
     
     current++;
     
-    slideContent.classList.remove("slideBackwards");
-    slideContent.classList.remove("slideForwards");
-    slideContent.offsetWidth = slideContent.offsetWidth;
-    slideContent.classList.add("slideForwards");
+    $slideContent.removeClass("slideBackwards");
+    $slideContent.removeClass("slideForwards");
+    $slideContent.offset($slideContent.offset());
+    $slideContent.addClass("slideForwards");
     
     setTimeout(function () {
         setSlideScreen(current);
@@ -110,7 +110,7 @@ function slideBackwards() {
         blocked = false;
         return;
     } else if (current <= 1) {
-        backwardsSlide.classList.add("slideUnselectable");
+        $backwardsSlide.addClass("slideUnselectable");
     }
     
     nextMessageTimeout && clearTimeout(nextMessageTimeout);
@@ -118,10 +118,10 @@ function slideBackwards() {
 
     current--;
     
-    slideContent.classList.remove("slideBackwards");
-    slideContent.classList.remove("slideForwards");
-    slideContent.offsetWidth = slideContent.offsetWidth;
-    slideContent.classList.add("slideBackwards");
+    $slideContent.removeClass("slideBackwards");
+    $slideContent.removeClass("slideForwards");
+    $slideContent.offset($slideContent.offset());
+    $slideContent.addClass("slideBackwards");
     
     setTimeout(function () {
         setSlideScreen(current);
@@ -139,11 +139,11 @@ $(document).ready(function(){
     $("#slider").hover(function () {
         hovering = true;
         adaptSlideTextHeight();
-        $('#fadeout').css('opacity', 0);
+        $fadeout.css('opacity', 0);
     }, function () {
         hovering = false;
-        $('#slidetext').css('height', '2.3em');
-        $('#fadeout').css('opacity', 1);
+        $slideText.css('height', '2.3em');
+        $fadeout.css('opacity', 1);
     });
 }); 
 
