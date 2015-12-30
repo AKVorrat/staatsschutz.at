@@ -1,3 +1,19 @@
+/*
+@font-face {
+    font-family: "FiraSans";
+    src: url("../fonts/fira-sans/FiraSans-Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src: url("../fonts/fira-sans/FiraSans-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +27,7 @@ html {
 
 body {
     color: #000;
-    font-family: fira_sansregular, sans-serif;
+    font-family: FiraSans, sans-serif;
     line-height: 1.4;
     padding-top: 0px;
     padding-bottom: 0px;

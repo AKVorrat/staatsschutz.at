@@ -7,8 +7,26 @@
 }
 
 .slideContent {
-    width: 40%;
+    width: 100%;
     margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.slideContent {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.slideContent {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.slideContent {
+		width: 40%;
+	}
 }
 
 .slider {
@@ -24,7 +42,6 @@
     margin: 0;
     font-size: inherit;
     border-left: none;
-    transition: height .6s ease;
 }
 
 .slider blockquote:before {
@@ -37,6 +54,15 @@
     content: '«';
     color: #8ebf2a;
     font-weight: bold;
+}
+
+#fixHeight {
+    transition: height .6s ease;
+    height: 2.3em;
+}
+
+#slideText {
+    min-height: 2.3em;
 }
 
 #fadeout {
