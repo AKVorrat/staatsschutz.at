@@ -7,7 +7,7 @@ var blocked = false;
 var hovering = false;
 var loaded = false;
 var xmlResource = "https://www.staatsschutz.at/appsrv/messages";
-var timeout = 15000;
+var timeout = 3000;
 
 //for testing purposes use
 //var xmlResource = "./appsrv/messages";
