@@ -14,6 +14,15 @@ var timeout = 3000;
 
 $(function () {
     findElements();
+    
+    var hash = window.location.hash.substring(1);
+    if (hash == "dokumente") {
+        $("#downloadsModal").modal("show");
+    } else if (hash == "glosar") {
+        $("#glossaryModal").modal("show");
+    } else if (hash == "privacy") {
+        $("#privacyModal").modal("show");
+    }
 })
 
 function htmlColToArray(xml, tagName) {
