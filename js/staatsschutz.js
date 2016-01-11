@@ -116,7 +116,7 @@ $(function () {
 $(function () {
   try {
     var twords = _translate_twords[((window.location.pathname + '').match(/\/(\w\w)\/?$/)||[])[1]||'de'];
-    var e = $('.countdown'); 
+    var e = $('#countdown'); 
     if (e) {
       setCountdown(e, twords);
       window.setInterval(function () {

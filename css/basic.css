@@ -33,24 +33,22 @@ body {
     padding-bottom: 0px;
 }
 
-header {
-    position: relative;
-    overflow: hidden;
-    padding: 1em 1em 2em;
-    background: #003b4c;
+header, footer {
+    padding: 1em;
     color: #fff;
     text-align: center;
+    background: #003b4c;
+    overflow: hidden;
+    position: relative;
 }
 
 header h1 {
-    font-size: 3.2em;
-    margin: 0 0 .35em;
+    margin: 0;
 }
 
 header h2 {
-    font-size: 2.4em;
     color: rgba(255, 255, 255, .5);
-    margin-bottom: .25em;
+    margin: .25em 0;
 }
 
 header a img {
@@ -59,13 +57,14 @@ header a img {
     bottom: 1.3em;
 }
 
+header #backlink {
+    position: absolute;
+    top: 1.3em;
+    left: 1.3em;
+}
+
 footer {
-    margin-top: 20px;
-    padding: 1em;
-    background: #003b4c;
-    color: #fff;
-    text-align: center;
-    overflow: hidden;
+    margin-top: 1em;
 }
 
 footer img {
@@ -77,6 +76,10 @@ footer a,
 footer a:hover,
 footer a:focus {
     color: #fff;
+}
+
+p:last-of-type {
+    margin: 0;
 }
 
 .center {
@@ -119,34 +122,8 @@ a:hover abbr {
     border: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-weight: bold;
-}
-
-h1,
-h2 {
-    text-align: center;
-    margin: 0 0 0.5em;
-}
-
-h3,
-h4 {
-    margin: 0;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.6em;
-}
-
-h3 {
-    font-size: 1.1em;
 }
 
 p {
