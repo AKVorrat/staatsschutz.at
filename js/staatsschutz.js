@@ -48,7 +48,7 @@ var _translate_twords = {
 var plenary_vote = new Date(2016, 0, 19, 13, 0);  // innenausschuss
 
 if (plenary_vote.valueOf() - (new Date()).valueOf() <= 0) 
-  plenary_vote = new Date(2016, 0, 27, 9, 0); // Plenum Jaenner 2016
+  plenary_vote = new Date(2016, 0, 27, 11, 0); // Plenum Jaenner 2016
 
 
 function setCountdown (e, twords) {
