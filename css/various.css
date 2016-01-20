@@ -32,6 +32,10 @@ article ol {
     color: #000;
 }
 
+.paper h2 {
+    text-align: center;
+}
+
 .paper img {
     display: block;
     margin: auto;
@@ -54,7 +58,7 @@ article ol {
     padding-right: 2px;
 }
 
-.specialemphasis {
+#countdown {
     max-width: 35em;
     margin: 1em auto;
     border: solid 0.2em #8ebf2a;
