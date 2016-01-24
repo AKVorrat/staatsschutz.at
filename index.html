@@ -449,53 +449,6 @@
     </div>
     <!--END downloadsModal-->
     
-    <!--START demoModal-->
-        <script type="text/javascript">
-            function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(";");
-                for(var i=0; i<ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0)==" ") c = c.substring(1);
-                    if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
-                }
-                return "";
-            }
-            $(function () {
-                var hash = window.location.hash.substring(1);
-                if (hash == "demo") {
-                    $("#demoModal").modal("show");
-                } else if (getCookie("seenDemo") == "") {
-                    $("#demoModal").modal("show");
-                    var d = new Date();
-                    d.setTime(d.getTime() + (24*60*60*1000));
-                    document.cookie = "seenDemo=true; " + "expires=" + d.toUTCString();
-                }
-            })
-        </script>
-        <div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Lichtermeer gegen Überwachung am 23. Jänner 2016</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Am 27. Jänner 2016 soll das umstrittene Polizeiliche Staatsschutzgesetz beschlossen werden. Wir wollen mit dieser Kundgebung ein starkes Zeichen setzen, dass wir nicht damit einverstanden sind, dass Österreich einen unkontrollierbaren Geheimdienst bekommt und das Bundesamt für Verfassungsschutz und Terrorismusbekämpfung mit weitreichenden Überwachungsbefugnissen ausgestattet wird.</p>
-                        <p>Kommt zum Lichtermeer gegen Überwachung und nehmt Kerzen mit, damit wir Licht ins Geheimdienstdunkel bringen!</p>
-                        <p><strong>Wann?</strong> 23. Jänner 2016, ab 18:30 Uhr</p>
-                        <p><strong>Wo?</strong> Bundesamt für Verfassungsschutz und Terrorismusbekämpfung; Kreuzung Rennweg / Landstraßer Hauptstraße, 1030 Wien</p>
-                        <p>Mehr Informationen auf <a href="https://akvorrat.at/node/141" target="_blank" >AKVorrat.at</a>.</p>
-                        <p><small>Wir verwenden Cookies, damit diese Benachrichtigung nur einmalig angezeigt wird.</small></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Schlie&szlig;en</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--END demoModal-->
-    
     <!-- Piwik -->
     <script type="text/javascript">
         var _paq = _paq || [];
