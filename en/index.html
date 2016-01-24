@@ -1,353 +1,471 @@
 <!DOCTYPE html>
 <html id="top" lang="de-AT">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-<title>Petition against the Austrian Surveillance Act</title>
-<meta name="author" content="Arbeitskreis Vorratsdastenspeicherung">
-<meta name="description" content="Austria is getting a new Surveillance Agency!">
-<meta name="keywords" content="Petition,PStSG,Staatsschutzgesetz,Überwachungsstaat">
-<meta name="robots" content="index,follow">
-
-<meta property="og:image" content=".././img/sharables/staatsschutz-1200.png" />
-<meta property="og:title" content="Petition against the Austrian Surveillance Act" />
-<meta property="og:url" content="https://www.staatsschutz.at" />
-<meta property="og:description" content="Austria is getting a new Surveillance Agency!" />
-
-<link href=".././css/bootstrap/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
-<link rel="stylesheet" type="text/css" href=".././css/layout.css">
-<link rel="shortcut icon" href=".././favicon.ico">
-<script type="text/javascript" src=".././js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src=".././js/count.js"></script>
-<script type="text/javascript" src=".././js/count_paper.js"></script>
-<script type="text/javascript" src=".././js/staatsschutz.js"></script>
-
-<script>
-  $(document).ready(function(){
-
-  // remove after nginx https redirect is activated - dirty :| but useful
-	// https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-	if (window.location.protocol != "https:" && (window.location.href || '').indexOf('localhost') === -1)
-	{
-		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-	}	
-  });
-</script>
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Petition against the Austrian Surveillance Act</title>
+    <meta name="author" content="Arbeitskreis Vorratsdaten Österreich" />
+    <meta name="description" content="Austria is getting a new Surveillance Agency!" />
+    <meta name="keywords" content="Petition,PStSG,Staatsschutzgesetz,Überwachungsstaat" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:image" content="https://staatsschutz.at/img/sharables/staatsschutz-1200.png" />
+    <meta property="og:title" content="Petition against the Austrian Surveillance Act" />
+    <meta property="og:url" content="https://www.staatsschutz.at" />
+    <meta property="og:description" content="Austria is getting a new Surveillance Agency!" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap336.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../css/various.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/progressbar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/forms.css" />
+    <link rel="icon" href="../favicon.ico" />
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/count.js"></script>
+    <script type="text/javascript" src="../js/count_paper.js"></script>
+    <script type="text/javascript" src="../js/staatsschutz.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
 </head>
+
 <body id="home">
 
-<p class="nocss"><a href="#page_content">Skip navigation</a></p>
+    <!--START body header-->
+    <header>
+        <h1>Petition against the planned State Protection Act</h1>
+        <h2>Austria is getting a new Surveillance Agency!</h2>
+        <img src="../img/staatsschutz.png" alt="Staatsschutz Logo" />
+        <form id="backlink" method="get" action="https://act.staatsschutz.at" class="hidden-xs hidden-sm">
+            <button type="submit" class="btn btn-default" aria-label="BackToPetition">
+                <span>&blacktriangleleft; Act now!</span>
+            </button>
+        </form>
+        <a href="https://www.akvorrat.at/"><img src="../img/akvorrat.png" alt="AKVorrat Logo" class="hidden-xs hidden-sm" /></a>
+    </header>
+    <!--END body header-->
 
-<header>
-	<p id="akvorrat" class="max768"><img src=".././img/akvorrat.png" alt="AKVorrat Logo"></p>
-	<h1>Petition against the planned State Protection Act
-		<br>
-		<small class="subheadline">Austria is getting a new Surveillance Agency</small>
-		<br>
-		<img src=".././img/notext.png" alt="Logo">
-	</h1>
-	<blockquote>
-		<cite> <abbr>AK</abbr>Vorrat :</cite>
-		<p>
-			The planned State Protection Act undermines our fundamental rights<br>
-			and establishes an uncontrollable authority.  
-		</p>
-	</blockquote>
-</header>
+    <!--START body slider-->
+    <div id="slider" class="slider">
+        <div id="slideleft" class="slide noSelect slideUnselectable" onclick="slideBackwards()">&lang;</div>
+        <div class="slideColumn">
+            <div id="slideContent" class="slideContent noSelect">
+                <strong id="slideAuthor">Arbeitskreis Vorratsdaten Österreich</strong>
+                <div id="fixHeight"><blockquote id="slideText">Das geplante Staatschutzgesetz untergr&#228;bt unsere Grundrechte und etabliert eine unkontrollierbare &#220;berwachungsbeh&#246;rde.</blockquote></div>
+            </div>
+            <div id="fadeout"></div>
+        </div>
+        <div id="slideright" class="slide noSelect slideUnselectable" onclick="slideForwards()">&rang;</div>
+    </div>
+    <!--END body slider-->
 
-<div class="container">
-<div class="row">
-<div id="actionarea" class="col-md-4">
-<h2 id="page_content" class="nocss">Page Content</h2>
+    <!--START body main-->
+    <main class="container">
 
-	<section class="status">
-		<h2 class="nocss">Progress on Collected Signatures</h2>
-		<div class="progress_bar">
-			<div id="progress" class="progress">
-				<noscript>
-					This element needs
-					<a href="http://enable-javascript.com/" title="How to enable JavaScript in your browser.">JavaScript</a>.
-				</noscript>
-			</div>
-			<p id="progress_description"></p>
-		</div>
-	</section>
+        <!--START progress bar-->
+        <div class="progress_bar shadow">
+            <div id="progress" class="progress_volume"></div>
+            <p id="progress_description">
+                <noscript>This element needs <a href="http://enable-javascript.com/de/" title="Wie Sie JavaScript in Ihrem Browser aktivieren">JavaScript</a> to function properly.</noscript>
+           </p>
+        </div>
+        <!--END progress bar-->
 
-	<section class="actions" id="sign">
-		<ul>
-			<li class="signpetition">
-				<h2>1. Sign <a href="#fivedemands">Petition</a></h2>
+        <div class="row">
 
-				<form class="webform-client-form webform-client-form-108" enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8"><div><div class="form-item webform-component webform-component-textfield webform-component--vorname webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-vorname">First Name <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" placeholder="(required)" type="text" id="edit-submitted-vorname" name="submitted[vorname]" value="" size="40" maxlength="150" class="form-text required">
-				</div>
-				<div class="form-item webform-component webform-component-textfield webform-component--nachname webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-nachname">Last Name <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" placeholder="(required)" type="text" id="edit-submitted-nachname" name="submitted[nachname]" value="" size="40" maxlength="128" class="form-text required">
-				</div>
-				<div class="form-item webform-component webform-component-email webform-component--e-mail webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-e-mail">E-mail <span class="form-required" title="This field is required.">*</span></label>
-				 <input required="required" class="email form-text form-email required" placeholder="(required)" type="email" id="edit-submitted-e-mail" name="submitted[e_mail]" size="40">
-				</div>
-				<!--<div class="form-item webform-component webform-component-textfield webform-component--plz webform-container-inline">
-					
+            <!--START side column-->
+            <aside class="col-md-4 col-md-push-8">
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Sign</div>
+                    <div class="sidetext">
+                        <p>By signing you approve our <a href="#fivedemands">5&nbsp;demands</a> which helps to use this petition as a strong argument. The privacy policy can be found <a href="#privacyns" data-toggle="modal" data-target="#privacyModal">here</a>.</p>
+                        <form enctype="multipart/form-data" action="https://akvorrat.at/node/108" method="post" id="webform-client-form-108" accept-charset="UTF-8">
+                            <div class="form-group">
+                                <label for="edit-submitted-vorname">Firstname<span class="form-required" title="Dieses Feld ist ein Pflichtfeld.">*</span></label>
+                                <input type="text" class="form-control" id="edit-submitted-vorname" name="submitted[vorname]" placeholder="(required)" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nachname">Lastname<span class="form-required" title="Dieses Feld ist ein Pflichtfeld.">*</span></label>
+                                <input type="text" class="form-control" id="edit-submitted-nachname" name="submitted[nachname]" placeholder="(required)" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-e-mail">E-mail<span class="form-required" title="Dieses Feld ist ein Pflichtfeld.">*</span></label>
+                                <input type="email" class="form-control" id="edit-submitted-e-mail" name="submitted[e_mail]" placeholder="(to confirm your mail address)" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-nationalitat">Citizenship</label>
+                                <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-control">
+                                    <option value="at" selected="selected">Austria</option>
+                                    <option value="be">Belgium</option>
+                                    <option value="bg">Bulgaria</option>
+                                    <option value="hr">Croatia</option>
+                                    <option value="cy">Cyprus</option>
+                                    <option value="cz">Czechia</option>
+                                    <option value="dk">Denmark</option>
+                                    <option value="ee">Estonia</option>
+                                    <option value="fi">Finland</option>
+                                    <option value="fr">France</option>
+                                    <option value="de">Germany</option>
+                                    <option value="gr">Greek</option>
+                                    <option value="hu">Hungary</option>
+                                    <option value="it">Italy</option>
+                                    <option value="ie">Ireland</option>
+                                    <option value="lv">Latvia</option>
+                                    <option value="lt">Lithuania</option>
+                                    <option value="lu">Luxembourg</option>
+                                    <option value="mt">Malta</option>
+                                    <option value="nl">Netherlands</option>
+                                    <option value="pl">Poland</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="ro">Romania</option>
+                                    <option value="sk">Slovakia</option>
+                                    <option value="si">Slovenia</option>
+                                    <option value="es">Spain</option>
+                                    <option value="se">Sweden</option>
+                                    <option value="gb">Great Britain</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-plz">Zipcode</label>
+                                <input type="text" class="form-control" id="edit-submitted-plz" name="submitted[plz]" maxlength="4" placeholder="Zipcode">
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">Age</label>
+                                <input type="text" class="form-control" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" placeholder="Age">
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-newsletter-1">
+                                <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" />
+                                I want to receive the newsletter of AKVorrat
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label for="edit-submitted-ispublic-1">
+                                <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" />
+                                Display my name and signature publicly
+                              </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-submitted-deine-botschaft">Your message</label>
+                                <textarea class="form-control" id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" rows="3" placeholder="Your message"></textarea>
+                            </div>
+                            <input type="hidden" name="details[sid]">
+                            <input type="hidden" name="details[page_num]" value="1">
+                            <input type="hidden" name="details[page_count]" value="1">
+                            <input type="hidden" name="details[finished]" value="0">
+                            <input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
+                            <input type="hidden" name="form_id" value="webform_client_form_108">
+                            <button type="submit" class="btn btn-default btn-lg btn-block greenbutton" name="op" value="Unterzeichnen">Sign</button>
+                        </form>                   
+                    </div>
+                </div>
+                
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Share</div>
+                    <div class="sidetext">
+                        <p>The more people sign, the more influence we will have. Tell your friends and family about this act since they are just as affected as you are.</p>
+                        <div class="container-fluid">
+                            <div class="row" id="shareicons">
+                                <div class="col-xs-2 col-xs-offset-1"><a href="mailto:?subject=%C3%96sterreich%20bekommt%20einen%20neuen%20Geheimdienst.%20Tun%20wir%20etwas%20dagegen%21&amp;body=In%20%C3%96sterreich%20wird%20gerade%20ein%20Gesetz%20verabschiedet%2C%20das%20einen%20neuen%20Geheimdienst%20etabliert.%0A%0ADieser%20neue%20Staatsschutz%20kann%20ohne%20konkreten%20Verdacht%2C%20ohne%20Richter%20und%20Staatsanwalt%20jede%20Person%20in%20%C3%96sterreich%20%C3%BCberwachen.%20Zu%20den%20Kritikern%20des%20Gesetzes%20geh%C3%B6ren%20der%20AKVorrat%2C%20Amnesty%20International%2C%20die%20Richtervereinigung%20und%20viele%20andere.%20%0A%0AIm%20Juni%20wurde%20im%20Ministerrat%20die%20Regierungsvorlage%20beschlossen%2C%20der%20Gro%C3%9Fteil%20unserer%20Kritik%20am%20Gesetz%20wurde%20nicht%20aufgenommen%20(siehe%20http%3A%2F%2Fakvorrat.at%2Fsites%2Fdefault%2Ffiles%2FAKVorrat_PStSG_Stellungnahme_RV.pdf)%0A%0AUrspr%C3%BCnglich%20sollte%20das%20Gesetz%20noch%20vor%20der%20Sommerpause%20beschlossen%20werden.%20Aufgrund%20des%20massiven%20Protests%20der%20Zivilgesellschaft%20konnten%20wir%20diesen%20Termin%20aber%20bereits%20verhindern!%0A%0AJedoch%20wird%20das%20Gesetz%20schon%20im%20Herbst%20weiter%20verhandelt%20und%20soll%20laut%20den%20Pl%C3%A4nen%20der%20Regierung%20bereits%20am%201.%20Juli%202016%20in%20Kraft%20treten.%20%0A%0AHilf%20mit%2C%20etwas%20dagegen%20zu%20tun%2C%20unterschreibe%20die%20Petition%20auf%20https%3A%2F%2Fwww.staatsschutz.at%20und%20leite%20diese%20E-Mail%20weiter!"><img src="../img/share/mail.png" alt="E-Mail" class="img-responsive" /></a></div>
+                                <div class="col-xs-2"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaatsschutz.at&amp;title=%C3%96sterreich%20bekommt%20einen%20neuen%20Geheimdienst.%20Unterschreibe%20jetzt%20gegen%20das%20geplante%20Staatsschutzgesetz!" target="_blank"><img src="../img/share/facebook.png" alt="Facebook" class="img-responsive" /></a></div>
+                                <div class="col-xs-2"><a href="https://twitter.com/intent/tweet?text=Der%20neue%20%23Staatsschutz%20speichert%20Daten%20bis%20zu%206%20Jahre%20lang%2C%2012x%20l%C3%A4nger%20als%20unter%20der%20Vorratsdatenspeicherung.%20https%3A%2F%2Fstaatsschutz.at%20%23PStSG&amp;source=webclient" target="_blank"><img src="../img/share/twitter.png" alt="Twitter" class="img-responsive" /></a></div>
+                                <div class="col-xs-2"><a href="https://plus.google.com/share?url=https://www.staatsschutz.at" target="_blank"><img src="../img/share/gplus.png" alt="Google Plus" class="img-responsive" /></a></div>
+                                <div class="col-xs-2"><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.staatsschutz.at&amp;title=%C3%96sterreich%20bekommt%20einen%20neuen%20Geheimdienst&amp;summary=Unterschreibe%20die%20Petition%20gegen%20das%20geplante%20Staatsschutzgesetz%20in%20%C3%96sterreich!%20&amp;source=https://www.akvorrat.at" target="_blank"><img src="../img/share/linkedin.png" alt="LinkedIn" class="img-responsive" /></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Act</div>
+                    <div class="sidetext">
+                        <p>If you want to support our <a href="#fivedemands">5&nbsp;demands</a> even more you can go and collect signatures. Just print our <a href="../docs/staatsschutz-unterschriftenliste.pdf" target="_blank">template</a>, enlighten your fellows, ask them to sign and <a href=# data-toggle=tooltip title="Unfortunately, we need the original documents. If you can't send a letter you are welcome to visit us personally. Our address is Neubaugasse 12-14, 1070 Vienna">send the list back</a>.</p>
+                        <p>We set up a <a href="https://act.staatsschutz.at/">compaign site</a> for you to contact your representatives easily. Let them know what you think about the State Protection Act because they need to represent your opinion in the parliament.</p>
+                        <p>Another way to help is donating. Besides financing our web hosting we need to cover <a href=# data-toggle=tooltip title="Stickers and flyers are provided for free by the Arbeitskreis Vorratsdaten Österreich.">advertising material</a> and actions.</p>
+                        <form action="https://spenden.akvorrat.at/">
+                            <button type="submit" class="btn btn-default btn-block">Donate now!</button>
+                        </form>
+                    </div>
+                </div>
 
-				<div class="form-item webform-component webform-component-select webform-component--nationalitat webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-nationalitat">Nationality </label>
-				 <select id="edit-submitted-nationalitat" name="submitted[nationalitat]" class="form-select"><option value="" selected="selected">select country</option><option value="at">Austria</option><option value="be">Belgium</option><option value="bg">Bulgaria </option><option value="hr">Croatia</option><option value="cy">Cyprus</option><option value="cz">Czech Republic</option><option value="dk">Denmark</option><option value="ee">Estonia</option><option value="fi">Finland</option><option value="fr">France</option><option value="de">Germany</option><option value="gr">Greece</option><option value="hu">Hungary</option><option value="it">Italy</option><option value="ie">Ireland</option><option value="lv">Latvia</option><option value="lt">Lithuania</option><option value="lu">Luxembourg</option><option value="mt">Malta</option><option value="nl">Netherlands</option><option value="pl">Poland</option><option value="pt">Portugal</option><option value="ro">Romania</option><option value="sk">Slovakia</option><option value="si">Slovenia</option><option value="es">Spain</option><option value="se">Sweden</option><option value="gb">United Kingdom</option></select>
-				</div>
-				<label class="signformLabel" for="edit-submitted-plz">ZIP Code </label>
-				 <input type="text" id="edit-submitted-plz" name="submitted[plz]" value="" maxlength="10" class="form-text">
-				</div>-->
-				<div class="form-item webform-component webform-component-number webform-component--alter webform-container-inline">
-				  <label class="signformLabel" for="edit-submitted-alter">Age </label>
-				 <input type="text" id="edit-submitted-alter" name="submitted[alter]" maxlength="3" class="form-text form-number">
-				</div>
-				<br/>
-				<div class="form-item webform-component webform-component-checkboxes webform-component--newsletter webform-container-inline">
-				 <div id="edit-submitted-newsletter" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-submitted-newsletter-1">
-				 <input type="checkbox" id="edit-submitted-newsletter-1" name="submitted[newsletter][1]" value="1" class="form-checkbox">  <label class="option" for="edit-submitted-newsletter-1"> I want to receive the newsletter of AKVorrat</label>
+                <div class="sidebar shadow">
+                    <div class="sidetitle">Stay informed</div>
+                    <div class="sidetext">
+                        <p>The Arbeitskreis Vorratsdaten Österreich keeps you informed. If you want to receive news about digital civil rights consider signing up for out newsletter.</p>            
+                        <form method="post" action="https://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
+                            <div class="form-group">
+                                <label for="edit-submitted-alter">E-Mail</label>
+                                <input type="email" name="email" class="form-control" placeholder="E-Mail" required="required">
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <!--END side column-->
 
-				</div>
-				</div>
-				</div>
-				<br/>
-				<div class="form-item webform-component webform-component-checkboxes webform-component--ispublic webform-container-inline">
-				 <div id="edit-submitted-ispublic" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-submitted-ispublic-1">
-				 <input type="checkbox" id="edit-submitted-ispublic-1" name="submitted[ispublic][1]" value="1" class="form-checkbox">  <label class="option" for="edit-submitted-ispublic-1"> Display my name and signature (publicly)</label>
+            <!--START main column-->
+            <section id="infoarea" class="col-md-8 col-md-pull-4">
+                <article class="indent paper shadow">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/JOeD4dOw4mM" style="border: none;" allowfullscreen="1"></iframe>
+                        <!--<a href="https://www.youtube.com/watch?v=JOeD4dOw4mM" class="loadEmbed" target="_blank"><img src="../img/youtube/cover_opinions.jpg" class="img-responsive" alt="YouTube"></a>-->
+                    </div>
+                </article>
 
-				</div>
-				</div>
-				</div>
-				
-				<br/>
-				<div class="form-item webform-component webform-component-textarea webform-component--deine-botschaft webform-container-inline">
-				  <label for="edit-submitted-deine-botschaft"> Your message</label>
-				 <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-submitted-deine-botschaft" name="submitted[deine_botschaft]" cols="60" rows="5" class="form-textarea"></textarea><div class="grippie"></div></div>
-				</div>
-				<input type="hidden" name="details[sid]">
-				<input type="hidden" name="details[page_num]" value="1">
-				<input type="hidden" name="details[page_count]" value="1">
-				<input type="hidden" name="details[finished]" value="0">
-				<input type="hidden" name="form_build_id" value="form-P_8icd7v3v3N01YNzdbZxJDQVDtz_jG2AR4EfFG5Uh4">
-				<input type="hidden" name="form_id" value="webform_client_form_108">
-				<div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" name="op" value="Sign">
+                <article class="indent paper shadow" id="tenpoints">
+                    <h2>8 important facts about the State Protection Act</h2>
+                    <ol>
+                        <li>Austria gets a new secret service.</li>
+                        <li>The Federal Agency for State Protection and Counter Terrorism (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>), which is currently a police department, will soon gain the powers of an intelligence agency.</li>
+                        <li>The <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> will be able to spy on any citizens without having to ask for a permit from a judge or prosecutor.</li>
+                        <li>To <q>estimate the possibility</q> of an "attack endangering the constitution" everyone can be spied upon. Only a justified suspicion of danger is required. However, there are no clear rules on where and how the justification for the existence of a concrete danger has to be recorded in writing and must be submitted.</li>
+                        <li>The <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> can access the data from all authorities and all companies, no judge or prosecutor is needed. The only control instance is the internal officer for the protection of rights of the <abbr title="Ministry of the Interior">BMI</abbr> together with his two deputies. The <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> has the possibility to deny their access to needed informations for various reasons, for example in order to protect the identity of a witness.</li>
+                        <li>The objectives of the <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> are many more than just the defense against terrorism. People acting as whistleblowers, people protesting against right-wing extremists in the Hofburg, or protestors against animal cruelty become the target of authority</li>
+                        <li>Around 100 crimes are defined as <q>attack endangering the constitution</q>, 40 of them if they are committed with <q>religious or ideological motives</q>.</li>
+                        <li>The <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> may store all the data for up to 6 years. The access of this data is stored only for 3 years. Furthermore, all data can be shared with foreign intelligence agencies. Therefore, privacy measures are practically irrelevant.</li>
+                        <li><s>Austria will soon have 10 new intelligence agencies, because in addition to the <abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr> also all 9 provinces get their own office with the same powers. Each Governor will soon have his own intelligence agency.</s><strong> The latest version of the draft allows for only a single agency with 9 branches, all of them being coordinated centrally.</strong></li>
+                    </ol>
+                </article>
 
-				<h3>Signing on Paper</h3>
-				<p><a href="https://staatsschutz.at/staatsschutz-unterschriftenliste.pdf" target="_blank">download</a>,  print, collect signatures and <a href="https://akvorrat.at/kontakt">send the forms back to us</a></p>
-			</li>
-			<li>
-				<h2>2. Tell others about the campaign</h2>
-				<div style="text-align:center;">
-					<ul class="shareicons">
-						<li><a href="mailto:?subject=Austria%20gets%2010%20new%20intelligence%20services.%20Let%27s%20stop%20them!&amp;body=In%20Austria%20a%20new%20law%20is%20planned%20to%20establish%2010%20new%20intelligence%20services.%0ADue%20to%20this%20new%20law%20it%20will%20be%20possible%20to%20spy%20on%20Austrian%20citizens%20without%20court%20order.%0A%0AOn%20Mai%2012th%202015%20%2C%20the%20review%20period%20of%20the%20new%20law%20ended.%20There%20were%20numerous%20critical%20opinions%20by%20the%20Judges%20Association%2C%20Amnesty%20International%2C%20The%20Austrian%20Chamber%20of%20Labour%2C%20The%20Austrian%20Economic%20Chamber%2C%20The%20Austrian%20Conference%20of%20Catholic%20Bishops%2C%20The%20Protestant%20Church%20of%20Austria%2C%20The%20Austrian%20Medical%20Chamber%2C%20Internet%20Providers%2C%20Austrian%20Bar%20-%20The%20umbrella%20organisation%20of%20all%20Chambers%20of%20Austrian%20Lawyers%20(%C3%96RAK)%2C%20the%20network%20for%20critical%20legal%20research%2C%20the%20ombudsman%20board%2C%20the%20data%20privacy%20council%2C%20trade%20unions%2C%20journalists%2C%20and%20AKVorrat.%0A%0AIn%20June%2C%20the%20government%20bill%20was%20passed%20in%20the%20Council%20of%20Ministers.%20The%20majority%20of%20our%20criticism%20of%20the%20law%20has%20not%20been%20included.%0A%0AOriginally%2C%20the%20law%20should%20be%20adopted%20before%20the%20summer%20break.%20Due%20to%20the%20massive%20protest%20of%20civil%20society%2C%20we%20could%20prevent%20this!%0A%0AHowever%2C%20the%20law%20will%20continue%20to%20be%20negotiated%20in%20autumn%20and%20it%20is%20due%20to%20come%20into%20force%20on%20July%201st%2C%202016%2C%20according%20to%20the%20government%27s%20plans.%0A%0A%0APlease%20help%20us%20to%20stop%20them%2C%0ASign%20our%20petition%20on%20https%3A%2F%2Fwww.staatsschutz.at%20and%20forward%20this%20e-mail%20to%20your%20friends%0A"><img src=".././img/email.png" alt="E-Mail"></a></li>
-						<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstaatsschutz.at&amp;title=Austria%20gets%2010%20new%20intelligence%20services.%20Sign%20our%20petition%20to%20prohibit%20the%20planned%20State%20Protection%20Act!" target="_blank"><img src=".././img/facebook.png" alt="Facebook"></a></li>
-						<li><a href="https://twitter.com/intent/tweet?text=Austria%20establishes%2010%20new%20secret%20agencies.%20Prevent%20the%20new%20state%20security%20law!%20%23Staatsschutz%0Ahttps%3A%2F%2Fwww.staatsschutz.at&amp;source=webclient" target="_blank"><img src=".././img/twitter.png" alt="Twitter"></a></li>
-						<li><a href="https://plus.google.com/share?url=https://www.staatsschutz.at" target="_blank"><img src=".././img/gplus.png" alt="Google Plus"></a></li>
-						<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.staatsschutz.at&amp;title=%C3%96sterreich%20bekommt%2010%20neue%20Geheimdienste&amp;summary=Unterschreibe%20die%20Petition%20gegen%20das%20geplante%20Staatsschutzgesetz%20in%20%C3%96sterreich!%20&amp;source=https://www.akvorrat.at" target="_blank"><img src=".././img/linkedin.png" alt="LinkedIn"></a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<h2>3. Subscribe to the AKVorrat newsletter and donate</h2>
-					<form method="post" action="http://lists.akvorrat.at/cgi-bin/mailman/subscribe/vds-info">
-						<input type="email" name="email" class="inputText" size="19" placeholder="E-Mail">
-						<input type="submit" value="Subscribe to newsletter" class="inputSubmit webform-submit"><br>
-					</form>
-				<a href="https://spenden.akvorrat.at/" id="spenden-button">Donate now!</a>
-			</li>
-		</ul>
-	</section>
-</div>
+                <div class="indent paper shadow" id="wrapper-zeitplan">
+                    <div class="sectionimage"><img src="./img/timetable.png" alt="Zeitplan" /></div>
+                    <article class="paper shadow">
+                        <h2 class="nocss">Timetable</h2>
+                        <div>
+                            <p><strong>Originally the law was supposed to be adopted before the summer break of 2015. This vote was postponed because of massive protest from civil society.</strong></p>
+                            <p>Now the parliament <a href="https://www.parlament.gv.at/PAKT/PR/JAHR_2015/PK1364/index.shtml">shall</a> pass the act on <strong>January 27<sup>th</sup> 2016</strong> and inure on July 1<sup>st</sup> 2016!</p>
+                        </div>
+                        <p id="countdown">The law makers must return to square one and start from scratch!</p>
+                        <div style="clear:both"></div>
+                        <div class="center">
+                            <a id="tweetcount" href="https://twitter.com/intent/tweet?text=Der%20neue%20%23Staatsschutz%20speichert%20alle%20Daten%206%20Jahre%20lang%2C%2012x%20l%C3%A4nger%20als%20unter%20der%20Vorratsdatenspeicherung.%20https%3A%2F%2Fstaatsschutz.at%20%23PStSG&amp;source=webclient" target="_blank"><img src="../img/tweet-this.png" alt="Tweet this" width="220" /></a>
+                        </div>
+                    </article>
+                </div>
 
-<div id="infoarea" class="col-md-8">
+                <article class="indent paper shadow" id="fivedemands">
+                    <h2>Our 5 demands</h2>
+                    <p>The signatories to this petition call on the Austrian Government and the National Council to fulfill the following five points concerning the planned State Protection Act.</p>
+                    <ol>
+                        <li><strong>Fact-based protection policy</strong> &ndash; The State Protection Act needs to return to square one. It has to be reoriented after a comprehensive evaluation of the monitoring situation, determining statistics about investigations, and an evidence-based survey of security needs. Before the federal government may restrict basic rights, it must prove that their project is necessary and proportionate.</li>
+                        <li><strong>Clear separation of police and intelligence services</strong> &ndash; The State Security must not be a part of the police and at the same time possess the same surveillance rights as a secret agency. Clear responsibilities are needed.</li>
+                        <li><strong>No repression against civil society, journalists, and "whistleblowers"</strong> &ndash; The responsibility/duty of the state security shouldn't be to act on easily constructed low level/minor offenses. The "attack endangering the constitution" must only encompass the most serious crimes and must not restrict general fundamental rights such as the right to demonstrate or freedom of the press.</li>
+                        <li><strong>Strong legal protection, no "pre-crime"</strong> &ndash; for each surveillance measure concrete suspicions and the proportionality of the interference must be justified in written form and approved judicially. Parliamentary control must be enhanced and the transparency of the activities of the security authorities must be strengthened.</li>
+                        <li><strong>No paid spies</strong> &ndash; Examples in and outside of Austria show that the use of "trusted third parties" in legal processes often leads to difficulties - and paid spies often lead to scandalous excesses. Austria should learn from the experiences of other countries instead of repeating their mistakes. The use of unpaid "undercover agents" (spies) should be clearly regulated in accordance with the Criminal Procedure Code.</li>
+                    </ol>
+                </article>
 
-	<section class="indent paper" id="tenpoints">
-		<h2>9 important facts about<br> the new State Protection Act</h2>
-		<ol>
-			<li>Austria gets a new secret service.
-			<li>The Federal Agency for State Protection and Counter Terrorism (<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>), which is currently a police department, will soon gain the powers of an intelligence agency.
-			<li>The <abbr>BVT</abbr> will be able to spy on any citizens without having to ask for a permit from a judge or prosecutor.
-			<li>To <q> estimate the possibility</q> of an "attack endangering the constitution" everyone can be spied upon. Only a justified suspicion of danger is required. However, there are no clear rules on where and how the justification for the existence of a concrete danger has to be recorded in writing and must be submitted.
-			<li>The <abbr>BVT</abbr> can access the data from all authorities and all companies, no judge or prosecutor is needed. The only control instance is the internal officer for the protection of rights of the <abbr>Ministry of the Interior (BMI)</abbr> and the <abbr>BVT</abbr> has the possibility to deny him access to files for various reasons, for example in order to protect the identity of a witness.
-			<li>The objectives of the <abbr>BVT</abbr> are many more than just the defense against terrorism. People acting as whistleblowers, people protesting against right-wing extremists in the Hofburg, or protestors against animal cruelty become the target of authority
-			<li>Around 100 crimes are defined as <q>attack endangering the constitution</q>, 40 of them if they are committed with <q>religious or ideological motives</q>.
-			<li>The <abbr>BVT</abbr> may store all the data for 6 years. Who is accessing this data is stored only for 3 years.
-			<li>Austria will soon have 10 new intelligence agencies, because in addition to the <abbr>BVT</abbr> also all 9 provinces get their own office with the same powers. Each Governor will soon have his own intelligence agency.
-		</ol>
-	</section>
+                <article class="indent paper shadow">
+                    <div class="sectionimage"> <img src="./img/examples.png" alt="Kritik" /></div>
+                    <h2 class="nocss">2 examples</h2>
+                    <h3>Abolition of press freedom</h3>
+                    <p>In our comment, we show on basis of the dispute around the <abbr>ORF (Austrian broadcast company) </abbr> documentary <q><a href="https://www.youtube.com/watch?v=7jpfJ70SmL8">Am Schauplatz – am rechten Rand</a></q> how the new State Protection Act adversely affects editorial secrecy. The editor of <abbr>ORF</abbr> documentation was accused of having incited teenagers to National Socialist Offences, which then led to the seizure of footage from the <abbr>ORF</abbr> archive.</p>
+                    <p>The court order to surrender the material was later decided to be fundamentally unlawful by <abbr title="Oberster Gerichtshof">the Austrian Supreme Court (OGH).</abbr> Among the new investigative powers included in the PStSG <q>strong suspicion</q> as now required by the Criminal Procedure Code is no longer a prerequisite for the use of instruments such as covert investigation, monitoring of communication, data synchronization, and many more.</p>
+                    <p>In future, even the <q>evaluation of the likelihood</q> of a threat is sufficient to undermine the editorial secret and other recognized professional secrets even without direct confiscation.A comparable legal process, with which the <abbr>ORF</abbr> editorial staff at that time prohibited the breakdown of editorial secrecy, would not be availiable after the introduction of the proposed law. It might even be possible that journalists would not be notified about the breach of their secrets in the course of the actions of the state authorities.</p>
+                    <h3>Database for "potentially dangerous citizens"</h3>
+                    <p><a href="http://www.juridikum.at/fileadmin/user_upload/ausgaben/juridikum_4-2011.pdf">The Students' Union organized a bus trip to a political event</a> (PDF, page 417). On their Departure Point a police squad was waiting for them. The police did not let students who did not show their IDs and let the police search their luggage enter the bus. Some people were undergoing this procedure. Later they filed a complaint for violation of their individual rights and the court declared the identity verification and inspection unlawful.</p>
+                    <p>Although the police acted illegally, their collected data could end up in a database of <q>potentially dangerous citizens</q>. In this new database introduced through the state protection act various sensitive informations are stored (e.g. sexual orientation, union membership) to rate the possibility of an "attack endangering the constitution"</p>
+                    <p>These data are stored for up to six years, ten times longer than it was the case with the data retention in Austria. Furthermore, they can be legaly exchanged with foreign intelligence services as NSA, GCHQ and BND. The logs about who accessed this database are only stored for 3 years, which is certainly not helpful in preventing abuse of these highly sensitive data.</p>
+                </article>
 
-	<hr class="nocss">
+                <article class="indent paper shadow">
+                    <a href="https://www.youtube.com/watch?v=MvzVFbQ06wM" class="loadEmbed" target="_blank"><img src="../img/youtube/cover_quiz.jpg" class="img-responsive" alt="YouTube" style="width: 100%;" /></a>
+                </article>
 
-	<div class="indent" id="wrapper-zeitplan" style="padding-bottom:1px;">
-          <div class="sectionimage">
-                  <img src=".././img/timetable.png" alt="timetable">
-          </div>
-          <section class="paper indent">
-                  <h2 class="nocss">Zeitplan</h2>
-                  <p>
-                          
-                          <p><strong>Originally the law was supposed to be adopted before the summer break of 2015. This vote was postponed because of massive protest from civil society.</strong></p>
-                          <p>Now, the new date for the plenary vote in the Austrian Parliament will be announced soon.</p>
-                  </p>
-                  <p class="specialemphasis countdown">
-                          The law makers must return to square one and start from scratch!
-                  </p>
-                  <div style="clear:both"></div>
-                  <center>
-	                  <a id="tweetcount" href="https://twitter.com/intent/tweet?text=Austria%20establishes%2010%20new%20secret%20agencies.%20Prevent%20the%20new%20state%20security%20law!%20%23Staatsschutz%0Ahttps%3A%2F%2Fwww.staatsschutz.at&amp;source=webclient" target="_blank"><img src="/img/tweet-this.png" alt="Tweet this" width="220px"/></a>
-	                </center>
-          </section>
-  </div>
+                <article class="indent paper shadow">
+                    <h2>Background</h2>
+                    <h4>State protection instead of Constitutional Protection</h4>
+                    <p>In the draft of the law, the state is defined only as the sum of the state institutions which have to be protected.The protection of the constitution and the fundamental rights of the population are no longer part of the scope of the<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>.</p>
+                    <h4>Potential for abuse because of redundancies</h4>
+                    <p>The Federal Office and the federal offices will continue to be security agencies, they will mostly use <abbr title="Sicherheitspolizeigesetz">SPG</abbr> and in specific cases <abbr title="Polizeiliches Staatsschutzgesetz">PStSG</abbr>. One single authority may thus act on the basis of different laws. An official can choose whether he needs to get a judge's permission to demand telecommunications data from an internet service provider or not. For example, once a <q>religious or ideological motivation</q> is assumed in an offense, the legal protection can be bypassed.</p>
+                    <h4>Extended threat research for <q>attacks endangering the constitution</q></h4>
+                    <p>The concept of an <q>attack endangering the constitution</q> is a very important key aspect in this law. It determines the scope of action and competences of <q>State security bodies</q>. Apart from a very vague definition of what is meant by it, authorities can already respond to <q>probable attacks endangering the constitution</q> before they started using all of their surveillance powers to store all potential suspects in their database. So they are allowed to collect <q>any information from all available sources</q> - which also includes publicly accessible data on the internet about when a person <q>probably</q> would like to take part in a demonstration against the academics ball for example.To put it plainly, those who <q>probably</q> want to participate in the prevention or disruption of a meeting such as this ball have to fear systematic monitoring by the <abbr>BVT</abbr>, before even attending the demonstration. </p>
+                    <h4>Far-reaching opportunities for data collection and processing</h4>
+                    <p>The collection of personal data of suspects and their contact persons will be allowed for <q>assessment of the likelihood of a hazard</q> in the future. This means that a concrete suspicion is not explicitly needed. As a result, the entire internet usage of a target person can be collected and evaluated. Most means of (undercover) investigation are therefore no longer linked to specific crimes or suspicious circumstances. It suffices if authorities want to analyze an abstract risk scenario. This comprehensive collection of data on potentially everyone of us may be stored for 5 years and logs about who is accessing these data get deleted after 3 years.</p>
+                    <h4>Numerous technical surveillance possibilities</h4>
+                    <p>The use of tracking devices and<a href="https://en.wikipedia.org/wiki/IMSI-catcher"><abbr>IMSI</abbr>-<span lang="en">catchers</span></a> will be permitted,<q>if the observation was otherwise difficult or considered hopeless</q>. The periods for the permitted use of such special investigative means will be increased. According to the old law of the <abbr title="StPO/Strafprozessordnung">Code of Criminal Procedure</abbr>, the maximum period is three months under the condition of a court order. Under the new legal system of <abbr title="Polizeiliches Staatsschutzgesetz">PStSG</abbr>even six months are possible, and all it takes to prolong the observation is the approval of the officer for the protection of rights at the Interior Ministry. In the same way, the protection of the citizens' rights against audio and video recordings during surveillance by the police, the analysis of travel movements <abbr title="Passenger Name Records">(PNR)</abbr>, and information regarding traffic and content data from the Internet is withdrawn.</p>
+                    <h4>Paid informers</h4>
+                    <p>The legalization of paid undercover agents without judicial review is also extremely problematic. The current draft of the law shows very little sensitivity to issues such as the entrapment, and it draws no lessons from the huge scandal involving the <a href="https://en.wikipedia.org/wiki/National_Socialist_Underground"><abbr title="National Socialist Underground">NSU</abbr>murders</a> in Germany.</p>
+                    <h4>Missing evaluation</h4>
+                    <p>The draft of the new <abbr>PStSG</abbr> includes a chapter with a promising title - the <q>impact-oriented consequence assessment</q>,but here only to budgetary implications are evaluated. There are neither statistics explaining which surveillance measures have proven to be effective so far and why there is a need to extended them, nor are there criteria defined, such as security situation or increased rate of solved crimes, on which the impact of the reform can be measured.  In its <span lang="en">Project HEAT</span>, the <abbr>AK Vorrat</abbr> demands a full evaluation of all anti-terror laws in Austria and is supplying the scientific basis.</p>
+                    <h4>Police and intelligence services in one Authority</h4>
+                    <p>Due to the extremely vague definition of an <q>attack endangering the constitution</q> and the expansion of surveillance powers to the <q>evaluation of the likelihood of a threat</q> , a police force with the powers of an intelligence service is created. The principle of mandatory prosecution of offenses and the principle of opportunity are being breached. The <abbr>BVT</abbr> and - even worse - the federal offices become uncontrollable authorities with officials who are subject to almost no limits in their operations and don't have to answer to anyone. The next police scandal in <abbr>BVT</abbr> is inevitable.</p>
+                </article>
 
-	<hr class="nocss">
+                <article class="indent paper shadow">
+                    <a href="https://www.youtube.com/watch?v=ezK19cRJfTI" class="loadEmbed" target="_blank"><img src="../img/youtube/cover_author.jpg" class="img-responsive" alt="YouTube" style="width: 100%;" /></a>
+                </article>
 
-	<section class="indent paper" id="fivedemands">
-		<h2>Our 5 demands</h2>
-		<p>The signatories to this petition call on the Austrian Government and the National Council to fulfill the following five points concerning the planned State Protection Act.</p>
+                <div id="wrapper-fazit" class="indent paper shadow">
+                    <div class="sectionimage"> <img src="./img/conclusion.png" alt="Fazit" /> </div>
+                    <article class="paper shadow">
+                        <h2 class="nocss">Conclusion</h2>
+                        <p>With the vague definition of <q>attack endangering the constitution</q>, the law creates the basis for the excessive surveillance of innocent citizens. Although such serious intrusions into privacy require careful control, no efficient legal mechanisms have been provided. A feigned reason justifies the means. According to the AKVorrat, the bill creates the basis for a domestic intelligence agency and therefore it is rejected entirely. At the same time AKVorrat acknowledges that counter-terrorism measures are needed. This, however, should be drafted in an open dialogue with stakeholders and evaluated very closely in terms of effectiveness and with respect for fundamental rights.</p>
+                    </article>
+                </div>
+                
+                <noscript>
+                    <article class="indent paper shadow" id="privacyns">
+                        <h2>Privacy Policy</h2>
+                        <p>Die persönlichen Daten der Unterzeichner und Unterzeichnerinnen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt#datenschutz">Datenschutzbestimmungen</a>.</p>
+                        <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
+                        <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
+                    </article>
+                </noscript>
+                
+                <form class="form-inline center indent">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#privacyModal">Privacy policy</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#glossaryModal">Glossary</button>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#downloadsModal">Documents</button>
+                    </div>
+                </form>
+                
+                <p class="text-center"><a href="https://akvorrat.at/kontakt#page-title">Contact</a> &#124; <a href="https://akvorrat.at/kontakt">Impressum</a> &#124; <a href="https://akvorrat.at/kontakt">Press</a></p>
+            </section>
+            <!--END main column-->
 
-			<ol>
-				<li><span class="demand_short">Fact-based protection policy</span> - The State Protection Act needs to return to square one. It has to be reoriented after a comprehensive evaluation of the monitoring situation, determining statistics about investigations, and an evidence-based survey of security needs. Before the federal government may restrict basic rights, it must prove that their project is necessary and proportionate.</li>
-				<li><span class="demand_short">Clear separation of police and intelligence services</span> - The State Security must not be a part of the police and at the same time possess the same surveillance rights as a secret agency. Clear responsibilities are needed.</li>
-				<li><span class="demand_short">No repression against civil society, journalists, and "whistleblowers"</span> - The responsibility/duty of the state security shouldn't be to act on easily constructed low level/minor offenses. The "attack endangering the constitution" must only encompass the most serious crimes and must not restrict general fundamental rights such as the right to demonstrate or freedom of the press.</li>
-				<li><span class="demand_short">Strong legal protection, no "pre-crime"</span> - for each surveillance measure concrete suspicions and the proportionality of the interference must be justified in written form and approved judicially. Parliamentary control must be enhanced and the transparency of the activities of the security authorities must be strengthened.</li>
-				<li><span class="demand_short">No paid spies</span> - Examples in and outside of Austria show that the use of "trusted third parties" in legal processes often leads to difficulties - and paid spies often lead to scandalous excesses. Austria should learn from the experiences of other countries instead of repeating their mistakes. The use of unpaid "undercover agents" (spies) should be clearly regulated in accordance with the Criminal Procedure Code.</li>
-			</ol>
-			<br/>
-	</section>
+        </div>
+    </main>
+    <!--END body main-->
 
-	<hr class="nocss">
+    <!--START body footer-->
+    <footer class="container-fluid">
+        <p>This campaign is being supported by</p>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <div class="col-xs-3"><a href="https://akvorrat.at/"><img src="../img/logo/akv.gif" alt="AKVorrat Logo" /></a></div>
+                    <div class="col-xs-3"><a href="https://amnesty.at/"><img src="../img/logo/amnesty.gif" alt="Amnesty International Österreich Logo" /></a></div>
+                    <div class="col-xs-3"><a href="https://attac.at/"><img src="../img/logo/attac.gif" alt="ATTAC Österreich Logo" /></a></div>
+                    <div class="col-xs-3"><a href="https://vgt.at/"><img src="../img/logo/vgt.gif" alt="VGT Logo" /></a></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+                    <div class="col-xs-3"><a href="https://www.oeh.ac.at/"><img src="../img/logo/oeh.gif" alt="Oesterreichische Hochschueler_innenschaft Logo" /></a></div>
+                    <div class="col-xs-3"><a href="https://www.mehr-demokratie.at/"><img src="../img/logo/mehrdemokratie.gif" alt="Mehrdemokratie Logo" /></a></div>
+                    <div class="col-xs-3"><a href="http://www.zara.or.at/"><img src="../img/logo/zara.gif" alt="Zara Logo" /></a></div>
+                    <div class="col-xs-3"><a href="http://www.informationsfreiheit.at/"><img src="../img/logo/foruminformationsfreiheit.gif" alt="Forum Informationsfreiheit Logo" /></a></div>
+                </div>
+            </div>
+        </div>
+        <p><a href="https://akvorrat.at/kontakt">Contact us, if your organization would like to support this action as well.</a></p>
+    </footer>
+    <!--END body footer-->
 
-	<div class="sectionimage">
-		<img src=".././img/examples.png" alt="examples">
-	</div>
-	<section class="indent paper">
-		<h2 class="nocss">2 examples</h2>
+    <!--START privacyModal-->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Privacy Policy</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Die persönlichen Daten der Unterzeichner und Unterzeichnerinnen dieser Petition werden in einer Datenbank abgelegt und am Ende der Kampagne an die Parlamentsdirektion des Österreichischen Parlaments übergeben. Mit der optionalen Anmeldung zu unserem Newsletter werden Ihre Daten in unserer Newsletter-Software verarbeitet. Siehe dazu unsere verständlichen <a href="https://www.akvorrat.at/kontakt#datenschutz">Datenschutzbestimmungen</a>.</p>
+                    <p>Wenn Sie angeben, mit Ihrer Unterstützung öffentlich gelistet werden zu wollen, geben Sie uns das Einverständnis, Ihre Daten für Kampagnen-Zwecke zu verarbeiten und öffentlich zugänglich zu machen. Ihre E-Mail Adresse und Ihr vollständiger Nachname sind von dieser Veröffentlichung jedoch ausgeschlossen.</p>
+                    <p>Darüber hinaus werden die Daten nicht an Dritte weitergegeben und auch für keine anderen Zwecke verwendet. Wenn die Petition abgeschlossen ist, werden alle personenbezogenen Daten gelöscht.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END privacyModal-->
+    
+    <!--START glossaryModal-->
+    <div class="modal fade" id="glossaryModal" tabindex="-1" role="dialog" aria-labelledby="glossaryModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Glossar</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><abbr>PStSG</abbr></dt>
+                        <dd>Polizeiliches Staatsschutzgesetz / State Protection Act</dd>
+                        <dt><abbr>SPG</abbr></dt>
+                        <dd>Sicherheitspolizeigesetz / Security Police Act</dd>
+                        <dt><abbr>StPO</abbr></dt>
+                        <dd>Strafprozessordnung / code of criminal procedure</dd>
+                        <dt><abbr>BVT</abbr></dt>
+                        <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung / Federal Agency for State Protection and Counter Terrorism</dd>
+                        <dt><abbr>LV</abbr></dt>
+                        <dd>Landesämter für Verfassungsschutz / regional authorities of the Federal Agency for State Protection and Counter Terrorism</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END glossaryModal-->
+    
+    <!--START downloadsModal-->
+    <div class="modal fade" id="downloadsModal" tabindex="-1" role="dialog" aria-labelledby="downloadsModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Documents</h4>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/PSTSG_Kritik_short.pdf">Criticism short</a> (2 Pages, 110 KB)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/Policy_Brief_PStSG.pdf">Policy Brief</a> (7 Pages, 150 KB)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/akvorrat_print-handout-PStSG.pdf">Handout</a> (4 Pages, 110 KB)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/Stellungnahme_PStSG_AAA.pdf">Answer AKVorrat 3rd draft</a> (40 Pages, 605 KB)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="http://akvorrat.at/sites/default/files/AKVorrat_PStSG_Stellungnahme_RV.pdf">Answer AKVorrat 2nd draft</a> (40 Pages, 810 KB)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="https://www.akvorrat.at/sites/default/files/AKVorrat-Stellungnahme-Polizeiliches%20Staatsschutzgesetz%20-%20PStSG_Entwurf_BM%20I_Stellungnahme.pdf">Answer AKVorrat 1st draft</a> (79 Pages, 3,63 MB)</dd>
+                        <dt><img src="../img/icons/www.png" alt="Link" /></dt>
+                        <dd><a href="http://www.parlament.gv.at/PAKT/VHG/XXV/ME/ME_00110/index.shtml">All answers to 1st draft</a> (39 Answers, 18 refusing, Official site of the Austrian Parliament)</dd>
+                        <dt><img src="../img/icons/pdf.png" alt="PDF" /></dt>
+                        <dd><a href="../docs/PSTSG-Vergleich%20RV-Innenausschuss-2015-11-30.pdf">Amendment of the Government December 1st 2015</a> (32 Pages, 658 KB)</dd>
+                        <dt></dt>
+                        <dd><a href="../img/sharables.zip">Banners</a> (ZIP, 931 KB)</dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END downloadsModal-->
+    
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "https://piwik.akvorrat.at/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 3]);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 
-		<h2>Example 1: Abolition of press freedom</h2>
-		<p>
-			In our comment, we show on basis of the dispute around the  <abbr>ORF (Austrian broadcast company) </abbr> documentary 
-			<q><a href="https://www.youtube.com/watch?v=7jpfJ70SmL8">Am Schauplatz – am rechten Rand</a></q> how the new State Protection Act adversely affects editorial secrecy. The editor of <abbr>ORF</abbr> documentation was accused of having incited teenagers to National Socialist Offences, which then led to the seizure of footage from the <abbr>ORF</abbr> archive.
-			</p>
-			<p>
-			The court order to surrender the material was later decided to be fundamentally unlawful by <abbr title="Oberster Gerichtshof">the Austrian Supreme Court (OGH).</abbr>
-			Among the new investigative powers included in the PStSG <q>strong suspicion</q> as now required by the Criminal Procedure Code is no longer a prerequisite for the use of instruments such as covert investigation, monitoring of communication, data synchronization, and many more.
-			</p>
-			<p>
-			In future, even the <q>evaluation of the likelihood</q> of a threat is sufficient to undermine the editorial secret and other recognized professional secrets even without direct confiscation.A comparable legal process, with which the <abbr>ORF</abbr> editorial staff at that time prohibited the breakdown of editorial secrecy, would not be availiable after the introduction of the proposed law. It might even be possible that journalists would not be notified about the breach of their secrets in the course of the actions of the state authorities.
-		</p>
+</body>
 
-		<h2>Example 2: database for "potentially dangerous citizens"</h2>
-		<p>
-			<a href="http://www.juridikum.at/fileadmin/user_upload/ausgaben/juridikum_4-2011.pdf">The Students' Union organized a bus trip to a political event</a> (PDF, page 417). On their Departure Point a police squad was waiting for them. The police did not let students who did not show their IDs and let the police search their luggage enter the bus. Some people were undergoing this procedure. Later they filed a complaint for violation of their individual rights and the court declared the identity verification and inspection unlawful.
-			</p>
-			<p>
-				Although the police acted illegally, their collected data could end up in a database of <q>potentially dangerous citizens</q>. 
-In this new database introduced through the state protection act various sensitive informations are stored (e.g. sexual orientation, union membership) to rate the possibility of an "attack endangering the constitution"
-			</p>
-			<p> 
-			These data are stored for up to six years, ten times longer than it was the case with the data retention in Austria. 
-Furthermore, they can be legaly exchanged with foreign intelligence services as NSA, GCHQ and BND. The logs about who accessed this database are only stored for 3 years, which is certainly not helpful in preventing abuse of these highly sensitive data.
-		</p>
-	</section>
-
-	<hr class="nocss">
-
-	<section class="indent paper">
-		<h2>Background</h2>
-		<p>
-			<strong>State protection instead of Constitutional Protection:</strong>
-			In the draft of the law, the state is defined only as the sum of the state institutions which have to be protected.
-
-The protection of the constitution and the fundamental rights of the population are no longer part of the scope of the
-			<abbr title="Bundesamt für Verfassungsschutz und Terrorismusbekämpfung">BVT</abbr>.
-		</p>
-		<p>
-			<strong>Potential for abuse because of redundancies:</strong> The Federal Office and the federal offices will continue to be security agencies, they will mostly use <abbr title="Sicherheitspolizeigesetz">SPG</abbr> and in specific cases <abbr title="Polizeiliches Staatsschutzgesetz">PStSG</abbr>
-			. One single authority may thus act on the basis of different laws. An official can choose whether he needs to get a judge's permission to demand telecommunications data from an internet service provider or not. 
-For example, once a <q>religious or ideological motivation</q> is assumed in an offense, the legal protection can be bypassed.
-		</p>
-		<p>
-			<strong>Extended threat research for <q>attacks endangering the constitution</q>:</strong> The concept of an <q>attack endangering the constitution</q> is a very important key aspect in this law. It determines the scope of action and competences of <q>State security bodies</q>. Apart from a very vague definition of what is meant by it, authorities can already respond to <q>probable attacks endangering the constitution</q> before they started using all of their surveillance powers to store all potential suspects in their database. So they are allowed to collect <q>any information from all available sources</q> - which also includes publicly accessible data on the internet about when a person <q>probably</q> would like to take part in a demonstration against the academics ball for example.
-			
-			To put it plainly, those who <q>probably</q> want to participate in the prevention or disruption of a meeting such as this ball have to fear systematic monitoring by the <abbr>BVT</abbr>, before even attending the demonstration. 
-		</p>
-		<p>
-			<strong>Far-reaching opportunities for data collection and processing: </strong> The collection of personal data of suspects and their contact persons will be allowed for <q>assessment of the likelihood of a hazard</q> in the future. This means that a concrete suspicion is not explicitly needed. As a result, the entire internet usage of a target person can be collected and evaluated. Most means of (undercover) investigation are therefore no longer linked to specific crimes or suspicious circumstances. It suffices if authorities want to analyze an abstract risk scenario. This comprehensive collection of data on potentially everyone of us may be stored for 5 years and logs about who is accessing these data get deleted after 3 years.
-		</p>
-		<p>
-			<strong>Numerous technical surveillance possibilities:</strong> The use of tracking devices and
-			<a href="https://en.wikipedia.org/wiki/IMSI-catcher"><abbr>IMSI</abbr>-<span lang="en">catchers</span></a> will be permitted,
-			<q>if the observation was otherwise difficult or considered hopeless</q>. The periods for the permitted use of such special investigative means will be increased. According to the old law of the <abbr title="StPO/Strafprozessordnung">Code of Criminal Procedure</abbr>, the maximum period is three months under the condition of a court order. Under the new legal system of <abbr title="Polizeiliches Staatsschutzgesetz">PStSG</abbr>even six months are possible, and all it takes to prolong the observation is the approval of the officer for the protection of rights at the Interior Ministry. In the same way, the protection of the citizens' rights against audio and video recordings during surveillance by the police, the analysis of travel movements <abbr title="Passenger Name Records">(PNR)</abbr>, and information regarding traffic and content data from the Internet is withdrawn.
-		</p>
-		<p>
-			<strong>Paid informers:</strong> The legalization of paid undercover agents without judicial review is also extremely problematic. The current draft of the law shows very little sensitivity to issues such as the entrapment, and it draws no lessons from the huge scandal involving the 
-			<a href="https://en.wikipedia.org/wiki/National_Socialist_Underground"><abbr title="National Socialist Underground">NSU</abbr>murders</a> in Germany.
-		</p>
-		<p>
-			<strong>Missing evaluation:</strong> The draft of the new <abbr>PStSG</abbr> includes a chapter with a promising title - the <q>impact-oriented consequence assessment</q>,
-			but here only to budgetary implications are evaluated. 
-
-There are neither statistics explaining which surveillance measures have proven to be effective so far and why there is a need to extended them, nor are there criteria defined, such as security situation or increased rate of solved crimes, on which the impact of the reform can be measured.  In its <span lang="en">Project HEAT</span>, the <abbr>AK Vorrat</abbr> demands a full evaluation of all anti-terror laws in Austria and is supplying the scientific basis.
-		</p>
-		<p>
-			<strong>Police and intelligence services in one Authority:</strong> Due to the extremely vague definition of an <q>attack endangering the constitution</q> and the expansion of surveillance powers to the <q>evaluation of the likelihood of a threat</q> , a police force with the powers of an intelligence service is created. 
-The principle of mandatory prosecution of offenses and the principle of opportunity are being breached. The <abbr>BVT</abbr> and - even worse - the federal offices become uncontrollable authorities with officials who are subject to almost no limits in their operations and don't have to answer to anyone. The next police scandal in <abbr>BVT</abbr> is inevitable.
-		</p>
-	</section>
-
-	<hr class="nocss">
-	<div id="wrapper-fazit">
-		<div class="sectionimage">
-			<img src=".././img/conclusion.png" alt="conclusion">
-		</div>
-		<section class="indent paper">
-			<h2 class="nocss">Conclusion</h2>
-			<p>
-				With the vague definition of <q>attack endangering the constitution</q>, the law creates the basis for the excessive surveillance of innocent citizens. Although such serious intrusions into privacy require careful control, no efficient legal mechanisms have been provided. 
-A feigned reason justifies the means. 
-According to the AKVorrat, the bill creates the basis for a domestic intelligence agency and therefore it is rejected entirely. At the same time AKVorrat acknowledges that counter-terrorism measures are needed. This, however, should be drafted in an open dialogue with stakeholders and evaluated very closely in terms of effectiveness and with respect for fundamental rights.
-			</p>
-		</section>
-		<br/>
-	</div>
-
-	<section class="glossar indent">
-		<h2>glossary</h2>
-		<dl>
-			<dt><abbr>PStSG</abbr></dt> <dd>Polizeiliches Staatsschutzgesetz / State Protection Act</dd>
-			<dt><abbr>SPG</abbr></dt>   <dd>Sicherheitspolizeigesetz / Security Police Act</dd>
-			<dt><abbr>StPO</abbr></dt>  <dd>Strafprozessordnung / code of criminal procedure</dd>
-			<dt><abbr>BVT</abbr></dt>   <dd>Bundesamt für Verfassungsschutz und Terrorismusbekämpfung / Federal Agency for State Protection and Counter Terrorism</dd>
-			<dt><abbr>LV</abbr></dt>    <dd>Landesämter für Verfassungsschutz / regional authorities of the Federal Agency for State Protection and Counter Terrorism</dd>
-		</dl>
-	</section>
-
-	<div style="text-align:center;"><a href="https://akvorrat.at/kontakt">contact / imprint / press</a> | <a href="http://staatsschutz.at/img/sharables.zip">Sharepics</a> (ZIP)</div>
-	<hr class="nocss">
-
-</div>
-</div>
-</div>
-
-<footer id="footer">
-	<p>This campaign is being supported by</p>
-	<ul>
-		<li><a href="https://akvorrat.at"><img src=".././img/akvorrat_logo.jpg" alt="AKVorrat Logo"><br> Arbeitskreis Vorratsdaten Österreich</a> </li>
-		<li><a href="https://amnesty.at"><img src=".././img/amnesty.png" alt="Amnesty International Österreich Logo"><br> Amnesty International Österreich</a> </li>
-		<li><a href="https://attac.at"><img src=".././img/AttacAustria.png" alt="ATTAC Österreich Logo"><br> ATTAC Österreich</a> </li>
-		<li><a href="https://vgt.at"><img src=".././img/VGT.png" alt="VGT Logo"><br> Verein gegen Tierfabriken</a> </li>
-		<li><a href="https://www.oeh.ac.at"><img src="./img/www.oeh.ac.at.jpg" alt="Oesterreichische Hochschueler_innenschaft Logo"> <br> Oesterreichische Hochschüler_innenschaft</a> </li>
-		<li><a href="http://mehrdemokratie.at"><img src=".././img/mehrdemokratie.png" alt="Mehrdemokratie Logo"> <br> Mehr Demokratie Österreich</a> </li>
-		<li><a href="https://zara.or.at"><img src=".././img/Zara-schwarzweiss.jpg" alt="Zara Logo"> <br> Zivilcourage und Anti-Rassismus-Arbeit</a> </li>
-		<li><a href="http://www.informationsfreiheit.at/"><img src=".././img/ForumInformationsfreiheit.jpg" alt="Forum Informationsfreiheit Logo"> <br> Forum Informationsfreiheit (FOI)</a> </li>	</ul>
-
-<div style="text-align:center;"><br/><a href="https://akvorrat.at/kontakt">Contact us, if your organization would like to support us as well.</a></div>
-</footer>
-
-</body></html>
+</html>
