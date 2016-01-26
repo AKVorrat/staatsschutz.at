@@ -78,8 +78,12 @@ footer a:focus {
     color: #fff;
 }
 
-p:last-of-type {
-    margin: 0;
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 .center {

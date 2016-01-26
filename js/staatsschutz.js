@@ -22,11 +22,6 @@ function beautify_number (nr) {
 function set_progress ( signatures ) {
 	signatures = signatures || 0;
 	var target = getTarget(signatures);
-	var percent = signatures/target*100 + '%';
-	//console.log('progress', signatures, target, percent, $('#progress'))
-
-	//$('#progress').animate({'width': percent}, 800);
-	$('#progress').css('width', percent);
 	$('#progress_description').text(beautify_number(signatures) + ' Menschen sind gegen das geplante Staatsschutzgesetz'/* + beautify_number(target)*/);
 }
 

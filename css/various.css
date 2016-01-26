@@ -1,18 +1,5 @@
-.sidebar {
-    margin: 2em auto;
+.notification {
     background: #F8F9FA;
-}
-
-.sidetitle {
-    padding: .5em;
-    color: #fff;
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: bold;
-    background: #003b4c;
-}
-
-.sidetext {
     padding: 1em;
 }
 
