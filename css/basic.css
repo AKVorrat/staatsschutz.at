@@ -86,6 +86,12 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.links {
+    padding: 1em;
+    color: #fff;
+    background-color: #001319;
+}
+
 .center {
     text-align: center;
 }
@@ -110,20 +116,10 @@ p:last-child {
     quotes: "\201E" "\201C" "\201A" "\2018";
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+a,
+a:hover,
 a:focus {
-    text-decoration: underline;
-}
-
-a:hover abbr {
-    border: none;
+    color: #999;
 }
 
 h1, h2, h3, h4 {
