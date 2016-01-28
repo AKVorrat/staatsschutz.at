@@ -1,6 +1,12 @@
-.notification {
+.highlight {
     background: #F8F9FA;
     padding: 1em;
+}
+
+#infoarea {
+    padding: 0px;
+    float: none;
+    margin: 0px auto;
 }
 
 article ul,
