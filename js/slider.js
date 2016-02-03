@@ -18,7 +18,7 @@ $(function () {
     var hash = window.location.hash.substring(1);
     if (hash == "dokumente") {
         $("#downloadsModal").modal("show");
-    } else if (hash == "glosar") {
+    } else if (hash == "glossar") {
         $("#glossaryModal").modal("show");
     } else if (hash == "privacy") {
         $("#privacyModal").modal("show");

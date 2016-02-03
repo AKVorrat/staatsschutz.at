@@ -1,3 +1,41 @@
+/* PROGRESS_BAR */
+
+.progress_bar {
+    position: relative;
+    overflow: hidden;
+    margin: 2em auto;
+    border: solid 1px #9C9C9C;
+    background: #F8F9FA;
+}
+
+.progress_volume {
+    background: #8ebf2a;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b6f235 0%, #8ebf2a 50%, #b6f235 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b6f235 0%, #8ebf2a 50%, #b6f235 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b6f235 0%, #8ebf2a 50%, #b6f235 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: width 4s ease;
+}
+
+#progress_description {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 10px #fff;
+    font-size: 1.3em;
+}
+
+/* VARIOUS */
+
 .highlight {
     background: #F8F9FA;
     padding: 1em;
@@ -56,8 +94,6 @@ article ol {
     margin: 1em auto;
     border: solid 0.2em #8ebf2a;
     padding: 1em;
-    text-align: center;
-    font-weight: bold;
     font-size: 1.2em;
 }
 
