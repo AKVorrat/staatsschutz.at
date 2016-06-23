@@ -108,6 +108,11 @@ footer a:focus {
     color: #fff;
 }
 
+.paper li,
+p {
+    text-align: justify;
+}
+
 p:first-child {
     margin-top: 0;
 }
