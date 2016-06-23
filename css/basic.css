@@ -1,7 +1,6 @@
-/*
 @font-face {
     font-family: "FiraSans";
-    src: url("../fonts/fira-sans/FiraSans-Light.otf") format("opentype");
+    src: url("../fonts/fira-sans/FiraSans-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -12,7 +11,34 @@
     font-weight: bold;
     font-style: normal;
 }
-*/
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/open-sans/OpenSans-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/open-sans/OpenSans-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
 
 * {
     margin: 0;
@@ -27,19 +53,22 @@ html {
 
 body {
     color: #000;
-    font-family: FiraSans, sans-serif;
+    font-family: OpenSans, sans-serif;
     line-height: 1.4;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 header, footer {
-    padding: 1em;
     color: #fff;
     text-align: center;
     background: #003b4c;
     overflow: hidden;
     position: relative;
+}
+
+header {
+    padding: 5em 1em;
 }
 
 header h1 {
@@ -65,6 +94,7 @@ header #backlink {
 
 footer {
     margin-top: 1em;
+    padding: 1em;
 }
 
 footer img {
@@ -87,9 +117,9 @@ p:last-child {
 }
 
 .links {
-    padding: 1em;
+    padding: 0.5em;
     color: #fff;
-    background-color: #001319;
+    background-color: #000;
 }
 
 .center {
@@ -110,8 +140,6 @@ p:last-child {
     cursor: default;
 }
 
-/* abbr[title], span[title] { cursor:help; } */
-
 :lang(de) {
     quotes: "\201E" "\201C" "\201A" "\2018";
 }
@@ -123,6 +151,7 @@ a:focus {
 }
 
 h1, h2, h3, h4 {
+    font-family: FiraSans, sans-serif;
     font-weight: bold;
 }
 

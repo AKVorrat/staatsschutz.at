@@ -1,2 +1,5 @@
-# Staatsschutz.at
-campaign against Austrian surveillance law 
+# About
+Petition against the planned State Protection Act
+
+# Requirements
+MySQLdb
