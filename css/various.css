@@ -182,7 +182,12 @@ article ol {
 }
 
 .sectionimage {
+    max-width: 100%;
     margin: 2em 0;
+}
+
+.sectionimage img {
+    max-width: 100%;
 }
 
 .form-required {
