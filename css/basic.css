@@ -61,7 +61,7 @@ body {
 
 header, footer {
     color: #fff;
-    text-align: center;
+    text-align: center !important;
     background: #003b4c;
     overflow: hidden;
     position: relative;
@@ -106,11 +106,6 @@ footer a,
 footer a:hover,
 footer a:focus {
     color: #fff;
-}
-
-.paper li,
-p {
-    text-align: justify;
 }
 
 p:first-child {

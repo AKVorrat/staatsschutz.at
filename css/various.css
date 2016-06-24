@@ -81,6 +81,12 @@
 
 /* VARIOUS */
 
+#lang {
+    position: absolute;
+    top: 1.3em;
+    left: 1.3em;
+}
+
 .highlight {
     background: #F8F9FA;
     padding: 1em;
